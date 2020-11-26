@@ -3,7 +3,14 @@
         <title>CharlesRen</title>
         <link>https://charlesren.github.io/mysite-public/</link>
         <description>About LoveIt Theme</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 26 Nov 2020 16:45:15 &#43;0800</lastBuildDate>
             <atom:link href="https://charlesren.github.io/mysite-public/index.xml" rel="self" type="application/rss+xml" />
-        </channel>
+        <item>
+    <title>Firstpg</title>
+    <link>https://charlesren.github.io/mysite-public/firstpg/</link>
+    <pubDate>Thu, 26 Nov 2020 16:45:15 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://charlesren.github.io/mysite-public/firstpg/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
 </rss>
