@@ -2,30 +2,22 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://charlesren.github.io/mysite-public/</loc><lastmod>2020-11-26T16:47:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://charlesren.github.io/mysite-public/</loc><lastmod>2020-11-26T16:56:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://charlesren.github.io/mysite-public/zh-cn/"
-                        /><xhtml:link
-                        rel="alternate"
-                        hreflang="fr"
-                        href="https://charlesren.github.io/mysite-public/fr/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
                     href="https://charlesren.github.io/mysite-public/"
                     /></url><url>
-            <loc>https://charlesren.github.io/mysite-public/firstpg/</loc><lastmod>2020-11-26T16:47:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://charlesren.github.io/mysite-public/posts/</loc><lastmod>2020-11-26T16:47:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://charlesren.github.io/mysite-public/about/</loc><lastmod>2020-11-26T16:47:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://charlesren.github.io/mysite-public/firstpg/</loc><lastmod>2020-11-26T16:56:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://charlesren.github.io/mysite-public/posts/</loc><lastmod>2020-11-26T16:56:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://charlesren.github.io/mysite-public/about/</loc><lastmod>2020-11-26T16:56:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://charlesren.github.io/mysite-public/categories/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://charlesren.github.io/mysite-public/zh-cn/categories/"
-                        /><xhtml:link
-                        rel="alternate"
-                        hreflang="fr"
-                        href="https://charlesren.github.io/mysite-public/fr/categories/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
@@ -35,10 +27,6 @@
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://charlesren.github.io/mysite-public/zh-cn/tags/"
-                        /><xhtml:link
-                        rel="alternate"
-                        hreflang="fr"
-                        href="https://charlesren.github.io/mysite-public/fr/tags/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"

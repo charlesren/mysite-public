@@ -7,10 +7,6 @@
                         hreflang="en"
                         href="https://charlesren.github.io/mysite-public/categories/"
                         /><xhtml:link
-                        rel="alternate"
-                        hreflang="fr"
-                        href="https://charlesren.github.io/mysite-public/fr/categories/"
-                        /><xhtml:link
                     rel="alternate"
                     hreflang="zh-cn"
                     href="https://charlesren.github.io/mysite-public/zh-cn/categories/"
@@ -20,10 +16,6 @@
                         hreflang="en"
                         href="https://charlesren.github.io/mysite-public/"
                         /><xhtml:link
-                        rel="alternate"
-                        hreflang="fr"
-                        href="https://charlesren.github.io/mysite-public/fr/"
-                        /><xhtml:link
                     rel="alternate"
                     hreflang="zh-cn"
                     href="https://charlesren.github.io/mysite-public/zh-cn/"
@@ -32,10 +24,6 @@
                         rel="alternate"
                         hreflang="en"
                         href="https://charlesren.github.io/mysite-public/tags/"
-                        /><xhtml:link
-                        rel="alternate"
-                        hreflang="fr"
-                        href="https://charlesren.github.io/mysite-public/fr/tags/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="zh-cn"
