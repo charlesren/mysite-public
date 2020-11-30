@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>All Posts - CharlesRen</title>
+        <title>所有文章 - CharlesRen</title>
         <link>https://charlesren.github.io/mysite-public/posts/</link>
-        <description>All Posts | CharlesRen</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>renccn@gmail.com (CharlesRen)</managingEditor>
+        <description>所有文章 | CharlesRen</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>renccn@gmail.com (CharlesRen)</managingEditor>
             <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 26 Nov 2020 16:45:15 &#43;0800</lastBuildDate><atom:link href="https://charlesren.github.io/mysite-public/posts/" rel="self" type="application/rss+xml" /><item>
     <title>Firstpg</title>
     <link>https://charlesren.github.io/mysite-public/firstpg/</link>
     <pubDate>Thu, 26 Nov 2020 16:45:15 &#43;0800</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://charlesren.github.io/mysite-public/firstpg/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
