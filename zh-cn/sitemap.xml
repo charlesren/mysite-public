@@ -2,7 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://charlesren.github.io/mysite-public/categories/</loc><lastmod>2020-11-26T16:56:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://charlesren.github.io/mysite-public/categories/</loc><lastmod>2020-11-30T09:23:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://charlesren.github.io/mysite-public/en/categories/"
@@ -11,7 +11,7 @@
                     hreflang="zh-cn"
                     href="https://charlesren.github.io/mysite-public/categories/"
                     /></url><url>
-            <loc>https://charlesren.github.io/mysite-public/</loc><lastmod>2020-11-26T16:56:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://charlesren.github.io/mysite-public/</loc><lastmod>2020-11-30T09:23:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://charlesren.github.io/mysite-public/en/"
@@ -20,11 +20,11 @@
                     hreflang="zh-cn"
                     href="https://charlesren.github.io/mysite-public/"
                     /></url><url>
-            <loc>https://charlesren.github.io/mysite-public/tags/cncf/</loc><lastmod>2020-11-26T16:56:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://charlesren.github.io/mysite-public/categories/cncf/</loc><lastmod>2020-11-26T16:56:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://charlesren.github.io/mysite-public/firstpg/</loc><lastmod>2020-11-26T16:56:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://charlesren.github.io/mysite-public/posts/</loc><lastmod>2020-11-26T16:56:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://charlesren.github.io/mysite-public/tags/</loc><lastmod>2020-11-26T16:56:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://charlesren.github.io/mysite-public/tags/cncf/</loc><lastmod>2020-11-30T09:23:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://charlesren.github.io/mysite-public/categories/cncf/</loc><lastmod>2020-11-30T09:23:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://charlesren.github.io/mysite-public/firstpg/</loc><lastmod>2020-11-30T09:23:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://charlesren.github.io/mysite-public/posts/</loc><lastmod>2020-11-30T09:23:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://charlesren.github.io/mysite-public/tags/</loc><lastmod>2020-11-30T09:23:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://charlesren.github.io/mysite-public/en/tags/"
