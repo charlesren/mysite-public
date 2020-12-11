@@ -7,18 +7,18 @@
             <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 30 Nov 2020 16:52:55 &#43;0800</lastBuildDate>
             <atom:link href="https://charlesren.github.io/mysite-public/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>Secondpg</title>
-    <link>https://charlesren.github.io/mysite-public/secondpg/</link>
+    <title>Centos8安装VNC</title>
+    <link>https://charlesren.github.io/mysite-public/centos8%E5%AE%89%E8%A3%85vnc/</link>
     <pubDate>Mon, 30 Nov 2020 16:52:55 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>https://charlesren.github.io/mysite-public/secondpg/</guid>
-    <description><![CDATA[abc ]]></description>
+    <guid>https://charlesren.github.io/mysite-public/centos8%E5%AE%89%E8%A3%85vnc/</guid>
+    <description><![CDATA[Centos8 配置VNC 安装 TigerVNC server 1 dnf install tigervnc-server 防火墙放行VNC服务 1 2 3 firewall-cmd --add-service=vnc-server --permanent firewall-cmd --reload 配置VNC 用户 vi /etc/tigervnc/vncserver.users 添加用户，如： ：1=root 配置分辨率 vi $HOME/.vnc/config geometry=1920x1080 设置VNC用户]]></description>
 </item><item>
-    <title>Firstpg</title>
-    <link>https://charlesren.github.io/mysite-public/firstpg/</link>
+    <title>hugo的使用</title>
+    <link>https://charlesren.github.io/mysite-public/hugo%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
     <pubDate>Thu, 26 Nov 2020 16:45:15 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>https://charlesren.github.io/mysite-public/firstpg/</guid>
-    <description><![CDATA[]]></description>
+    <guid>https://charlesren.github.io/mysite-public/hugo%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
+    <description><![CDATA[参考 https://www.adamormsby.com/posts/how-to-set-up-a-hugo-site-on-github-pages-with-submodules/ 安装hugo github 下载linux安装包 下载extend版 解压后把二进制文件复制到/usr/bin/ hugo new site [SITE_NAME] hugo new site mysite github 建新repo Enter the project folder. cd]]></description>
 </item></channel>
 </rss>
