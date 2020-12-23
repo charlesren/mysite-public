@@ -6,7 +6,7 @@
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>hugo的使用 - CharlesRen</title><meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="hugo的使用" />
-<meta property="og:description" content="参考 https://www.adamormsby.com/posts/how-to-set-up-a-hugo-site-on-github-pages-with-submodules/ 安装hugo github 下载linux安装包 下载extend版 解压后把二进制文件复制到/usr/bin/ hugo new site [SITE_NAME] hugo new site mysite github 建新repo Enter the project folder. cd" />
+<meta property="og:description" content="参考 https://www.adamormsby.com/posts/how-to-set-up-a-hugo-site-on-github-pages-with-submodules/ 安装hugo github 下载linux安装包 注意：下载extend版 解压后把二进制文件复制到/usr/bin/ create new site 1 2 #### hugo new site [SITE_NAME] hugo new site mysite github 建新" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://charlesren.github.io/mysite-public/hugo%E7%9A%84%E4%BD%BF%E7%94%A8/" />
 <meta property="og:image" content="https://charlesren.github.io/logo.png"/>
@@ -16,7 +16,7 @@
 <meta name="twitter:image" content="https://charlesren.github.io/logo.png"/>
 
 <meta name="twitter:title" content="hugo的使用"/>
-<meta name="twitter:description" content="参考 https://www.adamormsby.com/posts/how-to-set-up-a-hugo-site-on-github-pages-with-submodules/ 安装hugo github 下载linux安装包 下载extend版 解压后把二进制文件复制到/usr/bin/ hugo new site [SITE_NAME] hugo new site mysite github 建新repo Enter the project folder. cd"/>
+<meta name="twitter:description" content="参考 https://www.adamormsby.com/posts/how-to-set-up-a-hugo-site-on-github-pages-with-submodules/ 安装hugo github 下载linux安装包 注意：下载extend版 解压后把二进制文件复制到/usr/bin/ create new site 1 2 #### hugo new site [SITE_NAME] hugo new site mysite github 建新"/>
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/charlesren.github.io\/mysite-public\/hugo%E7%9A%84%E4%BD%BF%E7%94%A8\/"
-        },"image": ["https:\/\/charlesren.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Tools","wordcount":  850 ,
+        },"image": ["https:\/\/charlesren.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Tools","wordcount":  851 ,
         "url": "https:\/\/charlesren.github.io\/mysite-public\/hugo%E7%9A%84%E4%BD%BF%E7%94%A8\/","datePublished": "2020-11-26T16:45:15+08:00","dateModified": "2020-11-26T16:45:15+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/charlesren.github.io\/images\/avatar.png"},"author": {
@@ -110,7 +110,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">hugo的使用</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://charlesren.github.io/mysite-public/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>CharlesRen</a></span>&nbsp;<span class="post-category">收录于 <a href="/mysite-public/categories/tools/"><i class="far fa-folder fa-fw"></i>Tools</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-11-26">2020-11-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 850 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-11-26">2020-11-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 851 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -121,11 +121,8 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#安装hugo">安装hugo</a>
-          <ul>
-            <li><a href="#hugo-new-site-site_name">hugo new site [SITE_NAME]</a></li>
-          </ul>
-        </li>
+        <li><a href="#安装hugo">安装hugo</a></li>
+        <li><a href="#create-new-site">create new site</a></li>
         <li><a href="#github-建新repo">github 建新repo</a>
           <ul>
             <li><a href="#enter-the-project-folder">Enter the project folder.</a></li>
@@ -166,21 +163,44 @@
 </nav></div>
             </div><div class="content" id="content"><p>参考  <a href="https://www.adamormsby.com/posts/how-to-set-up-a-hugo-site-on-github-pages-with-submodules/">https://www.adamormsby.com/posts/how-to-set-up-a-hugo-site-on-github-pages-with-submodules/</a></p>
 <h3 id="安装hugo">安装hugo</h3>
-<ul>
+<ol>
 <li>github 下载linux安装包</li>
-</ul>
-<p>下载extend版</p>
-<ul>
+</ol>
+<p><em>注意：下载extend版</em></p>
+<ol start="2">
 <li>解压后把二进制文件复制到/usr/bin/</li>
-</ul>
-<h4 id="hugo-new-site-site_name">hugo new site [SITE_NAME]</h4>
-<p>hugo new site mysite</p>
-<h3 id="github-建新repo">github 建新repo</h3>
+</ol>
+<h3 id="create-new-site">create new site</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">#### hugo new site [SITE_NAME]
+hugo new site mysite
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="github-建新repo">github 建新repo</h3>
 <h4 id="enter-the-project-folder">Enter the project folder.</h4>
-<p>cd mysite</p>
-<h4 id="initialize-git-locally">Initialize git locally.</h4>
-<p>git init</p>
-<h4 id="set-our-new-github-repo-as-the-remote-for-our-local-project">Set our new Github repo as the remote for our local project</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">cd mysite
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="initialize-git-locally">Initialize git locally.</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git init
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="set-our-new-github-repo-as-the-remote-for-our-local-project">Set our new Github repo as the remote for our local project</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -192,12 +212,33 @@ git remote add origin https://github.com/charlesren/mysite.git
 </code></pre></td></tr></table>
 </div>
 </div><h4 id="stage-all-files-for-commit">Stage all files for commit.</h4>
-<p>git add .</p>
-<h4 id="commit-files">Commit files.</h4>
-<p>git commit -m &ldquo;committing our hugo template&rdquo;</p>
-<h4 id="push-to-the-remote-master">Push to the remote master</h4>
-<p>git push -u origin master</p>
-<h3 id="创建--live-site-data-repository">创建  Live Site Data Repository</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git add .
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="commit-files">Commit files.</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git commit -m &#34;committing our hugo template&#34;
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="push-to-the-remote-master">Push to the remote master</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git push -u origin master
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="创建--live-site-data-repository">创建  Live Site Data Repository</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -262,28 +303,21 @@ git commit -m &#34;first build - update submodule reference&#34;
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="add-a-theme-to-our-site">Add a Theme to Our Site</h3>
+<blockquote>
+<p>Make a fork of the Hello Friend theme so we have our own copy of it.</p>
+<p>这里fork <a href="https://github.com/dillonzq/LoveIt">https://github.com/dillonzq/LoveIt</a></p>
+<p>fork 后地址：  <a href="https://github.com/charlesren/LoveIt">https://github.com/charlesren/LoveIt</a></p>
+<p>Add our forked repo as a submodule in our main project’s themes folder.</p>
+<p>Add the theme submodule from the root project folder</p>
+<p>my sample URL - <a href="https://github.com/aormsby/F-hugo-theme-hello-friend.git">https://github.com/aormsby/F-hugo-theme-hello-friend.git</a></p>
+<p>git submodule add <a href="https://github.com/%5BGITHUB_USERNAME%5D/%5BFORKED_THEME_REPO_NAME%5D.git">https://github.com/<sup>GITHUB_USERNAME</sup>/<sub>FORKED_THEME_REPO_NAME</sub>.git</a> themes/hello-friend</p>
+</blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">#### Make a fork of the Hello Friend theme so we have our own copy of it.
-这里fork https://github.com/dillonzq/LoveIt
-fork 后地址：  https://github.com/charlesren/LoveIt
-#### Add our forked repo as a submodule in our main project’s themes folder.
-# Add the theme submodule from the root project folder
-# my sample URL - https://github.com/aormsby/F-hugo-theme-hello-friend.git
-# git submodule add https://github.com/<sup>GITHUB_USERNAME</sup>/<sub>FORKED_THEME_REPO_NAME</sub>.git themes/hello-friend
-
-git submodule add zz  themes/LoveIt
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git submodule add https://github.com/charlesren/LoveIt.git  themes/LoveIt
 </code></pre></td></tr></table>
 </div>
 </div><h4 id="修改configtoml">修改config.toml</h4>
@@ -346,15 +380,29 @@ name = &#34;CharlesRen&#34;
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="test-site-and-deploy">Test Site and Deploy</h3>
-<p>hugo
-cd public
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">hugo
+<span class="nb">cd</span> public
 git add .
-git commit -m &ldquo;build with theme&rdquo;
-cd ../
+git commit -m <span class="s2">&#34;build with theme&#34;</span>
+<span class="nb">cd</span> ../
 git add .
-git commit -m &ldquo;build with theme - update submodule reference&rdquo;
-git push -u origin master &ndash;recurse-submodules=on-demand</p>
-<p>至此站点已完成，但没有内容</p>
+git commit -m <span class="s2">&#34;build with theme - update submodule reference&#34;</span>
+git push -u origin master --recurse-submodules<span class="o">=</span>on-demand
+</code></pre></td></tr></table>
+</div>
+</div><p>至此站点已完成，但没有内容</p>
 <h3 id="添加about页">添加about页</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -385,27 +433,18 @@ vi content/about.md
 <ul>
 <li>问题一</li>
 </ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">Error: Error building site: failed to render pages: render of &#34;page&#34; failed: execute of template failed: template: _default/single.html:18:124: executing &#34;content&#34; at &lt;partial &#34;function/content.html&#34;&gt;: error calling partial: &#34;/data/mysite/themes/LoveIt/layouts/partials/function/content.html:4:19&#34;: execute of template failed: template: partials/function/content.html:4:19: executing &#34;partials/function/content.html&#34; at &lt;partial &#34;function/ruby.html&#34; $content&gt;: error calling partial: partial that returns a value needs a non-zero argument.
-
-</code></pre></td></tr></table>
-</div>
-</div><p>解决方案 ：  <a href="https://github.com/dillonzq/LoveIt/pull/519/files">https://github.com/dillonzq/LoveIt/pull/519/files</a></p>
+<blockquote>
+<p>Error: Error building site: failed to render pages: render of &ldquo;page&rdquo; failed: execute of template failed: template: _default/single.html:18:124: executing &ldquo;content&rdquo; at &lt;partial &ldquo;function/content.html&rdquo;&gt;: error calling partial: &ldquo;/data/mysite/themes/LoveIt/layouts/partials/function/content.html:4:19&rdquo;: execute of template failed: template: partials/function/content.html:4:19: executing &ldquo;partials/function/content.html&rdquo; at &lt;partial &ldquo;function/ruby.html&rdquo; $content&gt;: error calling partial: partial that returns a value needs a non-zero argument.</p>
+</blockquote>
+<p>解决方案 ：  <a href="https://github.com/dillonzq/LoveIt/pull/519/files">https://github.com/dillonzq/LoveIt/pull/519/files</a></p>
 <ul>
-<li>问题二</li>
+<li>问题二  about页面不显示</li>
 </ul>
-<p>about页面不显示</p>
-<p>解决方案，config.toml写绝对地址</p>
+<p>解决方案:config.toml写绝对地址</p>
 <ul>
-<li>问题三</li>
+<li>问题三 文章自动分类到标签、分类、文档</li>
 </ul>
-<p>文章自动分类到标签、分类、文档</p>
-<p>文章前加tags\ categories</p>
+<p>解决方案：文章前加tags\ categories</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -417,14 +456,14 @@ vi content/about.md
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">---
-title: &#34;Firstpg&#34;
-date: 2020-11-26T16:45:15+08:00
-draft: false
-tags: [&#34;cncf&#34;]
-categories: [&#34;cncf&#34;,&#34;documentation&#34;]
----
-</code></pre></td></tr></table>
+<pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nn">---</span><span class="w">
+</span><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Firstpg&#34;</span><span class="w">
+</span><span class="w"></span><span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="ld">2020-11-26T16:45:15</span><span class="m">+08</span><span class="p">:</span><span class="m">00</span><span class="w">
+</span><span class="w"></span><span class="nt">draft</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="w"></span><span class="nt">tags</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;cncf&#34;</span><span class="p">]</span><span class="w">
+</span><span class="w"></span><span class="nt">categories</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;cncf&#34;</span><span class="p">,</span><span class="s2">&#34;documentation&#34;</span><span class="p">]</span><span class="w">
+</span><span class="w"></span><span class="nn">---</span><span class="w">
+</span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
     <div class="post-info">

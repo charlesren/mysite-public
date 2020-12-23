@@ -17,6 +17,6 @@
     <pubDate>Thu, 26 Nov 2020 16:45:15 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://charlesren.github.io/mysite-public/hugo%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
-    <description><![CDATA[参考 https://www.adamormsby.com/posts/how-to-set-up-a-hugo-site-on-github-pages-with-submodules/ 安装hugo github 下载linux安装包 下载extend版 解压后把二进制文件复制到/usr/bin/ hugo new site [SITE_NAME] hugo new site mysite github 建新repo Enter the project folder. cd]]></description>
+    <description><![CDATA[参考 https://www.adamormsby.com/posts/how-to-set-up-a-hugo-site-on-github-pages-with-submodules/ 安装hugo github 下载linux安装包 注意：下载extend版 解压后把二进制文件复制到/usr/bin/ create new site 1 2 #### hugo new site [SITE_NAME] hugo new site mysite github 建新]]></description>
 </item></channel>
 </rss>
