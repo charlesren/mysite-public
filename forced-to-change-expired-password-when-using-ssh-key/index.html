@@ -5,32 +5,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>Centos8安装VNC - CharlesRen</title><meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Centos8安装VNC" />
-<meta property="og:description" content="Centos8 配置VNC 安装 TigerVNC server 1 dnf install tigervnc-server 防火墙放行VNC服务 1 2 3 firewall-cmd --add-service=vnc-server --permanent firewall-cmd --reload 配置VNC 用户 vi /etc/tigervnc/vncserver.users 添加用户，如： ：1=root 配置分辨率 vi $HOME/.vnc/config geometry=1920x1080 设置VNC用户" />
+        <title>Forced to Change Expired Password When Using Ssh Key - CharlesRen</title><meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Forced to Change Expired Password When Using Ssh Key" />
+<meta property="og:description" content="I am working in an environment where I have an account on multiple linux machines where accounts and passwords are managed independently (no active directory/LDAP/etc) and passwords expire every 30 days. As such, I thought it would be easier to manage my authentication using ssh keys. I am able to authenticate using my ssh keys just fine. However, I found that when my password expires, I am prompted to change" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://charlesren.github.io/mysite-public/centos8%E5%AE%89%E8%A3%85vnc/" />
+<meta property="og:url" content="https://charlesren.github.io/mysite-public/forced-to-change-expired-password-when-using-ssh-key/" />
 <meta property="og:image" content="https://charlesren.github.io/logo.png"/>
-<meta property="article:published_time" content="2020-11-30T16:52:55+08:00" />
-<meta property="article:modified_time" content="2020-11-30T16:52:55+08:00" />
+<meta property="article:published_time" content="2021-01-08T11:05:02+08:00" />
+<meta property="article:modified_time" content="2021-01-08T11:05:02+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://charlesren.github.io/logo.png"/>
 
-<meta name="twitter:title" content="Centos8安装VNC"/>
-<meta name="twitter:description" content="Centos8 配置VNC 安装 TigerVNC server 1 dnf install tigervnc-server 防火墙放行VNC服务 1 2 3 firewall-cmd --add-service=vnc-server --permanent firewall-cmd --reload 配置VNC 用户 vi /etc/tigervnc/vncserver.users 添加用户，如： ：1=root 配置分辨率 vi $HOME/.vnc/config geometry=1920x1080 设置VNC用户"/>
+<meta name="twitter:title" content="Forced to Change Expired Password When Using Ssh Key"/>
+<meta name="twitter:description" content="I am working in an environment where I have an account on multiple linux machines where accounts and passwords are managed independently (no active directory/LDAP/etc) and passwords expire every 30 days. As such, I thought it would be easier to manage my authentication using ssh keys. I am able to authenticate using my ssh keys just fine. However, I found that when my password expires, I am prompted to change"/>
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://charlesren.github.io/mysite-public/centos8%E5%AE%89%E8%A3%85vnc/" /><link rel="prev" href="https://charlesren.github.io/mysite-public/hugo%E7%9A%84%E4%BD%BF%E7%94%A8/" /><link rel="next" href="https://charlesren.github.io/mysite-public/forced-to-change-expired-password-when-using-ssh-key/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/mysite-public/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://charlesren.github.io/mysite-public/forced-to-change-expired-password-when-using-ssh-key/" /><link rel="prev" href="https://charlesren.github.io/mysite-public/centos8%E5%AE%89%E8%A3%85vnc/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/mysite-public/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Centos8安装VNC",
+        "headline": "Forced to Change Expired Password When Using Ssh Key",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/charlesren.github.io\/mysite-public\/centos8%E5%AE%89%E8%A3%85vnc\/"
-        },"image": ["https:\/\/charlesren.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Tools","wordcount":  123 ,
-        "url": "https:\/\/charlesren.github.io\/mysite-public\/centos8%E5%AE%89%E8%A3%85vnc\/","datePublished": "2020-11-30T16:52:55+08:00","dateModified": "2020-11-30T16:52:55+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@id": "https:\/\/charlesren.github.io\/mysite-public\/forced-to-change-expired-password-when-using-ssh-key\/"
+        },"image": ["https:\/\/charlesren.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Linux","wordcount":  393 ,
+        "url": "https:\/\/charlesren.github.io\/mysite-public\/forced-to-change-expired-password-when-using-ssh-key\/","datePublished": "2021-01-08T11:05:02+08:00","dateModified": "2021-01-08T11:05:02+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/charlesren.github.io\/images\/avatar.png"},"author": {
                 "@type": "Person",
@@ -47,7 +47,7 @@
         </div>
         <div class="menu">
             <div class="menu-inner"><a class="menu-item" href="/mysite-public/posts/"> 所有文章 </a><a class="menu-item" href="/mysite-public/tags/"> 标签 </a><a class="menu-item" href="/mysite-public/categories/"> 分类 </a><a class="menu-item" href="/mysite-public/categories/documentation/"> 文档 </a><a class="menu-item" href="/mysite-public/about/"> 关于 </a><a class="menu-item" href="https://github.com/charlesren" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
-                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/mysite-public/centos8%E5%AE%89%E8%A3%85vnc/" selected>简体中文</option></select>
+                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/mysite-public/forced-to-change-expired-password-when-using-ssh-key/" selected>简体中文</option></select>
                     </a><span class="menu-item search" id="search-desktop">
                         <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
                         <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
@@ -94,7 +94,7 @@
                 </div><a class="menu-item" href="/mysite-public/posts/" title="">所有文章</a><a class="menu-item" href="/mysite-public/tags/" title="">标签</a><a class="menu-item" href="/mysite-public/categories/" title="">分类</a><a class="menu-item" href="/mysite-public/categories/documentation/" title="">文档</a><a class="menu-item" href="/mysite-public/about/" title="">关于</a><a class="menu-item" href="https://github.com/charlesren" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
                 <i class="fas fa-adjust fa-fw"></i>
             </a><a href="javascript:void(0);" class="menu-item" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
-                    <select class="language-select" onchange="location = this.value;"><option value="/mysite-public/centos8%E5%AE%89%E8%A3%85vnc/" selected>简体中文</option></select>
+                    <select class="language-select" onchange="location = this.value;"><option value="/mysite-public/forced-to-change-expired-password-when-using-ssh-key/" selected>简体中文</option></select>
                 </a></div>
     </div>
 </header>
@@ -108,41 +108,31 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">目录</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animated flipInX">Centos8安装VNC</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="https://charlesren.github.io/mysite-public/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>CharlesRen</a></span>&nbsp;<span class="post-category">收录于 <a href="/mysite-public/categories/tools/"><i class="far fa-folder fa-fw"></i>Tools</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-11-30">2020-11-30</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 123 字&nbsp;
+        </div><article class="page single"><h1 class="single-title animated flipInX">Forced to Change Expired Password When Using Ssh Key</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://charlesren.github.io/mysite-public/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>CharlesRen</a></span>&nbsp;<span class="post-category">收录于 <a href="/mysite-public/categories/documentation/"><i class="far fa-folder fa-fw"></i>documentation</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-08">2021-01-08</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 393 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
                     <span><i class="details-icon fas fa-angle-right"></i></span>
                 </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#安装-tigervnc-server">安装 TigerVNC server</a></li>
-        <li><a href="#防火墙放行vnc服务">防火墙放行VNC服务</a></li>
-        <li><a href="#配置vnc-用户">配置VNC 用户</a></li>
-        <li><a href="#配置分辨率">配置分辨率</a></li>
-        <li><a href="#设置vnc用户密码">设置VNC用户密码</a></li>
-        <li><a href="#启动服务">启动服务</a></li>
-        <li><a href="#连接到远程设备">连接到远程设备</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav></div>
-            </div><div class="content" id="content"><p>Centos8  配置VNC</p>
-<h3 id="安装-tigervnc-server">安装 TigerVNC server</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">dnf install tigervnc-server
-</code></pre></td></tr></table>
-</div>
-</div><h3 id="防火墙放行vnc服务">防火墙放行VNC服务</h3>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+            </div><div class="content" id="content"><blockquote>
+<p>I am working in an environment where I have an account on multiple linux machines where accounts and passwords are managed independently (no active directory/LDAP/etc) and passwords expire every 30 days. As such, I thought it would be easier to manage my authentication using ssh keys.</p>
+<p>I am able to authenticate using my ssh keys just fine. However, I found that when my password expires, I am prompted to change my password when I try to connect using my ssh key.</p>
+<p>Is this normal behavior? I thought the whole point of using key pairs is to bypass using your password. Shouldn&rsquo;t I only be prompted to change my password if I login using a password?</p>
+</blockquote>
+<p>Linux服务器用户的密码有过期设置，需定期修改密码。<br>
+凭直觉，可以通过秘钥登录，避免密码过期后，必须修改密码才能进行其他操作,同时也利于编写自动化脚本。<br>
+然而,当密码过期后，通过秘钥登录时，也会提示修改密码。<br>
+那么问题来了。<br>
+这正常吗？使用秘钥登录不是绕过密码?<br>
+如果正常，怎么避免使用key登录还提示修改密码？</p>
+<p>答案是正常的。可以通过修改<a href="http://www.linux-pam.org/Linux-PAM-html/Linux-PAM_SAG.html" target="_blank" rel="noopener noreffer">Linux-PAM</a>及<a href="http://www.linux-pam.org/Linux-PAM-html/sag-pam_unix.html" target="_blank" rel="noopener noreffer">pam_unix</a>配置解决。</p>
+<p><strong>解决方案：</strong><br>
+修改/etc/pam.d/sshd文件。<br>
+老配置：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -150,71 +140,58 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">firewall-cmd --add-service=vnc-server --permanent
-
-firewall-cmd --reload
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">account    required     pam_nologin.so
+account    include      password-auth
+password   include      password-auth
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="配置vnc-用户">配置VNC 用户</h3>
-<p>vi  /etc/tigervnc/vncserver.users</p>
-<p>添加用户，如：</p>
-<p>：1=root</p>
-<h3 id="配置分辨率">配置分辨率</h3>
-<p>vi  $HOME/.vnc/config</p>
-<p>geometry=1920x1080</p>
-<h3 id="设置vnc用户密码">设置VNC用户密码</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">vncpasswd
-</code></pre></td></tr></table>
-</div>
-</div><p>set “view-only password”, press ‘n’ key</p>
-<h3 id="启动服务">启动服务</h3>
+</div><p>新配置：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">systemctl start vncserver@:1
-
-systemctl status vncserver@:1
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">account    required     pam_nologin.so
+account    sufficient  pam_unix.so no_pass_expiry
+account    include      password-auth
+password   sufficient  pam_unix.so no_pass_expiry
+password   include      password-auth
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="连接到远程设备">连接到远程设备</h3>
-<p>vnc viewer</p>
-<p>xxx.xxx.xxx.xxx:1</p>
+</div><p><strong>Reference:</strong><br>
+<a href="https://serverfault.com/questions/733955/forced-to-change-expired-password-when-using-ssh-key" target="_blank" rel="noopener noreffer">Forced to change expired password when using ssh key</a><br>
+<a href="https://unix.stackexchange.com/questions/160268/expired-password-and-ssh-key-based-login-with-usepam-yes/368303" target="_blank" rel="noopener noreffer">Expired password and SSH key based login with UsePAM yes</a><br>
+<a href="https://www.jianshu.com/p/342c05b51b7c" target="_blank" rel="noopener noreffer">PAM 教程</a></p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2020-11-30</span>
+                <span>更新于 2021-01-08</span>
             </div>
             <div class="post-info-license"></div>
         </div>
         <div class="post-info-line">
             <div class="post-info-md"><span>
-                            <a class="link-to-markdown" href="/mysite-public/centos8%E5%AE%89%E8%A3%85vnc/index.md" target="_blank">阅读原始文档</a>
+                            <a class="link-to-markdown" href="/mysite-public/forced-to-change-expired-password-when-using-ssh-key/index.md" target="_blank">阅读原始文档</a>
                         </span></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://charlesren.github.io/mysite-public/centos8%E5%AE%89%E8%A3%85vnc/" data-title="Centos8安装VNC" data-hashtags="Tools"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://charlesren.github.io/mysite-public/centos8%E5%AE%89%E8%A3%85vnc/" data-hashtag="Tools"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://charlesren.github.io/mysite-public/centos8%E5%AE%89%E8%A3%85vnc/" data-title="Centos8安装VNC"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://charlesren.github.io/mysite-public/centos8%E5%AE%89%E8%A3%85vnc/" data-title="Centos8安装VNC"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://charlesren.github.io/mysite-public/centos8%E5%AE%89%E8%A3%85vnc/" data-title="Centos8安装VNC"><i class="fab fa-weibo fa-fw"></i></a></span>
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://charlesren.github.io/mysite-public/forced-to-change-expired-password-when-using-ssh-key/" data-title="Forced to Change Expired Password When Using Ssh Key" data-hashtags="Linux"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://charlesren.github.io/mysite-public/forced-to-change-expired-password-when-using-ssh-key/" data-hashtag="Linux"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://charlesren.github.io/mysite-public/forced-to-change-expired-password-when-using-ssh-key/" data-title="Forced to Change Expired Password When Using Ssh Key"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://charlesren.github.io/mysite-public/forced-to-change-expired-password-when-using-ssh-key/" data-title="Forced to Change Expired Password When Using Ssh Key"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://charlesren.github.io/mysite-public/forced-to-change-expired-password-when-using-ssh-key/" data-title="Forced to Change Expired Password When Using Ssh Key"><i class="fab fa-weibo fa-fw"></i></a></span>
             </div>
         </div>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/mysite-public/tags/tools/">Tools</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/mysite-public/tags/linux/">Linux</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/mysite-public/">主页</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/mysite-public/hugo%E7%9A%84%E4%BD%BF%E7%94%A8/" class="prev" rel="prev" title="hugo的使用"><i class="fas fa-angle-left fa-fw"></i>hugo的使用</a>
-            <a href="/mysite-public/forced-to-change-expired-password-when-using-ssh-key/" class="next" rel="next" title="Forced to Change Expired Password When Using Ssh Key">Forced to Change Expired Password When Using Ssh Key<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/mysite-public/centos8%E5%AE%89%E8%A3%85vnc/" class="prev" rel="prev" title="Centos8安装VNC"><i class="fas fa-angle-left fa-fw"></i>Centos8安装VNC</a></div>
 </div>
 <div id="comments"></div></article></div>
             </main><footer class="footer">
