@@ -1,7 +1,7 @@
 # Gitlab的使用
 
 
-#### 0.把用户是公钥可以导入gitlab；hosts文件加入git服务器解析
+#### 0.把用户是公钥导入gitlab；hosts文件加入git服务器解析
 
 #### 1.在需要保存仓库的父目录下
 
@@ -39,9 +39,10 @@ git commit -m  "comment"
 git   push  origin master
 ```
 
-#### 2.推送到码云
+**推送到Github/码云**
 
 ```
 git remote add gitee https：//gitee.com/xxx/xxx.git
+git remote add github https：//gitee.com/xxx/xxx.git
 ```
 
