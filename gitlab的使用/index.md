@@ -39,10 +39,11 @@ git commit -m  "comment"
 git   push  origin master
 ```
 
-*若需推送到github/码云*
+*若需添加其他仓库*
 
 ```
-git remote add gitee https：//gitee.com/xxx/xxx.git
+git remote add gitlab2 https：//xxx.xxx/xxx/xxx.git
 git remote add github https：//gitee.com/xxx/xxx.git
+git remote add gitee https：//gitee.com/xxx/xxx.git
 ```
 
