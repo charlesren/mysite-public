@@ -4,7 +4,14 @@
         <link>https://charlesren.github.io/mysite-public/posts/</link>
         <description>所有文章 | CharlesRen</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>renccn@gmail.com (CharlesRen)</managingEditor>
-            <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 19 Jan 2021 16:09:22 &#43;0800</lastBuildDate><atom:link href="https://charlesren.github.io/mysite-public/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 19 Jan 2021 17:07:06 &#43;0800</lastBuildDate><atom:link href="https://charlesren.github.io/mysite-public/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>安装emby</title>
+    <link>https://charlesren.github.io/mysite-public/%E5%AE%89%E8%A3%85emby/</link>
+    <pubDate>Tue, 19 Jan 2021 17:07:06 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://charlesren.github.io/mysite-public/%E5%AE%89%E8%A3%85emby/</guid>
+    <description><![CDATA[docker pull emby/embyserver 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 # cat emby.sh docker run -d \ --name embyserver \ --volume /root/emby/programdata:/config \ --volume /data/Entbak:/mnt/Entbak \ --volume /data/Video:/mnt/Video \ --volume /data/Moives:/mnt/Moives \ --volume /data/Pictures:/mnt/Pictures \ --volume /data/Music:/mnt/Music \ --volume /data/Photos:/mnt/Photos \ --volume /data/Private:/mnt/Private \ --volume /data/TV:/mnt/TV \ --publish 8096:8096 \ --publish 8920:8920 \ --env UID=0 \ --env GID=0]]></description>
+</item><item>
     <title>Gitlab的使用</title>
     <link>https://charlesren.github.io/mysite-public/gitlab%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
     <pubDate>Tue, 19 Jan 2021 16:09:22 &#43;0800</pubDate>
