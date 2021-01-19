@@ -5,13 +5,14 @@
 
 #### 1.在需要保存仓库的父目录下
 
+```
 git init
 
 git remote
 
 git remote add origin ssh://[git@xxx.xxx.xxx](mailto:git@zdhgitlab.zzbank.cn):2222/xxx/xxxj.git
 
-***git remote set-url origin ssh://[git@xxx.xxx.xxx](mailto:git@zdhgitlab.zzbank.cn):2222/xxx/xxxj.git
+git remote set-url origin ssh://[git@xxx.xxx.xxx](mailto:git@zdhgitlab.zzbank.cn):2222/xxx/xxxj.git
 
 git remote -v
 
@@ -36,8 +37,11 @@ git status
 git commit -m  &quot;comment&quot;
 
 git   push  origin master
+```
 
 #### 2.推送到码云
 
+```
 git remote add gitee https：//gitee.com/xxx/xxx.git
+```
 

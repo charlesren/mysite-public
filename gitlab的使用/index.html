@@ -6,7 +6,7 @@
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>Gitlab的使用 - CharlesRen</title><meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Gitlab的使用" />
-<meta property="og:description" content="0.把用户是公钥可以导入gitlab；hosts文件加入git服务器解析 1.在需要保存仓库的父目录下 git init git remote git remote add origin ssh://git@xxx.xxx.xxx:2222/xxx/xxxj.git ***git remote set-url origin ssh://git@xxx.xxx.xxx:2222/xxx/xxxj.git git remote -v git config &ndash;list" />
+<meta property="og:description" content="0.把用户是公钥可以导入gitlab；hosts文件加入git服务器解析 1.在需要保存仓库的父目录下 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://charlesren.github.io/mysite-public/gitlab%E7%9A%84%E4%BD%BF%E7%94%A8/" />
 <meta property="og:image" content="https://charlesren.github.io/logo.png"/>
@@ -16,7 +16,7 @@
 <meta name="twitter:image" content="https://charlesren.github.io/logo.png"/>
 
 <meta name="twitter:title" content="Gitlab的使用"/>
-<meta name="twitter:description" content="0.把用户是公钥可以导入gitlab；hosts文件加入git服务器解析 1.在需要保存仓库的父目录下 git init git remote git remote add origin ssh://git@xxx.xxx.xxx:2222/xxx/xxxj.git ***git remote set-url origin ssh://git@xxx.xxx.xxx:2222/xxx/xxxj.git git remote -v git config &ndash;list"/>
+<meta name="twitter:description" content="0.把用户是公钥可以导入gitlab；hosts文件加入git服务器解析 1.在需要保存仓库的父目录下 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20"/>
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/charlesren.github.io\/mysite-public\/gitlab%E7%9A%84%E4%BD%BF%E7%94%A8\/"
-        },"image": ["https:\/\/charlesren.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Tools","wordcount":  149 ,
+        },"image": ["https:\/\/charlesren.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Tools","wordcount":  181 ,
         "url": "https:\/\/charlesren.github.io\/mysite-public\/gitlab%E7%9A%84%E4%BD%BF%E7%94%A8\/","datePublished": "2021-01-19T16:09:22+08:00","dateModified": "2021-01-19T16:09:22+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/charlesren.github.io\/images\/avatar.png"},"author": {
@@ -110,7 +110,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Gitlab的使用</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://charlesren.github.io/mysite-public/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>CharlesRen</a></span>&nbsp;<span class="post-category">收录于 <a href="/mysite-public/categories/tools/"><i class="far fa-folder fa-fw"></i>Tools</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-19">2021-01-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 149 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-19">2021-01-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 181 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -134,25 +134,84 @@
 </nav></div>
             </div><div class="content" id="content"><h4 id="0把用户是公钥可以导入gitlabhosts文件加入git服务器解析">0.把用户是公钥可以导入gitlab；hosts文件加入git服务器解析</h4>
 <h4 id="1在需要保存仓库的父目录下">1.在需要保存仓库的父目录下</h4>
-<p>git init</p>
-<p>git remote</p>
-<p>git remote add origin ssh://<a href="mailto:git@zdhgitlab.zzbank.cn" rel="">git@xxx.xxx.xxx</a>:2222/xxx/xxxj.git</p>
-<p>***git remote set-url origin ssh://<a href="mailto:git@zdhgitlab.zzbank.cn" rel="">git@xxx.xxx.xxx</a>:2222/xxx/xxxj.git</p>
-<p>git remote -v</p>
-<p>git config &ndash;list</p>
-<p>git config &ndash;global user.email <a href="mailto:ren.chuancheng@zzbank.cn" rel="">xxx@xxx</a></p>
-<p>git config &ndash;global user.name xxx</p>
-<p>git config &ndash;list</p>
-<p>git config &ndash;global http.sslVerify false</p>
-<p>git config &ndash;global http.postBuffer 1048576000</p>
-<p>git clone ssh://<a href="mailto:git@zdhgitlab.zzbank.cn" rel="">git@xxx.xxx.xxx</a>:2222/xxx/xxxj.git</p>
-<p>git add .</p>
-<p>git status</p>
-<p>git commit -m  &quot;comment&quot;</p>
-<p>git   push  origin master</p>
-<h4 id="2推送到码云">2.推送到码云</h4>
-<p>git remote add gitee https：//gitee.com/xxx/xxx.git</p>
-</div><div class="post-footer" id="post-footer">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git init
+
+git remote
+
+git remote add origin ssh://[git@xxx.xxx.xxx](mailto:git@zdhgitlab.zzbank.cn):2222/xxx/xxxj.git
+
+git remote set-url origin ssh://[git@xxx.xxx.xxx](mailto:git@zdhgitlab.zzbank.cn):2222/xxx/xxxj.git
+
+git remote -v
+
+git config --list
+
+git config --global user.email [xxx@xxx](mailto:ren.chuancheng@zzbank.cn)
+
+git config --global user.name xxx
+
+git config --list
+
+git config --global http.sslVerify false
+
+git config --global http.postBuffer 1048576000
+
+git clone ssh://[git@xxx.xxx.xxx](mailto:git@zdhgitlab.zzbank.cn):2222/xxx/xxxj.git
+
+git add .
+
+git status 
+
+git commit -m  &amp;quot;comment&amp;quot;
+
+git   push  origin master
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="2推送到码云">2.推送到码云</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git remote add gitee https：//gitee.com/xxx/xxx.git
+</code></pre></td></tr></table>
+</div>
+</div></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
