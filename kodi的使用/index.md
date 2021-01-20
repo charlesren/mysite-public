@@ -24,6 +24,7 @@ docker run -d --restart="always" --net=host --privileged -v /tmp/kodi:/opt/kodi-
 - 配置和程序分离，方便升级版本；   
 - 库由mysql/mariadb集中管理，每个docker kodi instances都从db里获取信息，库更新后，都能看到一样的东西；
 - 在一个客户端操作后，或更新文件后，所有客户端能看到最新状态，比如tv看到多少分钟停下的；  
+
 **Attention: **不要docker clean library ，通过任意一个clinet做
 
 ```
