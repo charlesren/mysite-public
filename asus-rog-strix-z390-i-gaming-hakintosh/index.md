@@ -2,6 +2,7 @@
 
 主要参考如下两篇文章
 [tonymacx86](https://blog.daliansky.net/macOS-Mojave-10.14.2-18C54-official-version-with-Clover-4792-original-image.html#more)
+
 [果黑小兵的部落阁](https://www.tonymacx86.com/threads/asus-rog-strix-z390-i-gaming-motherboard-specs.259848/)
 
 bios设置参考
@@ -58,9 +59,9 @@ https://blog.daliansky.net/Common-problems-and-solutions-in-macOS-Mojave-10.14-i
 
 https://www.tonymacx86.com/threads/guide-intel-framebuffer-patching-using-whatevergreen.256490/
 
-Proper audio support is available.
-Typo: Mojave/Desktop working audio, AppleALC.kext_v1.3.8 or newer
-Correct: Mojave/Desktop working audio, AppleALC.kext_v1.2.8 or newer
+Proper audio support is available.    
+Typo: Mojave/Desktop working audio, AppleALC.kext_v1.3.8 or newer    
+Correct: Mojave/Desktop working audio, AppleALC.kext_v1.2.8 or newer    
 Post #123, edited
 
 
