@@ -6,7 +6,7 @@
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>Kodi的使用 - CharlesRen</title><meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Kodi的使用" />
-<meta property="og:description" content="celedhrim版kodi-server Centos 系统 docker pull celedhrim/kodi-server docker run -d &ndash;restart=&ldquo;always&rdquo; &ndash;net=host &ndash;privileged -v /tmp/kodi:/opt/kodi-server/share/kodi/portable_data celedhrim/kodi-server 不加&ndash;privileged 容器会不断重启,docker l" />
+<meta property="og:description" content="celedhrim版kodi-server Centos 系统 1 2 docker pull celedhrim/kodi-server docker run -d --restart=&#34;always&#34; --net=host --privileged -v /tmp/kodi:/opt/kodi-server/share/kodi/portable_data celedhrim/kodi-server 不加&ndash;privileged 容器会不断重启,docke" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://charlesren.github.io/mysite-public/kodi%E7%9A%84%E4%BD%BF%E7%94%A8/" />
 <meta property="og:image" content="https://charlesren.github.io/logo.png"/>
@@ -16,7 +16,7 @@
 <meta name="twitter:image" content="https://charlesren.github.io/logo.png"/>
 
 <meta name="twitter:title" content="Kodi的使用"/>
-<meta name="twitter:description" content="celedhrim版kodi-server Centos 系统 docker pull celedhrim/kodi-server docker run -d &ndash;restart=&ldquo;always&rdquo; &ndash;net=host &ndash;privileged -v /tmp/kodi:/opt/kodi-server/share/kodi/portable_data celedhrim/kodi-server 不加&ndash;privileged 容器会不断重启,docker l"/>
+<meta name="twitter:description" content="celedhrim版kodi-server Centos 系统 1 2 docker pull celedhrim/kodi-server docker run -d --restart=&#34;always&#34; --net=host --privileged -v /tmp/kodi:/opt/kodi-server/share/kodi/portable_data celedhrim/kodi-server 不加&ndash;privileged 容器会不断重启,docke"/>
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/charlesren.github.io\/mysite-public\/kodi%E7%9A%84%E4%BD%BF%E7%94%A8\/"
-        },"image": ["https:\/\/charlesren.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Tools","wordcount":  734 ,
+        },"image": ["https:\/\/charlesren.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Tools","wordcount":  768 ,
         "url": "https:\/\/charlesren.github.io\/mysite-public\/kodi%E7%9A%84%E4%BD%BF%E7%94%A8\/","datePublished": "2021-01-20T09:07:43+08:00","dateModified": "2021-01-20T09:07:43+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/charlesren.github.io\/images\/avatar.png"},"author": {
@@ -110,7 +110,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Kodi的使用</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://charlesren.github.io/mysite-public/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>CharlesRen</a></span>&nbsp;<span class="post-category">收录于 <a href="/mysite-public/categories/tools/"><i class="far fa-folder fa-fw"></i>Tools</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-20">2021-01-20</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 734 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-20">2021-01-20</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 768 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -123,7 +123,11 @@
       <ul>
         <li>
           <ul>
-            <li><a href="#celedhrim版kodi-server">celedhrim版kodi-server</a></li>
+            <li><a href="#celedhrim版kodi-server">celedhrim版kodi-server</a>
+              <ul>
+                <li><a href="#centos-系统">Centos 系统</a></li>
+              </ul>
+            </li>
             <li><a href="#linuxserverio-headless版">linuxserver.io headless版</a>
               <ul>
                 <li><a href="#centos系统">centos系统</a></li>
@@ -137,22 +141,33 @@
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h4 id="celedhrim版kodi-server">celedhrim版kodi-server</h4>
-<p>Centos 系统<br>
-docker pull celedhrim/kodi-server<br>
-docker run -d &ndash;restart=&ldquo;always&rdquo; &ndash;net=host &ndash;privileged -v /tmp/kodi:/opt/kodi-server/share/kodi/portable_data  celedhrim/kodi-server</p>
-<p>不加&ndash;privileged 容器会不断重启,docker logs显示</p>
+<h5 id="centos-系统">Centos 系统</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">docker pull celedhrim/kodi-server   
+docker run -d --restart=&#34;always&#34; --net=host --privileged -v /tmp/kodi:/opt/kodi-server/share/kodi/portable_data  celedhrim/kodi-server   
+</code></pre></td></tr></table>
+</div>
+</div><p>不加&ndash;privileged 容器会不断重启,docker logs显示</p>
 <blockquote>
 <p>Could not init logging classes. Log folder error (/opt/kodi-server/share/kodi/portable_data/temp/)
 ERROR: Unable to create application. Exiting
-/tmp/kodi换成要保存kodi配置文件的目录
--v 还可以把共享文件映射到docker内</p>
+<em><strong>Attention</strong></em>/tmp/kodi换成要保存kodi配置文件的目录</p>
 </blockquote>
 <h4 id="linuxserverio-headless版">linuxserver.io headless版</h4>
 <h5 id="centos系统">centos系统</h5>
-<p>有问题上linuxserver.io论坛找，unraid论坛forums.lime-technology.com也有相关的东西
-好处：配置和程序分离，方便升级版本；<br>
-库由mysql/mariadb集中管理，每个docker kodi instances都从db里获取信息，库更新后，都能看到一样的东西；在一个客户端操作后，或更新文件后，所有客户端能看到最新状态，比如tv看到多少分钟停下的；<br>
-<strong>不要通过docker clean library ，通过任意一个clinet做</strong></p>
+<p>有问题上linuxserver.io论坛找;unraid论坛forums.lime-technology.com也有相关的东西;</p>
+<p>好处：</p>
+<ul>
+<li>配置和程序分离，方便升级版本；</li>
+<li>库由mysql/mariadb集中管理，每个docker kodi instances都从db里获取信息，库更新后，都能看到一样的东西；</li>
+<li>在一个客户端操作后，或更新文件后，所有客户端能看到最新状态，比如tv看到多少分钟停下的；<br>
+<em><strong>Attention</strong></em>不要docker clean library ，通过任意一个clinet做</li>
+</ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -185,9 +200,7 @@ docker run -d --restart=&#34;always&#34; --net=host  --privileged  --name=kodi-h
 <pre class="chroma"><code class="language-fallback" data-lang="fallback">docker start kodi-headless
 </code></pre></td></tr></table>
 </div>
-</div><p>这时gui还是不能访问
-修改 guisettings.xml里addonupdates 0到2
-仍不能访问gui</p>
+</div><p>这时gui还是不能访问,修改 guisettings.xml里addonupdates 0到2,仍不能访问</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -198,7 +211,8 @@ docker run -d --restart=&#34;always&#34; --net=host  --privileged  --name=kodi-h
 systemctl disable firewalld.service
 </code></pre></td></tr></table>
 </div>
-</div><h5 id="mac系统">Mac系统</h5>
+</div><p>关闭防火墙后，可以访问了。</p>
+<h5 id="mac系统">Mac系统</h5>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -214,8 +228,8 @@ docker run  -d --restart=&#34;always&#34; --net=host  --privileged  --name=kodi-
 </code></pre></td></tr></table>
 </div>
 </div><p>通过<strong>Docker logs containeridxxxxxxxxxxxx</strong>可以看到服务已经启动<br>
-ls    /Users/rencc/Kodi 发现下面已经生成配置文件了
-后续通过如下命令启停</p>
+通过<strong>ls    /Users/rencc/Kodi</strong>命令发现下面已经生成配置文件了</p>
+<p>后续可通过如下命令启停</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
