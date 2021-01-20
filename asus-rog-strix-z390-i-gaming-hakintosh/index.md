@@ -1,6 +1,7 @@
 # Asus ROG STRIX Z390 I GAMING Hakintosh
 
 主要参考如下两篇文章
+
 [tonymacx86](https://blog.daliansky.net/macOS-Mojave-10.14.2-18C54-official-version-with-Clover-4792-original-image.html#more)
 
 [果黑小兵的部落阁](https://www.tonymacx86.com/threads/asus-rog-strix-z390-i-gaming-motherboard-specs.259848/)
