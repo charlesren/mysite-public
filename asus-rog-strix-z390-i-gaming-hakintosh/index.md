@@ -1,12 +1,13 @@
 # Asus ROG STRIX Z390 I GAMING Hakintosh
 
-主要参考tonymacx86和果黑小兵的部落阁https://blog.daliansky.net 如下两篇文章
-https://blog.daliansky.net/macOS-Mojave-10.14.2-18C54-official-version-with-Clover-4792-original-image.html#more
-
-https://www.tonymacx86.com/threads/asus-rog-strix-z390-i-gaming-motherboard-specs.259848/
+主要参考如下两篇文章
+[tonymacx86](https://blog.daliansky.net/macOS-Mojave-10.14.2-18C54-official-version-with-Clover-4792-original-image.html#more)
+[果黑小兵的部落阁](https://www.tonymacx86.com/threads/asus-rog-strix-z390-i-gaming-motherboard-specs.259848/)
 
 bios设置参考
+
 https://www.tonymacx86.com/threads/asus-rog-strix-z390-i-gaming-motherboard-specs.259848/page-24
+
 https://www.tonymacx86.com/threads/pastrychefs-asus-rog-strix-z370-g-gaming-wi-fi-ac-build-w-i9-9900k-amd-vega-56.239969/
 
 - Advanced/CPU Configuration/Intel Virtualization Technology - Enabled
@@ -52,7 +53,9 @@ Use 3E910003 if you have a dGPU.
 
 ##### audio问题：
 https://www.tonymacx86.com/threads/asus-rog-strix-z390-i-gaming-motherboard-specs.259848/page-11
+
 https://blog.daliansky.net/Common-problems-and-solutions-in-macOS-Mojave-10.14-installation.html
+
 https://www.tonymacx86.com/threads/guide-intel-framebuffer-patching-using-whatevergreen.256490/
 
 Proper audio support is available.

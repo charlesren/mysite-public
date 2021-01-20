@@ -12,7 +12,7 @@
     <pubDate>Wed, 20 Jan 2021 10:50:53 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://charlesren.github.io/mysite-public/asus-rog-strix-z390-i-gaming-hakintosh/</guid>
-    <description><![CDATA[主要参考tonymacx86和果黑小兵的部落阁https://blog.daliansky.net 如下两篇文章 https://blog.daliansky.net/macOS-Mojave-10.14.2-18C54-official-version-with-Clover-4792-original-image.html#more https://www.tonymacx86.com/threads/asus-rog-strix-z390-i-gaming-motherboard-specs.259848/ bios设置参考 https://www.tonymacx86.com/threads/asus-rog-strix-z390-i-gaming-motherboard-specs.259848/page-24 https://www.tonymacx86.com/threads/pastrychefs-asus-rog-strix-z370-g-gaming-wi-fi-ac-build-w-i9-9900k-amd-vega-56.239969/ Advanced/CPU Configuration/Intel Virtualization]]></description>
+    <description><![CDATA[主要参考如下两篇文章 tonymacx86 果黑小兵的部落阁 bios设置参考 https://www.tonymacx86.com/threads/asus-rog-strix-z390-i-gaming-motherboard-specs.259848/page-24 https://www.tonymacx86.com/threads/pastrychefs-asus-rog-strix-z370-g-gaming-wi-fi-ac-build-w-i9-9900k-amd-vega-56.239969/ Advanced/CPU Configuration/Intel Virtualization Technology - Enabled Advanced/System Agent (SA) Configuration/VT-d - Disabled Advanced/System Agent (SA) Configuration/Graphics Configuration/Primary Display - PCIE (This will not be available if you are only using UHD 630.) Advanced/System Agent (SA) Configuration/Graphics Configuration/iGPU Multi-Monitor - Enabled (This]]></description>
 </item><item>
     <title>Kodi的使用</title>
     <link>https://charlesren.github.io/mysite-public/kodi%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
