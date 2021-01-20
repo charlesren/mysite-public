@@ -11,7 +11,7 @@ docker run -d --restart="always" --net=host --privileged -v /tmp/kodi:/opt/kodi-
 > Could not init logging classes. Log folder error (/opt/kodi-server/share/kodi/portable_data/temp/)
 > ERROR: Unable to create application. Exiting
 
-**Attention: **/tmp/kodi换成要保存kodi配置文件的目录
+**Attention:** /tmp/kodi换成要保存kodi配置文件的目录
 
 
 
@@ -25,7 +25,7 @@ docker run -d --restart="always" --net=host --privileged -v /tmp/kodi:/opt/kodi-
 - 库由mysql/mariadb集中管理，每个docker kodi instances都从db里获取信息，库更新后，都能看到一样的东西；
 - 在一个客户端操作后，或更新文件后，所有客户端能看到最新状态，比如tv看到多少分钟停下的；  
 
-**Attention: **不要docker clean library ，通过任意一个clinet做
+**Attention:** 不要docker clean library ，通过任意一个clinet做
 
 ```
 docker pull linuxserver/kodi-headless
