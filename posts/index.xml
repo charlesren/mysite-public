@@ -10,7 +10,7 @@
     <pubDate>Wed, 20 Jan 2021 10:50:53 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://charlesren.github.io/mysite-public/asus-rog-strix-z390-i-gaming-hakintosh/</guid>
-    <description><![CDATA[主要参考如下两篇文章 tonymacx86 果黑小兵的部落阁 bios设置参考 https://www.tonymacx86.com/threads/asus-rog-strix-z390-i-gaming-motherboard-specs.259848/page-24 https://www.tonymacx86.com/threads/pastrychefs-asus-rog-strix-z370-g-gaming-wi-fi-ac-build-w-i9-9900k-amd-vega-56.239969/ Advanced/CPU Configuration/Intel Virtualization Technology - Enabled Advanced/System Agent (SA) Configuration/VT-d - Disabled Advanced/System Agent (SA) Configuration/Graphics Configuration/Primary Display - PCIE (This will not be available if you are only using UHD 630.) Advanced/System Agent (SA) Configuration/Graphics Configuration/iGPU Multi-Monitor - Enabled (This]]></description>
+    <description><![CDATA[配置如下: 散热 海盗船h60 378.9 电源 海盗船sf600 698.9 机箱 追风者217e 700 主板 华硕rog z390i 1869 显示器 dell2419 1498.5 硬盘 三星970evo500g 879 硅脂 猫头鹰n]]></description>
 </item><item>
     <title>Kodi的使用</title>
     <link>https://charlesren.github.io/mysite-public/kodi%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
