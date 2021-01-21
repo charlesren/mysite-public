@@ -79,7 +79,7 @@ https://www.tonymacx86.com/threads/pastrychefs-asus-rog-strix-z370-g-gaming-wi-f
 put it in EFI/Clover/ACPI/patched, which will limit USB ports within 15 ports.
 
 Notice: Due to 15 ports limits, one of the Front USB Port can only read USB3.0.
-![](/static/ASUS-ROG-STRIX-Z390-i-GAMING-Hakintosh.jpg)
+![](ASUS-ROG-STRIX-Z390-i-GAMING-Hakintosh.jpg)
 **参考**
 https://www.tonymacx86.com/threads/asus-rog-strix-z390-i-gaming-motherboard-specs.259848/page-22
 
