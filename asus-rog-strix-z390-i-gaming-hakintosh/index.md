@@ -83,6 +83,7 @@ Notice: Due to 15 ports limits, one of the Front USB Port can only read USB3.0.
 ![](/ASUS-ROG-STRIX-Z390-i-GAMING-Hakintosh.jpg)
 
 **参考**
+
 https://www.tonymacx86.com/threads/asus-rog-strix-z390-i-gaming-motherboard-specs.259848/page-22
 
 https://www.tonymacx86.com/threads/guide-creating-a-custom-ssdt-for-usbinjectall-kext.211311/
