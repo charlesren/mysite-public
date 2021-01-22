@@ -28,7 +28,7 @@ sudo kextstat
 - kextbeast (tonymacx86)
 - [kent utility](http://cvad-mac.narod.ru/)
 - Clover Configurator (tonymacx86)
-- [geekbench](http://browser.geekbench.com/）
+- [geekbench](http://browser.geekbench.com/)
 - [hackintool](headsoft.com.au/download/mac/Hackintool.zip)  *原intel FB Patcher*
 
 #### 文件：
@@ -80,7 +80,7 @@ put it in EFI/Clover/ACPI/patched, which will limit USB ports within 15 ports.
 
 Notice: Due to 15 ports limits, one of the Front USB Port can only read USB3.0.
 
-![](/ASUS-ROG-STRIX-Z390-i-GAMING-Hakintosh.jpg)
+![](ASUS-ROG-STRIX-Z390-i-GAMING-Hakintosh.jpg)
 
 **参考**
 
