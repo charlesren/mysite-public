@@ -3,6 +3,8 @@
 
 #### 0.把用户是公钥导入gitlab；hosts文件加入git服务器解析
 
+**Attention:** 注意[remote url](https://docs.github.com/en/github/using-git/which-remote-url-should-i-use)类型
+
 #### 1.在需要保存仓库的父目录下
 
 ```

@@ -31,7 +31,7 @@
     <pubDate>Tue, 19 Jan 2021 16:09:22 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://charlesren.github.io/mysite-public/gitlab%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
-    <description><![CDATA[0.把用户是公钥导入gitlab；hosts文件加入git服务器解析 1.在需要保存仓库的父目录下 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22]]></description>
+    <description><![CDATA[0.把用户是公钥导入gitlab；hosts文件加入git服务器解析 Attention: 注意remote url类型 1.在需要保存仓库的父目录下 1 2 3 4 5 6 7 8]]></description>
 </item><item>
     <title>Forced to Change Expired Password When Using Ssh Key</title>
     <link>https://charlesren.github.io/mysite-public/forced-to-change-expired-password-when-using-ssh-key/</link>
