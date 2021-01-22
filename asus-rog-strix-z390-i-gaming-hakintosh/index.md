@@ -1,4 +1,4 @@
-# Asus ROG STRIX Z390 I GAMING Hakintosh
+# ASUS ROG STRIX Z390 I GAMING Hakintosh
 
 #### 配置如下:
 散热   海盗船h60  378.9    
