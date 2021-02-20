@@ -1,57 +1,77 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>所有文章 - CharlesRen</title>
-        <link>https://charlesren.github.io/mysite-public/posts/</link>
-        <description>所有文章 | CharlesRen</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>renccn@gmail.com (CharlesRen)</managingEditor>
-            <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 20 Jan 2021 10:50:53 &#43;0800</lastBuildDate><atom:link href="https://charlesren.github.io/mysite-public/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>ASUS ROG STRIX Z390 I GAMING Hakintosh</title>
-    <link>https://charlesren.github.io/mysite-public/asus-rog-strix-z390-i-gaming-hakintosh/</link>
-    <pubDate>Wed, 20 Jan 2021 10:50:53 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://charlesren.github.io/mysite-public/asus-rog-strix-z390-i-gaming-hakintosh/</guid>
-    <description><![CDATA[配置如下: 散热 海盗船h60 378.9 电源 海盗船sf600 698.9 机箱 追风者217e 700 主板 华硕rog z390i 1869 显示器 dell2419 1498.5 硬盘 三星970evo500g 879 硅脂 猫头鹰n]]></description>
-</item><item>
-    <title>Kodi的使用</title>
-    <link>https://charlesren.github.io/mysite-public/kodi%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
-    <pubDate>Wed, 20 Jan 2021 09:07:43 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://charlesren.github.io/mysite-public/kodi%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
-    <description><![CDATA[celedhrim版kodi-server centos 系统 1 2 docker pull celedhrim/kodi-server docker run -d --restart=&#34;always&#34; --net=host --privileged -v /tmp/kodi:/opt/kodi-server/share/kodi/portable_data celedhrim/kodi-server 不加&ndash;privileged 容器会不断重启,docke]]></description>
-</item><item>
-    <title>安装emby</title>
-    <link>https://charlesren.github.io/mysite-public/%E5%AE%89%E8%A3%85emby/</link>
-    <pubDate>Tue, 19 Jan 2021 17:07:06 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://charlesren.github.io/mysite-public/%E5%AE%89%E8%A3%85emby/</guid>
-    <description><![CDATA[docker pull emby/embyserver 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 # cat emby.sh docker run -d \ --name embyserver \ --volume /root/emby/programdata:/config \ --volume /data/Entbak:/mnt/Entbak \ --volume /data/Video:/mnt/Video \ --volume /data/Moives:/mnt/Moives \ --volume /data/Pictures:/mnt/Pictures \ --volume /data/Music:/mnt/Music \ --volume /data/Photos:/mnt/Photos \ --volume /data/Private:/mnt/Private \ --volume /data/TV:/mnt/TV \ --publish 8096:8096 \ --publish 8920:8920 \ --env UID=0 \ --env GID=0]]></description>
-</item><item>
-    <title>Gitlab的使用</title>
-    <link>https://charlesren.github.io/mysite-public/gitlab%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
-    <pubDate>Tue, 19 Jan 2021 16:09:22 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://charlesren.github.io/mysite-public/gitlab%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
-    <description><![CDATA[0.把用户是公钥导入gitlab；hosts文件加入git服务器解析 Attention: 注意remote url类型 1.在需要保存仓库的父目录下 1 2 3 4 5 6 7 8]]></description>
-</item><item>
-    <title>Forced to Change Expired Password When Using Ssh Key</title>
-    <link>https://charlesren.github.io/mysite-public/forced-to-change-expired-password-when-using-ssh-key/</link>
-    <pubDate>Fri, 08 Jan 2021 11:05:02 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://charlesren.github.io/mysite-public/forced-to-change-expired-password-when-using-ssh-key/</guid>
-    <description><![CDATA[I am working in an environment where I have an account on multiple linux machines where accounts and passwords are managed independently (no active directory/LDAP/etc) and passwords expire every 30 days. As such, I thought it would be easier to manage my authentication using ssh keys. I am able to authenticate using my ssh keys just fine. However, I found that when my password expires, I am prompted to change]]></description>
-</item><item>
-    <title>Centos8安装VNC</title>
-    <link>https://charlesren.github.io/mysite-public/centos8%E5%AE%89%E8%A3%85vnc/</link>
-    <pubDate>Mon, 30 Nov 2020 16:52:55 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://charlesren.github.io/mysite-public/centos8%E5%AE%89%E8%A3%85vnc/</guid>
-    <description><![CDATA[Centos8 配置VNC 安装 TigerVNC server 1 dnf install tigervnc-server 防火墙放行VNC服务 1 2 3 firewall-cmd --add-service=vnc-server --permanent firewall-cmd --reload 配置VNC 用户 vi /etc/tigervnc/vncserver.users 添加用户，如： ：1=root 配置分辨率 vi $HOME/.vnc/config geometry=1920x1080 设置VNC用户]]></description>
-</item><item>
-    <title>hugo的使用</title>
-    <link>https://charlesren.github.io/mysite-public/hugo%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
-    <pubDate>Thu, 26 Nov 2020 16:45:15 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://charlesren.github.io/mysite-public/hugo%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
-    <description><![CDATA[参考 https://www.adamormsby.com/posts/how-to-set-up-a-hugo-site-on-github-pages-with-submodules/ 安装hugo github 下载linux安装包 注意：下载extend版 解压后把二进制文件复制到/usr/bin/ create new site 1 2 #### hugo new site [SITE_NAME] hugo new site mysite github 建新]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on CharlesRen</title>
+    <link>https://charlesren.github.io/mysite-public/posts/</link>
+    <description>Recent content in Posts on CharlesRen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <managingEditor>renccn@gmail.com (CharlesRen)</managingEditor>
+    <webMaster>renccn@gmail.com (CharlesRen)</webMaster>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Wed, 20 Jan 2021 10:50:53 +0800</lastBuildDate><atom:link href="https://charlesren.github.io/mysite-public/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ASUS ROG STRIX Z390 I GAMING Hakintosh</title>
+      <link>https://charlesren.github.io/mysite-public/asus-rog-strix-z390-i-gaming-hakintosh/</link>
+      <pubDate>Wed, 20 Jan 2021 10:50:53 +0800</pubDate>
+      <author>renccn@gmail.com (CharlesRen)</author>
+      <guid>https://charlesren.github.io/mysite-public/asus-rog-strix-z390-i-gaming-hakintosh/</guid>
+      <description>配置如下: 散热 海盗船h60 378.9 电源 海盗船sf600 698.9 机箱 追风者217e 700 主板 华硕rog z390i 1869 显示器 dell2419 1498.5 硬盘 三星970evo500g 879 硅脂 猫头鹰n</description>
+    </item>
+    
+    <item>
+      <title>Kodi的使用</title>
+      <link>https://charlesren.github.io/mysite-public/kodi%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Wed, 20 Jan 2021 09:07:43 +0800</pubDate>
+      <author>renccn@gmail.com (CharlesRen)</author>
+      <guid>https://charlesren.github.io/mysite-public/kodi%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
+      <description>celedhrim版kodi-server centos 系统 1 2 docker pull celedhrim/kodi-server docker run -d --restart=&amp;#34;always&amp;#34; --net=host --privileged -v /tmp/kodi:/opt/kodi-server/share/kodi/portable_data celedhrim/kodi-server 不加&amp;ndash;privileged 容器会不断重启,docke</description>
+    </item>
+    
+    <item>
+      <title>安装emby</title>
+      <link>https://charlesren.github.io/mysite-public/%E5%AE%89%E8%A3%85emby/</link>
+      <pubDate>Tue, 19 Jan 2021 17:07:06 +0800</pubDate>
+      <author>renccn@gmail.com (CharlesRen)</author>
+      <guid>https://charlesren.github.io/mysite-public/%E5%AE%89%E8%A3%85emby/</guid>
+      <description>docker pull emby/embyserver 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 # cat emby.sh docker run -d \ --name embyserver \ --volume /root/emby/programdata:/config \ --volume /data/Entbak:/mnt/Entbak \ --volume /data/Video:/mnt/Video \ --volume /data/Moives:/mnt/Moives \ --volume /data/Pictures:/mnt/Pictures \ --volume /data/Music:/mnt/Music \ --volume /data/Photos:/mnt/Photos \ --volume /data/Private:/mnt/Private \ --volume /data/TV:/mnt/TV \ --publish 8096:8096 \ --publish 8920:8920 \ --env UID=0 \ --env GID=0</description>
+    </item>
+    
+    <item>
+      <title>Gitlab的使用</title>
+      <link>https://charlesren.github.io/mysite-public/gitlab%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Tue, 19 Jan 2021 16:09:22 +0800</pubDate>
+      <author>renccn@gmail.com (CharlesRen)</author>
+      <guid>https://charlesren.github.io/mysite-public/gitlab%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
+      <description>0.把用户是公钥导入gitlab；hosts文件加入git服务器解析 Attention: 注意remote url类型 1.在需要保存仓库的父目录下 1 2 3 4 5 6 7 8</description>
+    </item>
+    
+    <item>
+      <title>Forced to Change Expired Password When Using Ssh Key</title>
+      <link>https://charlesren.github.io/mysite-public/forced-to-change-expired-password-when-using-ssh-key/</link>
+      <pubDate>Fri, 08 Jan 2021 11:05:02 +0800</pubDate>
+      <author>renccn@gmail.com (CharlesRen)</author>
+      <guid>https://charlesren.github.io/mysite-public/forced-to-change-expired-password-when-using-ssh-key/</guid>
+      <description>I am working in an environment where I have an account on multiple linux machines where accounts and passwords are managed independently (no active directory/LDAP/etc) and passwords expire every 30 days. As such, I thought it would be easier to manage my authentication using ssh keys. I am able to authenticate using my ssh keys just fine. However, I found that when my password expires, I am prompted to change</description>
+    </item>
+    
+    <item>
+      <title>Centos8安装VNC</title>
+      <link>https://charlesren.github.io/mysite-public/centos8%E5%AE%89%E8%A3%85vnc/</link>
+      <pubDate>Mon, 30 Nov 2020 16:52:55 +0800</pubDate>
+      <author>renccn@gmail.com (CharlesRen)</author>
+      <guid>https://charlesren.github.io/mysite-public/centos8%E5%AE%89%E8%A3%85vnc/</guid>
+      <description>Centos8 配置VNC 安装 TigerVNC server 1 dnf install tigervnc-server 防火墙放行VNC服务 1 2 3 firewall-cmd --add-service=vnc-server --permanent firewall-cmd --reload 配置VNC 用户 vi /etc/tigervnc/vncserver.users 添加用户，如： :1=root 配置分辨率 mkdir $HOME/.vnc vi $HOME/.vnc/config 1 geometry=1920x1080 设置VNC用户密码 1</description>
+    </item>
+    
+    <item>
+      <title>hugo的使用</title>
+      <link>https://charlesren.github.io/mysite-public/hugo%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Thu, 26 Nov 2020 16:45:15 +0800</pubDate>
+      <author>renccn@gmail.com (CharlesRen)</author>
+      <guid>https://charlesren.github.io/mysite-public/hugo%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
+      <description>参考 https://www.adamormsby.com/posts/how-to-set-up-a-hugo-site-on-github-pages-with-submodules/ 安装hugo github 下载linux安装包 注意：下载extend版 解压后把二进制文件复制到/usr/bin/ create new site 1 2 #### hugo new site [SITE_NAME] hugo new site mysite github 建新</description>
+    </item>
+    
+  </channel>
 </rss>
