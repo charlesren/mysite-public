@@ -4,19 +4,18 @@
 
 #### 查看并连接设备
 nmcli d 
+
 nmcli d   connect xxx
 
 #### 查看并配置连接
 nmcli c
 
-nmcli c modify ens192 ipv4.address 10.193.94.94/24 ipv4.gateway 10.193.84.2 ipv4.dns 114.114.114.114 ipv4.method manual  connection.autoconnect yes
+nmcli c modify ens192 ipv4.address x.x.x.x/24 ipv4.gateway x.x.x.x ipv4.dns 114.114.114.114 ipv4.method manual  connection.autoconnect yes
 
 #### 启用连接
 nmcli c reload
 
 nmcli c up xxx
-
-
 
 ### Centos8 源设置
 ```
@@ -44,23 +43,18 @@ vim  /etc/docker/daemon.json
 ```
 docker info
 
-
-
 #### Run docker without sudo
-```
-useradd rencc
-passwd rencc
-usermod -aG docker rencc && newgrp docker
-```
+useradd xxx
+
+passwd xxx
+
+usermod -aG docker xxx && newgrp docker
 
 #### 开机启动docker
 
 sudo systemctl enable --now docker
 
-
 ### 本地k8s集群配置
-
-
 
 ####  安装kubectl 
 
@@ -116,7 +110,7 @@ rm -rf /usr/local/go
 #### 安装新版本
 官网下载安装包
 
-tar -C /usr/local -xzf go1.14.3.linux-amd64.tar.gz
+tar -C /usr/local -xzf gox.xx.x.linux-amd64.tar.gz
 #### 设置环境变量
 vim $HOME/.bash_profile
 export PATH=$PATH:/usr/local/go/bin
