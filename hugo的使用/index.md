@@ -214,3 +214,5 @@ categories: ["cncf","documentation"]
 ---
 ```
 
+###如已通过本文建站，在别的设备上只需clone my-site,public,Loveit主题,即可使用###
+
