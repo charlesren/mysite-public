@@ -6,17 +6,17 @@
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>Centos8安装VNC - CharlesRen</title><meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Centos8安装VNC" />
-<meta property="og:description" content="Centos8 配置VNC 安装 TigerVNC server 1 dnf install tigervnc-server 防火墙放行VNC服务 1 2 3 firewall-cmd --add-service=vnc-server --permanent firewall-cmd --reload 配置VNC 用户 vi /etc/tigervnc/vncserver.users 添加用户，如： ：1=root 配置分辨率 vi $HOME/.vnc/config geometry=1920x1080 设置VNC用户" />
+<meta property="og:description" content="Centos8 配置VNC 安装 TigerVNC server 1 dnf install tigervnc-server 防火墙放行VNC服务 1 2 3 firewall-cmd --add-service=vnc-server --permanent firewall-cmd --reload 配置VNC 用户 vi /etc/tigervnc/vncserver.users 添加用户，如： :1=root 配置分辨率 mkdir $HOME/.vnc vi $HOME/.vnc/config 1 geometry=1920x1080 设置VNC用户密码 1" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://charlesren.github.io/mysite-public/centos8%E5%AE%89%E8%A3%85vnc/" />
-<meta property="og:image" content="https://charlesren.github.io/logo.png"/>
-<meta property="article:published_time" content="2020-11-30T16:52:55+08:00" />
-<meta property="article:modified_time" content="2020-11-30T16:52:55+08:00" />
+<meta property="og:url" content="https://charlesren.github.io/mysite-public/centos8%E5%AE%89%E8%A3%85vnc/" /><meta property="og:image" content="https://charlesren.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-11-30T16:52:55&#43;08:00" />
+<meta property="article:modified_time" content="2020-11-30T16:52:55&#43;08:00" />
+
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://charlesren.github.io/logo.png"/>
 
 <meta name="twitter:title" content="Centos8安装VNC"/>
-<meta name="twitter:description" content="Centos8 配置VNC 安装 TigerVNC server 1 dnf install tigervnc-server 防火墙放行VNC服务 1 2 3 firewall-cmd --add-service=vnc-server --permanent firewall-cmd --reload 配置VNC 用户 vi /etc/tigervnc/vncserver.users 添加用户，如： ：1=root 配置分辨率 vi $HOME/.vnc/config geometry=1920x1080 设置VNC用户"/>
+<meta name="twitter:description" content="Centos8 配置VNC 安装 TigerVNC server 1 dnf install tigervnc-server 防火墙放行VNC服务 1 2 3 firewall-cmd --add-service=vnc-server --permanent firewall-cmd --reload 配置VNC 用户 vi /etc/tigervnc/vncserver.users 添加用户，如： :1=root 配置分辨率 mkdir $HOME/.vnc vi $HOME/.vnc/config 1 geometry=1920x1080 设置VNC用户密码 1"/>
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/charlesren.github.io\/mysite-public\/centos8%E5%AE%89%E8%A3%85vnc\/"
-        },"image": ["https:\/\/charlesren.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Tools","wordcount":  123 ,
+        },"image": ["https:\/\/charlesren.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Tools","wordcount":  120 ,
         "url": "https:\/\/charlesren.github.io\/mysite-public\/centos8%E5%AE%89%E8%A3%85vnc\/","datePublished": "2020-11-30T16:52:55+08:00","dateModified": "2020-11-30T16:52:55+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/charlesren.github.io\/images\/avatar.png"},"author": {
@@ -110,7 +110,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Centos8安装VNC</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://charlesren.github.io/mysite-public/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>CharlesRen</a></span>&nbsp;<span class="post-category">收录于 <a href="/mysite-public/categories/tools/"><i class="far fa-folder fa-fw"></i>Tools</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-11-30">2020-11-30</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 123 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-11-30">2020-11-30</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 120 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -158,11 +158,19 @@ firewall-cmd --reload
 </div><h3 id="配置vnc-用户">配置VNC 用户</h3>
 <p>vi  /etc/tigervnc/vncserver.users</p>
 <p>添加用户，如：</p>
-<p>：1=root</p>
+<p>:1=root</p>
 <h3 id="配置分辨率">配置分辨率</h3>
+<p>mkdir $HOME/.vnc</p>
 <p>vi  $HOME/.vnc/config</p>
-<p>geometry=1920x1080</p>
-<h3 id="设置vnc用户密码">设置VNC用户密码</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">geometry=1920x1080
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="设置vnc用户密码">设置VNC用户密码</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -218,7 +226,7 @@ systemctl status vncserver@:1
 </div>
 <div id="comments"></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.79.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.81.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://charlesren.github.io/mysite-public/" target="_blank">CharlesRen</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>

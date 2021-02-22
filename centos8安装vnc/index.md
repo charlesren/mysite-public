@@ -23,14 +23,15 @@ vi  /etc/tigervnc/vncserver.users
 
 添加用户，如：
 
-：1=root
+:1=root
 
 ### 配置分辨率
+mkdir $HOME/.vnc 
 
 vi  $HOME/.vnc/config
-
+```
 geometry=1920x1080
-
+```
 ### 设置VNC用户密码
 
 ```
