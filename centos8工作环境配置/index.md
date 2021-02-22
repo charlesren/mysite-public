@@ -113,9 +113,10 @@ rm -rf /usr/local/go
 tar -C /usr/local -xzf gox.xx.x.linux-amd64.tar.gz
 #### 设置环境变量
 vim $HOME/.bash_profile
+
 export PATH=$PATH:/usr/local/go/bin
 ### 安装vnc
-参考[Centos8安装VNC]<https://charlesren.github.io/mysite-public/centos8%E5%AE%89%E8%A3%85vnc/>
+参考[Centos8安装VNC](https://charlesren.github.io/mysite-public/centos8%E5%AE%89%E8%A3%85vnc/)
 
 ### 安装git  
 #### 安装git包
@@ -133,5 +134,5 @@ ssh -T git@github.com
 
 ### 安装Hugo
 
-参考[hugo的使用]<https://charlesren.github.io/mysite-public/hugo%E7%9A%84%E4%BD%BF%E7%94%A8/>
+参考[hugo的使用](https://charlesren.github.io/mysite-public/hugo%E7%9A%84%E4%BD%BF%E7%94%A8/)
 
