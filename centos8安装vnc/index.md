@@ -43,8 +43,8 @@ vncpasswd
 ### 启动服务
 
 ```
+systemctl enable vncserver@:1
 systemctl start vncserver@:1
-
 systemctl status vncserver@:1
 ```
 
