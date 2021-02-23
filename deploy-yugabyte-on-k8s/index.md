@@ -35,6 +35,11 @@ kubectl --namespace yb-demo port-forward --address 0.0.0.0 svc/yb-master-ui 7000
 kubectl exec --namespace yb-demo -it yb-tserver-0 -- /home/yugabyte/bin/ysqlsh -h yb-tserver-0.yb-tservers.yb-demo
 ```
 
+#### Connect yugabute outside cluster
+```
+kubectl --namespace yb-demo port-forward --address 0.0.0.0 svc/yb-tservers 5433:5433
+```
+
 #### Cleanup YugabyteDB Pods
 ```
 helm delete yb-demo -n yb-demo
