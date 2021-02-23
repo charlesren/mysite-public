@@ -54,6 +54,36 @@ usermod -aG docker xxx && newgrp docker
 
 sudo systemctl enable --now docker
 
+### 安装Golang
+#### 卸载旧版本
+rm -rf /usr/local/go
+#### 安装新版本
+官网下载安装包
+
+tar -C /usr/local -xzf gox.xx.x.linux-amd64.tar.gz
+#### 设置环境变量
+vim $HOME/.bash_profile
+
+export PATH=$PATH:/usr/local/go/bin
+### 安装vnc
+参考[Centos8安装VNC](https://charlesren.github.io/mysite-public/centos8%E5%AE%89%E8%A3%85vnc/)
+
+### 安装git  
+#### 安装git包
+dnf install git
+#### 配置ssh key
+if [ ! -e /root/.ssh/id_rsa ];then
+        ssh-keygen -t rsa -P '' -f /root/.ssh/id_rsa
+fi 
+#### 把公钥添加到 github(setting>ssh and gpg keys>new ssh key)
+#### 测试连接
+
+ssh -T git@github.com
+
+### 安装Hugo
+
+参考[hugo的使用](https://charlesren.github.io/mysite-public/hugo%E7%9A%84%E4%BD%BF%E7%94%A8/)
+
 ### 本地k8s集群配置
 
 ####  安装kubectl 
@@ -104,35 +134,4 @@ chmod 700 get_helm.sh
 ./get_helm.sh
 ```
 
-### 安装Golang
-#### 卸载旧版本
-rm -rf /usr/local/go
-#### 安装新版本
-官网下载安装包
-
-tar -C /usr/local -xzf gox.xx.x.linux-amd64.tar.gz
-#### 设置环境变量
-vim $HOME/.bash_profile
-
-export PATH=$PATH:/usr/local/go/bin
-### 安装vnc
-参考[Centos8安装VNC](https://charlesren.github.io/mysite-public/centos8%E5%AE%89%E8%A3%85vnc/)
-
-### 安装git  
-#### 安装git包
-dnf install git
-#### 配置ssh key
-if [ ! -e /root/.ssh/id_rsa ];then
-        ssh-keygen -t rsa -P '' -f /root/.ssh/id_rsa
-fi 
-#### 把公钥添加到 github(setting>ssh and gpg keys>new ssh key)
-#### 测试连接
-
-ssh -T git@github.com
-
-
-
-### 安装Hugo
-
-参考[hugo的使用](https://charlesren.github.io/mysite-public/hugo%E7%9A%84%E4%BD%BF%E7%94%A8/)
 

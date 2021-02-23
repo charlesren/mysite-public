@@ -137,14 +137,6 @@
             <li><a href="#开机启动docker">开机启动docker</a></li>
           </ul>
         </li>
-        <li><a href="#本地k8s集群配置">本地k8s集群配置</a>
-          <ul>
-            <li><a href="#安装kubectl">安装kubectl</a></li>
-            <li><a href="#下载特定版本kind">下载特定版本kind</a></li>
-            <li><a href="#创建三worker节点k8s集群">创建三worker节点k8s集群</a></li>
-            <li><a href="#安装helm">安装Helm</a></li>
-          </ul>
-        </li>
         <li><a href="#安装golang">安装Golang</a>
           <ul>
             <li><a href="#卸载旧版本">卸载旧版本</a></li>
@@ -162,6 +154,14 @@
           </ul>
         </li>
         <li><a href="#安装hugo">安装Hugo</a></li>
+        <li><a href="#本地k8s集群配置">本地k8s集群配置</a>
+          <ul>
+            <li><a href="#安装kubectl">安装kubectl</a></li>
+            <li><a href="#下载特定版本kind">下载特定版本kind</a></li>
+            <li><a href="#创建三worker节点k8s集群">创建三worker节点k8s集群</a></li>
+            <li><a href="#安装helm">安装Helm</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
@@ -222,6 +222,29 @@ dnf install -y docker-ce  --nobest --allowerasing
 <p>usermod -aG docker xxx &amp;&amp; newgrp docker</p>
 <h4 id="开机启动docker">开机启动docker</h4>
 <p>sudo systemctl enable &ndash;now docker</p>
+<h3 id="安装golang">安装Golang</h3>
+<h4 id="卸载旧版本">卸载旧版本</h4>
+<p>rm -rf /usr/local/go</p>
+<h4 id="安装新版本">安装新版本</h4>
+<p>官网下载安装包</p>
+<p>tar -C /usr/local -xzf gox.xx.x.linux-amd64.tar.gz</p>
+<h4 id="设置环境变量">设置环境变量</h4>
+<p>vim $HOME/.bash_profile</p>
+<p>export PATH=$PATH:/usr/local/go/bin</p>
+<h3 id="安装vnc">安装vnc</h3>
+<p>参考<a href="https://charlesren.github.io/mysite-public/centos8%E5%AE%89%E8%A3%85vnc/" target="_blank" rel="noopener noreffer">Centos8安装VNC</a></p>
+<h3 id="安装git">安装git</h3>
+<h4 id="安装git包">安装git包</h4>
+<p>dnf install git</p>
+<h4 id="配置ssh-key">配置ssh key</h4>
+<p>if [ ! -e /root/.ssh/id_rsa ];then
+ssh-keygen -t rsa -P '' -f /root/.ssh/id_rsa
+fi</p>
+<h4 id="把公钥添加到-githubsettingssh-and-gpg-keysnew-ssh-key">把公钥添加到 github(setting&gt;ssh and gpg keys&gt;new ssh key)</h4>
+<h4 id="测试连接">测试连接</h4>
+<p>ssh -T <a href="mailto:git@github.com">git@github.com</a></p>
+<h3 id="安装hugo">安装Hugo</h3>
+<p>参考<a href="https://charlesren.github.io/mysite-public/hugo%E7%9A%84%E4%BD%BF%E7%94%A8/" target="_blank" rel="noopener noreffer">hugo的使用</a></p>
 <h3 id="本地k8s集群配置">本地k8s集群配置</h3>
 <h4 id="安装kubectl">安装kubectl</h4>
 <div class="highlight"><div class="chroma">
@@ -307,30 +330,7 @@ chmod 700 get_helm.sh
 ./get_helm.sh
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="安装golang">安装Golang</h3>
-<h4 id="卸载旧版本">卸载旧版本</h4>
-<p>rm -rf /usr/local/go</p>
-<h4 id="安装新版本">安装新版本</h4>
-<p>官网下载安装包</p>
-<p>tar -C /usr/local -xzf gox.xx.x.linux-amd64.tar.gz</p>
-<h4 id="设置环境变量">设置环境变量</h4>
-<p>vim $HOME/.bash_profile</p>
-<p>export PATH=$PATH:/usr/local/go/bin</p>
-<h3 id="安装vnc">安装vnc</h3>
-<p>参考<a href="https://charlesren.github.io/mysite-public/centos8%E5%AE%89%E8%A3%85vnc/" target="_blank" rel="noopener noreffer">Centos8安装VNC</a></p>
-<h3 id="安装git">安装git</h3>
-<h4 id="安装git包">安装git包</h4>
-<p>dnf install git</p>
-<h4 id="配置ssh-key">配置ssh key</h4>
-<p>if [ ! -e /root/.ssh/id_rsa ];then
-ssh-keygen -t rsa -P '' -f /root/.ssh/id_rsa
-fi</p>
-<h4 id="把公钥添加到-githubsettingssh-and-gpg-keysnew-ssh-key">把公钥添加到 github(setting&gt;ssh and gpg keys&gt;new ssh key)</h4>
-<h4 id="测试连接">测试连接</h4>
-<p>ssh -T <a href="mailto:git@github.com">git@github.com</a></p>
-<h3 id="安装hugo">安装Hugo</h3>
-<p>参考<a href="https://charlesren.github.io/mysite-public/hugo%E7%9A%84%E4%BD%BF%E7%94%A8/" target="_blank" rel="noopener noreffer">hugo的使用</a></p>
-</div><div class="post-footer" id="post-footer">
+</div></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
