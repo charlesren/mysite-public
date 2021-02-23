@@ -1,6 +1,6 @@
 # Centos8工作环境配置
 
-### 配置网络
+# 配置网络
 
 #### 查看并连接设备
 nmcli d 
@@ -24,7 +24,7 @@ dnf config-manager --add-repo https://mirrors.aliyun.com/repo/Centos-8.repo
 
 
 
-### 安装docker
+# 安装docker
 
 #### 安装docker
 ```
@@ -54,7 +54,7 @@ usermod -aG docker xxx && newgrp docker
 
 sudo systemctl enable --now docker
 
-### 安装Golang
+# 安装Golang
 #### 卸载旧版本
 rm -rf /usr/local/go
 #### 安装新版本
@@ -80,11 +80,11 @@ fi
 
 ssh -T git@github.com
 
-### 安装Hugo
+# 安装Hugo
 
 参考[hugo的使用](https://charlesren.github.io/mysite-public/hugo%E7%9A%84%E4%BD%BF%E7%94%A8/)
 
-### 本地k8s集群配置
+# 本地k8s集群配置
 
 ####  安装kubectl 
 
@@ -134,4 +134,5 @@ chmod 700 get_helm.sh
 ./get_helm.sh
 ```
 
+# Istio配置
 
