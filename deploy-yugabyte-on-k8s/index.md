@@ -27,7 +27,7 @@ kubectl --namespace yb-demo get services
 
 #### Check cluster status with Admin UI
 ```
-kubectl --namespace yb-demo port-forward --address 0.0.0.0 svc/yb-master-ui 7000:7000
+kubectl --namespace yb-demo port-forward --address 0.0.0.0 svc/yb-master-ui 7000:7000 &
 ```
 
 ####  Run YSQL shell from inside of a tablet server 
@@ -37,7 +37,7 @@ kubectl exec --namespace yb-demo -it yb-tserver-0 -- /home/yugabyte/bin/ysqlsh -
 
 #### Connect yugabute outside cluster
 ```
-kubectl --namespace yb-demo port-forward --address 0.0.0.0 svc/yb-tservers 5433:5433
+kubectl --namespace yb-demo port-forward --address 0.0.0.0 svc/yb-tservers 5433:5433 &
 ```
 
 #### Cleanup YugabyteDB Pods

@@ -10,7 +10,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://charlesren.github.io/mysite-public/deploy-yugabyte-on-k8s/" /><meta property="og:image" content="https://charlesren.github.io/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-02-23T10:42:13&#43;08:00" />
-<meta property="article:modified_time" content="2021-02-23T11:12:12&#43;08:00" />
+<meta property="article:modified_time" content="2021-02-23T15:29:56&#43;08:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://charlesren.github.io/logo.png"/>
@@ -29,8 +29,8 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/charlesren.github.io\/mysite-public\/deploy-yugabyte-on-k8s\/"
-        },"image": ["https:\/\/charlesren.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Tools","wordcount":  167 ,
-        "url": "https:\/\/charlesren.github.io\/mysite-public\/deploy-yugabyte-on-k8s\/","datePublished": "2021-02-23T10:42:13+08:00","dateModified": "2021-02-23T11:12:12+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        },"image": ["https:\/\/charlesren.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Tools","wordcount":  169 ,
+        "url": "https:\/\/charlesren.github.io\/mysite-public\/deploy-yugabyte-on-k8s\/","datePublished": "2021-02-23T10:42:13+08:00","dateModified": "2021-02-23T15:29:56+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/charlesren.github.io\/images\/avatar.png"},"author": {
                 "@type": "Person",
@@ -110,7 +110,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Deploy Yugabyte On K8s</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://charlesren.github.io/mysite-public/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>CharlesRen</a></span>&nbsp;<span class="post-category">收录于 <a href="/mysite-public/categories/tools/"><i class="far fa-folder fa-fw"></i>Tools</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-02-23">2021-02-23</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 167 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-02-23">2021-02-23</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 169 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -184,7 +184,7 @@ kubectl --namespace yb-demo get services
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">kubectl --namespace yb-demo port-forward --address 0.0.0.0 svc/yb-master-ui 7000:7000
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">kubectl --namespace yb-demo port-forward --address 0.0.0.0 svc/yb-master-ui 7000:7000 &amp;
 </code></pre></td></tr></table>
 </div>
 </div><h4 id="run-ysql-shell-from-inside-of-a-tablet-server">Run YSQL shell from inside of a tablet server</h4>
@@ -202,7 +202,7 @@ kubectl --namespace yb-demo get services
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">kubectl --namespace yb-demo port-forward --address 0.0.0.0 svc/yb-tservers 5433:5433
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">kubectl --namespace yb-demo port-forward --address 0.0.0.0 svc/yb-tservers 5433:5433 &amp;
 </code></pre></td></tr></table>
 </div>
 </div><h4 id="cleanup-yugabytedb-pods">Cleanup YugabyteDB Pods</h4>
@@ -223,8 +223,8 @@ kubectl delete pvc &ndash;namespace yb-demo -l app=yb-tserver</p>
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2021-02-23&nbsp;<a class="git-hash" href="https://github.com/charlesren/LoveIt/commit/d5a84758446aed833c1f0d6b2deb7bf9b783c375" target="_blank" title="commit by charlesren(renccn@gmail.com) d5a84758446aed833c1f0d6b2deb7bf9b783c375: rebuilding site Tue Feb 23 11:12:12 CST 2021">
-                                    <i class="fas fa-hashtag fa-fw"></i>d5a8475</a></span>
+                <span>更新于 2021-02-23&nbsp;<a class="git-hash" href="https://github.com/charlesren/LoveIt/commit/8c5393eeed6070e45da0b01bf642364ad517d7a6" target="_blank" title="commit by charlesren(renccn@gmail.com) 8c5393eeed6070e45da0b01bf642364ad517d7a6: rebuilding site Tue Feb 23 15:29:56 CST 2021">
+                                    <i class="fas fa-hashtag fa-fw"></i>8c5393e</a></span>
             </div>
             <div class="post-info-license"></div>
         </div>
