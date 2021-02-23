@@ -27,7 +27,7 @@ kubectl --namespace yb-demo get services
 
 #### Check cluster status with Admin UI
 ```
-kubectl --namespace yb-demo port-forward svc/yb-master-ui 7000:7000
+kubectl --namespace yb-demo port-forward --address 0.0.0.0 svc/yb-master-ui 7000:7000
 ```
 
 ####  Run YSQL shell from inside of a tablet server 
