@@ -10,7 +10,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://charlesren.github.io/mysite-public/deploy-yugabyte-on-k8s/" /><meta property="og:image" content="https://charlesren.github.io/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-02-23T10:42:13&#43;08:00" />
-<meta property="article:modified_time" content="2021-02-23T10:47:17&#43;08:00" />
+<meta property="article:modified_time" content="2021-02-23T10:48:56&#43;08:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://charlesren.github.io/logo.png"/>
@@ -29,8 +29,8 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/charlesren.github.io\/mysite-public\/deploy-yugabyte-on-k8s\/"
-        },"image": ["https:\/\/charlesren.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Tools","wordcount":  150 ,
-        "url": "https:\/\/charlesren.github.io\/mysite-public\/deploy-yugabyte-on-k8s\/","datePublished": "2021-02-23T10:42:13+08:00","dateModified": "2021-02-23T10:47:17+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        },"image": ["https:\/\/charlesren.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Tools","wordcount":  152 ,
+        "url": "https:\/\/charlesren.github.io\/mysite-public\/deploy-yugabyte-on-k8s\/","datePublished": "2021-02-23T10:42:13+08:00","dateModified": "2021-02-23T10:48:56+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/charlesren.github.io\/images\/avatar.png"},"author": {
                 "@type": "Person",
@@ -110,7 +110,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Deploy Yugabyte On K8s</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://charlesren.github.io/mysite-public/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>CharlesRen</a></span>&nbsp;<span class="post-category">收录于 <a href="/mysite-public/categories/tools/"><i class="far fa-folder fa-fw"></i>Tools</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-02-23">2021-02-23</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 150 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-02-23">2021-02-23</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 152 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -187,10 +187,24 @@ kubectl --namespace yb-demo get services
 </code></pre></td></tr></table>
 </div>
 </div><h4 id="run-ysql-shell-from-inside-of-a-tablet-server">Run YSQL shell from inside of a tablet server</h4>
-<p>kubectl exec &ndash;namespace yb-demo -it yb-tserver-0 &ndash; /home/yugabyte/bin/ysqlsh -h yb-tserver-0.yb-tservers.yb-demo</p>
-<h4 id="cleanup-yugabytedb-pods">Cleanup YugabyteDB Pods</h4>
-<p>helm delete yb-demo -n yb-demo</p>
-<blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">kubectl exec --namespace yb-demo -it yb-tserver-0 -- /home/yugabyte/bin/ysqlsh -h yb-tserver-0.yb-tservers.yb-demo
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="cleanup-yugabytedb-pods">Cleanup YugabyteDB Pods</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">helm delete yb-demo -n yb-demo
+</code></pre></td></tr></table>
+</div>
+</div><blockquote>
 <p>NOTE: You need to manually delete the persistent volume <br>
 kubectl delete pvc &ndash;namespace yb-demo -l app=yb-master   <br>
 kubectl delete pvc &ndash;namespace yb-demo -l app=yb-tserver</p>
@@ -199,8 +213,8 @@ kubectl delete pvc &ndash;namespace yb-demo -l app=yb-tserver</p>
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2021-02-23&nbsp;<a class="git-hash" href="https://github.com/charlesren/LoveIt/commit/42d0f78b6347350154f04a7395d788661144e9ac" target="_blank" title="commit by charlesren(renccn@gmail.com) 42d0f78b6347350154f04a7395d788661144e9ac: rebuilding site Tue Feb 23 10:47:17 CST 2021">
-                                    <i class="fas fa-hashtag fa-fw"></i>42d0f78</a></span>
+                <span>更新于 2021-02-23&nbsp;<a class="git-hash" href="https://github.com/charlesren/LoveIt/commit/0f65f66b860f2efec208c12b4f23cb9ee340f9a4" target="_blank" title="commit by charlesren(renccn@gmail.com) 0f65f66b860f2efec208c12b4f23cb9ee340f9a4: rebuilding site Tue Feb 23 10:48:56 CST 2021">
+                                    <i class="fas fa-hashtag fa-fw"></i>0f65f66</a></span>
             </div>
             <div class="post-info-license"></div>
         </div>

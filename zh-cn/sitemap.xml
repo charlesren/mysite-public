@@ -2,7 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://charlesren.github.io/mysite-public/categories/</loc><lastmod>2021-02-23T10:47:17&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://charlesren.github.io/mysite-public/categories/</loc><lastmod>2021-02-23T10:48:56&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://charlesren.github.io/mysite-public/en/categories/"
@@ -11,7 +11,7 @@
                     hreflang="zh-cn"
                     href="https://charlesren.github.io/mysite-public/categories/"
                     /></url><url>
-            <loc>https://charlesren.github.io/mysite-public/</loc><lastmod>2021-02-23T10:47:17&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://charlesren.github.io/mysite-public/</loc><lastmod>2021-02-23T10:48:56&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://charlesren.github.io/mysite-public/en/"
@@ -20,9 +20,9 @@
                     hreflang="zh-cn"
                     href="https://charlesren.github.io/mysite-public/"
                     /></url><url>
-            <loc>https://charlesren.github.io/mysite-public/deploy-yugabyte-on-k8s/</loc><lastmod>2021-02-23T10:47:17&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://charlesren.github.io/mysite-public/posts/</loc><lastmod>2021-02-23T10:47:17&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://charlesren.github.io/mysite-public/tags/</loc><lastmod>2021-02-23T10:47:17&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://charlesren.github.io/mysite-public/deploy-yugabyte-on-k8s/</loc><lastmod>2021-02-23T10:48:56&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://charlesren.github.io/mysite-public/posts/</loc><lastmod>2021-02-23T10:48:56&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://charlesren.github.io/mysite-public/tags/</loc><lastmod>2021-02-23T10:48:56&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://charlesren.github.io/mysite-public/en/tags/"
@@ -31,8 +31,8 @@
                     hreflang="zh-cn"
                     href="https://charlesren.github.io/mysite-public/tags/"
                     /></url><url>
-            <loc>https://charlesren.github.io/mysite-public/tags/tools/</loc><lastmod>2021-02-23T10:47:17&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://charlesren.github.io/mysite-public/categories/tools/</loc><lastmod>2021-02-23T10:47:17&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://charlesren.github.io/mysite-public/tags/tools/</loc><lastmod>2021-02-23T10:48:56&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://charlesren.github.io/mysite-public/categories/tools/</loc><lastmod>2021-02-23T10:48:56&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://charlesren.github.io/mysite-public/centos8%E5%B7%A5%E4%BD%9C%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</loc><lastmod>2021-02-22T09:19:56&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://charlesren.github.io/mysite-public/asus-rog-strix-z390-i-gaming-hakintosh/</loc><lastmod>2021-01-22T12:46:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
             <loc>https://charlesren.github.io/mysite-public/kodi%E7%9A%84%E4%BD%BF%E7%94%A8/</loc><lastmod>2021-01-20T09:07:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>

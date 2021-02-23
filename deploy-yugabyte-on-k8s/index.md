@@ -31,11 +31,14 @@ kubectl --namespace yb-demo port-forward svc/yb-master-ui 7000:7000
 ```
 
 ####  Run YSQL shell from inside of a tablet server 
+```
 kubectl exec --namespace yb-demo -it yb-tserver-0 -- /home/yugabyte/bin/ysqlsh -h yb-tserver-0.yb-tservers.yb-demo
+```
 
 #### Cleanup YugabyteDB Pods
+```
 helm delete yb-demo -n yb-demo
-
+```
 >  NOTE: You need to manually delete the persistent volume    
 >  kubectl delete pvc --namespace yb-demo -l app=yb-master      
 >  kubectl delete pvc --namespace yb-demo -l app=yb-tserver      
