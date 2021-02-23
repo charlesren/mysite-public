@@ -10,7 +10,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://charlesren.github.io/mysite-public/deploy-yugabyte-on-k8s/" /><meta property="og:image" content="https://charlesren.github.io/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-02-23T10:42:13&#43;08:00" />
-<meta property="article:modified_time" content="2021-02-23T10:45:16&#43;08:00" />
+<meta property="article:modified_time" content="2021-02-23T10:47:17&#43;08:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://charlesren.github.io/logo.png"/>
@@ -30,7 +30,7 @@
             "@type": "WebPage",
             "@id": "https:\/\/charlesren.github.io\/mysite-public\/deploy-yugabyte-on-k8s\/"
         },"image": ["https:\/\/charlesren.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Tools","wordcount":  150 ,
-        "url": "https:\/\/charlesren.github.io\/mysite-public\/deploy-yugabyte-on-k8s\/","datePublished": "2021-02-23T10:42:13+08:00","dateModified": "2021-02-23T10:45:16+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        "url": "https:\/\/charlesren.github.io\/mysite-public\/deploy-yugabyte-on-k8s\/","datePublished": "2021-02-23T10:42:13+08:00","dateModified": "2021-02-23T10:47:17+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/charlesren.github.io\/images\/avatar.png"},"author": {
                 "@type": "Person",
@@ -151,7 +151,9 @@ helm search repo yugabytedb/yugabyte
 </div>
 </div><h4 id="准备docker-image">准备docker image</h4>
 <p>docker pull yugabytedb/yugabyte:2.5.1.0-b153</p>
-<p><em>kind 集群需导入镜像</em></p>
+<blockquote>
+<p>kind 集群需导入镜像</p>
+</blockquote>
 <p>kind  load yugabytedb/yugabyte:2.5.1.0-b153 &ndash;name yugabyte</p>
 <h4 id="部署yugabyte">部署yugabyte</h4>
 <div class="highlight"><div class="chroma">
@@ -189,20 +191,16 @@ kubectl --namespace yb-demo get services
 <h4 id="cleanup-yugabytedb-pods">Cleanup YugabyteDB Pods</h4>
 <p>helm delete yb-demo -n yb-demo</p>
 <blockquote>
-<p>NOTE: You need to manually delete the persistent volume</p>
-</blockquote>
-<blockquote>
-<p>kubectl delete pvc &ndash;namespace yb-demo -l app=yb-master</p>
-</blockquote>
-<blockquote>
-<p>kubectl delete pvc &ndash;namespace yb-demo -l app=yb-tserver</p>
+<p>NOTE: You need to manually delete the persistent volume <br>
+kubectl delete pvc &ndash;namespace yb-demo -l app=yb-master   <br>
+kubectl delete pvc &ndash;namespace yb-demo -l app=yb-tserver</p>
 </blockquote>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2021-02-23&nbsp;<a class="git-hash" href="https://github.com/charlesren/LoveIt/commit/053ffc0762fea6ef7aa335511c015fec4909423d" target="_blank" title="commit by charlesren(renccn@gmail.com) 053ffc0762fea6ef7aa335511c015fec4909423d: rebuilding site Tue Feb 23 10:45:15 CST 2021">
-                                    <i class="fas fa-hashtag fa-fw"></i>053ffc0</a></span>
+                <span>更新于 2021-02-23&nbsp;<a class="git-hash" href="https://github.com/charlesren/LoveIt/commit/42d0f78b6347350154f04a7395d788661144e9ac" target="_blank" title="commit by charlesren(renccn@gmail.com) 42d0f78b6347350154f04a7395d788661144e9ac: rebuilding site Tue Feb 23 10:47:17 CST 2021">
+                                    <i class="fas fa-hashtag fa-fw"></i>42d0f78</a></span>
             </div>
             <div class="post-info-license"></div>
         </div>

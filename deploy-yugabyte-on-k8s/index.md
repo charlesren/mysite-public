@@ -9,7 +9,7 @@ helm search repo yugabytedb/yugabyte
 #### 准备docker image
 docker pull yugabytedb/yugabyte:2.5.1.0-b153
 
-*kind 集群需导入镜像*
+> kind 集群需导入镜像
 
 kind  load yugabytedb/yugabyte:2.5.1.0-b153 --name yugabyte
 
@@ -36,9 +36,7 @@ kubectl exec --namespace yb-demo -it yb-tserver-0 -- /home/yugabyte/bin/ysqlsh -
 #### Cleanup YugabyteDB Pods
 helm delete yb-demo -n yb-demo
 
->  NOTE: You need to manually delete the persistent volume
-
->  kubectl delete pvc --namespace yb-demo -l app=yb-master
-
->  kubectl delete pvc --namespace yb-demo -l app=yb-tserver
+>  NOTE: You need to manually delete the persistent volume    
+>  kubectl delete pvc --namespace yb-demo -l app=yb-master      
+>  kubectl delete pvc --namespace yb-demo -l app=yb-tserver      
 
