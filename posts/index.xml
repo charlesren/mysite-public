@@ -4,7 +4,14 @@
         <link>https://charlesren.github.io/mysite-public/posts/</link>
         <description>所有文章 | CharlesRen</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>renccn@gmail.com (CharlesRen)</managingEditor>
-            <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 22 Feb 2021 09:19:56 &#43;0800</lastBuildDate><atom:link href="https://charlesren.github.io/mysite-public/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 23 Feb 2021 10:42:13 &#43;0800</lastBuildDate><atom:link href="https://charlesren.github.io/mysite-public/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>K8s Deploy Yugabyte</title>
+    <link>https://charlesren.github.io/mysite-public/deploy-yugabyte-on-k8s/</link>
+    <pubDate>Tue, 23 Feb 2021 10:42:13 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://charlesren.github.io/mysite-public/deploy-yugabyte-on-k8s/</guid>
+    <description><![CDATA[添加helm repo 1 2 3 helm repo add yugabytedb https://charts.yugabyte.com helm repo update helm search repo yugabytedb/yugabyte 准备docker image docker pull yugabytedb/yugabyte:2.5.1.0-b153 kind 集群需导入镜像 kind load yugabytedb/yugabyte:2.5.1.0-b153 &ndash;name yugabyte 部署yugabyte 1 2 kubectl create namespace yb-demo helm install yb-demo yugabytedb/yugabyte --namespace yb-demo --wait]]></description>
+</item><item>
     <title>Centos8工作环境配置</title>
     <link>https://charlesren.github.io/mysite-public/centos8%E5%B7%A5%E4%BD%9C%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
     <pubDate>Mon, 22 Feb 2021 09:19:56 &#43;0800</pubDate>
