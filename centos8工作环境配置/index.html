@@ -6,7 +6,7 @@
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>Centos8工作环境配置 - CharlesRen</title><meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Centos8工作环境配置" />
-<meta property="og:description" content="配置网络 查看并连接设备 nmcli d nmcli d connect xxx 查看并配置连接 nmcli c nmcli c modify ens192 ipv4.address x.x.x.x/24 ipv4.gateway x.x.x.x ipv4.dns 114.114.114.114 ipv4.method manual connection.autoconnect yes 启用连接 nmcli c reload nmcli c up xxx Centos8 源设置 1 dnf config-manager --add-repo https://mirrors.aliyun.com/repo/Centos-8.repo 安装docker 安装" />
+<meta property="og:description" content="配置网络 查看并连接设备 nmcli d nmcli d connect xxx 查看并配置连接 nmcli c nmcli c modify ens192 ipv4.address x.x.x.x/24 ipv4.gateway x.x.x.x ipv4.dns 8.8.8.8 ipv4.method manual connection.autoconnect yes 114.114.114.114 cat not resolve gcr.io etc, but 8.8.8.8 can 启用连接 nmcli c reload nmcli c up xxx Centos8 源设置 1 dnf config-manager --add-repo https://mirrors.aliyun.com/repo/Centos-8.repo 安" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://charlesren.github.io/mysite-public/centos8%E5%B7%A5%E4%BD%9C%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" /><meta property="og:image" content="https://charlesren.github.io/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-02-22T09:19:56&#43;08:00" />
@@ -16,7 +16,7 @@
 <meta name="twitter:image" content="https://charlesren.github.io/logo.png"/>
 
 <meta name="twitter:title" content="Centos8工作环境配置"/>
-<meta name="twitter:description" content="配置网络 查看并连接设备 nmcli d nmcli d connect xxx 查看并配置连接 nmcli c nmcli c modify ens192 ipv4.address x.x.x.x/24 ipv4.gateway x.x.x.x ipv4.dns 114.114.114.114 ipv4.method manual connection.autoconnect yes 启用连接 nmcli c reload nmcli c up xxx Centos8 源设置 1 dnf config-manager --add-repo https://mirrors.aliyun.com/repo/Centos-8.repo 安装docker 安装"/>
+<meta name="twitter:description" content="配置网络 查看并连接设备 nmcli d nmcli d connect xxx 查看并配置连接 nmcli c nmcli c modify ens192 ipv4.address x.x.x.x/24 ipv4.gateway x.x.x.x ipv4.dns 8.8.8.8 ipv4.method manual connection.autoconnect yes 114.114.114.114 cat not resolve gcr.io etc, but 8.8.8.8 can 启用连接 nmcli c reload nmcli c up xxx Centos8 源设置 1 dnf config-manager --add-repo https://mirrors.aliyun.com/repo/Centos-8.repo 安"/>
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/charlesren.github.io\/mysite-public\/centos8%E5%B7%A5%E4%BD%9C%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE\/"
-        },"image": ["https:\/\/charlesren.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Tools","wordcount":  552 ,
+        },"image": ["https:\/\/charlesren.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Tools","wordcount":  596 ,
         "url": "https:\/\/charlesren.github.io\/mysite-public\/centos8%E5%B7%A5%E4%BD%9C%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE\/","datePublished": "2021-02-22T09:19:56+08:00","dateModified": "2021-02-22T09:19:56+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/charlesren.github.io\/images\/avatar.png"},"author": {
@@ -110,7 +110,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Centos8工作环境配置</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://charlesren.github.io/mysite-public/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>CharlesRen</a></span>&nbsp;<span class="post-category">收录于 <a href="/mysite-public/categories/tools/"><i class="far fa-folder fa-fw"></i>Tools</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-02-22">2021-02-22</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 552 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-02-22">2021-02-22</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 596 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -192,8 +192,22 @@
         <li>
           <ul>
             <li><a href="#install-istioctl">Install istioctl</a></li>
-            <li><a href="#install-istio">install istio</a></li>
-            <li><a href="#confirm-the-istio-control-plane-services">confirm the Istio control plane services</a></li>
+            <li><a href="#install-istio">Install istio</a></li>
+            <li><a href="#confirm-the-istio-control-plane-services">Confirm the Istio control plane services</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#installing-the-knative-operator">Installing the Knative Operator</a></li>
+            <li><a href="#verify-the-operator-installation">Verify the operator installation</a></li>
+            <li><a href="#track-the-log">Track the log</a></li>
           </ul>
         </li>
       </ul>
@@ -206,7 +220,10 @@
 <p>nmcli d   connect xxx</p>
 <h4 id="查看并配置连接">查看并配置连接</h4>
 <p>nmcli c</p>
-<p>nmcli c modify ens192 ipv4.address x.x.x.x/24 ipv4.gateway x.x.x.x ipv4.dns 114.114.114.114 ipv4.method manual  connection.autoconnect yes</p>
+<p>nmcli c modify ens192 ipv4.address x.x.x.x/24 ipv4.gateway x.x.x.x ipv4.dns 8.8.8.8 ipv4.method manual  connection.autoconnect yes</p>
+<blockquote>
+<p>114.114.114.114 cat not resolve gcr.io etc, but 8.8.8.8 can</p>
+</blockquote>
 <h4 id="启用连接">启用连接</h4>
 <p>nmcli c reload</p>
 <p>nmcli c up xxx</p>
@@ -376,7 +393,7 @@ chmod 700 get_helm.sh
 export PATH=$PATH:$HOME/.istioctl/bin
 </code></pre></td></tr></table>
 </div>
-</div><h4 id="install-istio">install istio</h4>
+</div><h4 id="install-istio">Install istio</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -403,7 +420,7 @@ spec:
 EOF
 </code></pre></td></tr></table>
 </div>
-</div><h4 id="confirm-the-istio-control-plane-services">confirm the Istio control plane services</h4>
+</div><h4 id="confirm-the-istio-control-plane-services">Confirm the Istio control plane services</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -412,6 +429,34 @@ EOF
 <td class="lntd">
 <pre class="chroma"><code class="language-fallback" data-lang="fallback">kubectl get svc -n istio-system
 kubectl get pods -n istio-system
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="knative配置">Knative配置</h1>
+<h4 id="installing-the-knative-operator">Installing the Knative Operator</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">kubectl apply -f https://github.com/knative/operator/releases/download/v0.20.0/operator.yaml
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="verify-the-operator-installation">Verify the operator installation</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">kubectl get deployment knative-operator
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="track-the-log">Track the log</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">kubectl logs -f deploy/knative-operator
 </code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">

@@ -10,7 +10,9 @@ nmcli d   connect xxx
 #### 查看并配置连接
 nmcli c
 
-nmcli c modify ens192 ipv4.address x.x.x.x/24 ipv4.gateway x.x.x.x ipv4.dns 114.114.114.114 ipv4.method manual  connection.autoconnect yes
+nmcli c modify ens192 ipv4.address x.x.x.x/24 ipv4.gateway x.x.x.x ipv4.dns 8.8.8.8 ipv4.method manual  connection.autoconnect yes
+
+> 114.114.114.114 cat not resolve gcr.io etc, but 8.8.8.8 can
 
 #### 启用连接
 nmcli c reload
@@ -140,7 +142,7 @@ chmod 700 get_helm.sh
 curl -sL https://istio.io/downloadIstioctl | sh -
 export PATH=$PATH:$HOME/.istioctl/bin
 ```
-#### install istio
+#### Install istio
 ```
 kubectl create ns istio-system
 kubectl apply -f - <<EOF
@@ -153,10 +155,23 @@ spec:
   profile: demo
 EOF
 ```
-#### confirm the Istio control plane services
+#### Confirm the Istio control plane services
 ```
 kubectl get svc -n istio-system
 kubectl get pods -n istio-system
 ```
 
+# Knative配置
+#### Installing the Knative Operator
+```
+kubectl apply -f https://github.com/knative/operator/releases/download/v0.20.0/operator.yaml
+```
+#### Verify the operator installation
+```
+kubectl get deployment knative-operator
+```
+#### Track the log
+```
+kubectl logs -f deploy/knative-operator
+```
 
