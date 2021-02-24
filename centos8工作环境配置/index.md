@@ -135,4 +135,28 @@ chmod 700 get_helm.sh
 ```
 
 # Istio配置
+#### Install istioctl
+```
+curl -sL https://istio.io/downloadIstioctl | sh -
+export PATH=$PATH:$HOME/.istioctl/bin
+```
+#### 安装Istio
+```
+kubectl create ns istio-system
+kubectl apply -f - <<EOF
+apiVersion: install.istio.io/v1alpha1
+kind: IstioOperator
+metadata:
+  namespace: istio-system
+  name: example-istiocontrolplane
+spec:
+  profile: demo
+EOF
+```
+#### confirm the Istio control plane services
+```
+kubectl get svc -n istio-system
+kubectl get pods -n istio-system
+```
+
 
