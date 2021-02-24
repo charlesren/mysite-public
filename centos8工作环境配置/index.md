@@ -140,7 +140,7 @@ chmod 700 get_helm.sh
 curl -sL https://istio.io/downloadIstioctl | sh -
 export PATH=$PATH:$HOME/.istioctl/bin
 ```
-#### 安装Istio
+#### install istio
 ```
 kubectl create ns istio-system
 kubectl apply -f - <<EOF
