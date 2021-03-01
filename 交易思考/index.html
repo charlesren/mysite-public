@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>交易思考 - CharlesRen</title><meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="交易思考" />
+<meta property="og:description" content="交易对照: 1.交易你的计划，计划你的交易（每只股挂好买单，止损单，想好各种可能，盘中不改计划，极力避免手动操作） 2.小周期大周期 3.等待机会" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://charlesren.github.io/mysite-public/%E4%BA%A4%E6%98%93%E6%80%9D%E8%80%83/" /><meta property="og:image" content="https://charlesren.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-03-01T09:52:33&#43;08:00" />
+<meta property="article:modified_time" content="2021-03-01T09:52:33&#43;08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://charlesren.github.io/logo.png"/>
+
+<meta name="twitter:title" content="交易思考"/>
+<meta name="twitter:description" content="交易对照: 1.交易你的计划，计划你的交易（每只股挂好买单，止损单，想好各种可能，盘中不改计划，极力避免手动操作） 2.小周期大周期 3.等待机会"/>
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://charlesren.github.io/mysite-public/%E4%BA%A4%E6%98%93%E6%80%9D%E8%80%83/" /><link rel="prev" href="https://charlesren.github.io/mysite-public/deploy-yugabyte-on-k8s/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/mysite-public/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "交易思考",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/charlesren.github.io\/mysite-public\/%E4%BA%A4%E6%98%93%E6%80%9D%E8%80%83\/"
+        },"image": ["https:\/\/charlesren.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  1898 ,
+        "url": "https:\/\/charlesren.github.io\/mysite-public\/%E4%BA%A4%E6%98%93%E6%80%9D%E8%80%83\/","datePublished": "2021-03-01T09:52:33+08:00","dateModified": "2021-03-01T09:52:33+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/charlesren.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "CharlesRen"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/mysite-public/" title="CharlesRen"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>CharlesRen</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/mysite-public/posts/"> 所有文章 </a><a class="menu-item" href="/mysite-public/tags/"> 标签 </a><a class="menu-item" href="/mysite-public/categories/"> 分类 </a><a class="menu-item" href="/mysite-public/categories/documentation/"> 文档 </a><a class="menu-item" href="/mysite-public/about/"> 关于 </a><a class="menu-item" href="https://github.com/charlesren" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
+                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/mysite-public/%E4%BA%A4%E6%98%93%E6%80%9D%E8%80%83/" selected>简体中文</option></select>
+                    </a><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/mysite-public/" title="CharlesRen"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>CharlesRen</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/mysite-public/posts/" title="">所有文章</a><a class="menu-item" href="/mysite-public/tags/" title="">标签</a><a class="menu-item" href="/mysite-public/categories/" title="">分类</a><a class="menu-item" href="/mysite-public/categories/documentation/" title="">文档</a><a class="menu-item" href="/mysite-public/about/" title="">关于</a><a class="menu-item" href="https://github.com/charlesren" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/mysite-public/%E4%BA%A4%E6%98%93%E6%80%9D%E8%80%83/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">交易思考</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://charlesren.github.io/mysite-public/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>CharlesRen</a></span>&nbsp;<span class="post-category">收录于 <a href="/mysite-public/categories/trade/"><i class="far fa-folder fa-fw"></i>Trade</a>&nbsp;<a href="/mysite-public/categories/investment/"><i class="far fa-folder fa-fw"></i>Investment</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-03-01">2021-03-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1898 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 4 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+            </div><div class="content" id="content"><p>交易对照:
+1.交易你的计划，计划你的交易（每只股挂好买单，止损单，想好各种可能，盘中不改计划，极力避免手动操作）
+2.小周期大周期
+3.等待机会，占据有利位置（止损及期望盈利比率）
+4.适时离开市场
+5.问问自己能否在止损点退出
+6.入场的理由，策略
+7.有选择的交易，弱水三千，只取一瓢饮
+8.关键点买入（趋势刚刚开始时买入，避免早买时等待的时间成本，交易其它股票机会成本）
+买点
+大趋势向上:
+1价格下跌后企稳，窄幅震荡一段时间在震荡区间底部（波段或反弹）亏损后或三天无盈利，赶紧退出
+2.下跌一段时间，仍在下跌中，买在最低点下方，20周或更长周期均线位置（赌位置）（白马股）亏损后或三天无盈利，赶紧退出
+3.窄幅震荡一段时间，波动小，底部微微抬升时买入
+4突破，亏损后或三天无盈利，赶紧退出
+横盘:
+1.窄幅震荡一段时间，波动小，底部微微抬升时买入</p>
+<p>趋势策略/震荡策略</p>
+<p>顺势、轻仓、持赢、止损
+什么时候进攻，什么时候防守
+时间止损
+突破关键点赶紧行动，行动后亏损，或三交易日无盈利退出</p>
+<p>单笔交易仓位是自动的，总体仓位可以加以控制</p>
+<p>交易系统
+止损、加仓
+每支股票4次买入
+交易量猛增</p>
+<p>集中加仓，分批加仓？
+分批加仓，拉开距离？</p>
+<p>不在亏损时加仓，除非计划好的定投
+严格止损</p>
+<p>利弗莫尔卖加回补机制：正常回调（缩量，幅度有限），冲高大幅回落果断离场，后续市场正常，进场，要有回补机制；一次性事件引发短期大幅度冲高，而事件对基本面音响有不确定性，果断离场</p>
+<p>日线图与分时图周期差别太大，日线与60分钟更接近</p>
+<p>看图四要素，量价时间周期</p>
+<p>感悟拿到市场去验证</p>
+<p>交易记录 周期长，中，短 趋势，价值 买入逻辑
+负面清单，不做什么
+观点被市场证实后再交易，不能仅仅根据自己的看法交易</p>
+<p>买进后，操作不算完，下好或修改止损单，下一次或两次买进单，阶段性止盈单</p>
+<p>止损要快。
+收到关键点位再买入？
+尽量右侧交易，下跌盯盘提醒股价，跌破关键点后，下突破该点位的智能交易买入单</p>
+<p>趋势结束退出.但短期过猛，且有走坏趋势，可否在通道顶端或其它点卖出部分，走势正常后补回来</p>
+<p>买入时记录投资逻辑是什么
+逻辑驱动买入，逻辑驱动卖出</p>
+<p>检测一直方法，等风来？</p>
+<p>人只能赚自己认知范围之内的钱，市场天天开，钱赚不完</p>
+<p>500 4
+5g 4
+新能源 4
+消费 4 （调味，医，酒）
+现金 4</p>
+<p>假设暴跌怎么办，买什么</p>
+<p>要右侧交易尽量避免左侧交易。
+水平窄幅震荡突破，上涨突破时买，突破要带量。尽量避免v形转向上买，如果买带量
+仓位低时指数类基金，大白马可以水平稍向上时交易，或支撑位附近稍高点买入（非上涨时买入时，量要少）
+如果一定要左侧买入总仓位要低，单次买入要低，加仓时间幅度要拉开，同时拉大时间周期</p>
+<p>向下的风险，也有向上的风险（踏空）</p>
+<p>长期重仓卧倒好公司，在不同标的间切换，找不到好机会时退出  ？</p>
+<p>动态止损策略</p>
+<p>38
+建议不要看20日以下的均线。因为均线是比较滞后的指标，周期看太小会被震荡玩死</p>
+<p>不要试图摊薄成本，除非交易法则告诉该买入</p>
+<p>你可以做错很多事，但只要做对了一件事—也就是砍掉亏损头寸—你就能在这一行赚很多钱</p>
+<p>加仓后为新头寸单独设立止损点</p>
+<p>择时：1好公司好价格
+2技术分析</p>
+<p>机构持仓</p>
+<p>降低交易频率，日线上交易，提前计划，日内尽量不做决断，放弃平庸机会（）</p>
+<p>没有杠杆，时间是投资的朋友，加了杠杆，时间便成了投资的敌人。</p>
+<p>预期 交易假设 市场走势
+交易假设很重要，更重要的是应对。无论市场涨跌都要有应对措施，做好计划。
+计划你的交易，交易你的计划。</p>
+<p>跟随市场，让市场指导操作，而不是预期。</p>
+<p>当预期与市场不一致，无论市场对自己有利与否，紧盯市场，跟随市场，及时执行计划；</p>
+<p>只有不怕错过，才能真正抓住好的投资机会。</p>
+<p>危机发生后建仓：时间和空间间隔。如间隔10% ，间隔一个月</p>
+<p>趋势交易与市场周期及投资者钟摆式摆动融合</p>
+<p>止损
+刚买与已有丰厚盈利
+打算持有时间长短
+现有仓位水平高低
+长期资本，短期资本
+股价与成交量的变化情况？
+闪动危险信号的时候</p>
+<p>快速下跌后，重新上升
+短期盈利多部分止盈退出</p>
+<p>是否买入 买入 价格 考虑短期市场整体走势</p>
+<p>投机严格价升加仓，止损
+长期，分批买，低点支撑位可首笔买，不需严格等趋势确认，如首笔下跌，加仓拉开间隔，最好10点以上
+放弃平庸是机会</p>
+<p>问自己打算持有多久</p>
+<p>大部分时间震荡，或下跌，少时间涨，且长的快，定价突破后买入，不错过</p>
+<p>v形反转，或下跌时间不够长的反转，反转时只买入一次，设紧密止损？反弹到关键点
+抛出部分，突破后再买回来？
+v形反正结合支撑买入？
+回调深度够，时间不够，只买一笔？
+如买入后下跌，后续再买入，都当重新开仓，需满足买点条件
+市场整体低迷，谨慎开仓</p>
+<p>做反弹有一个重要原则，就是不要买在放量成交的区域，因为你如果和80%以上的人成本都差不多，就一定挣不到钱，一定要比80%的人买的更便宜10-20%才可以，如果买不到就放弃。</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2021-03-01</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/mysite-public/%E4%BA%A4%E6%98%93%E6%80%9D%E8%80%83/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://charlesren.github.io/mysite-public/%E4%BA%A4%E6%98%93%E6%80%9D%E8%80%83/" data-title="交易思考"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://charlesren.github.io/mysite-public/%E4%BA%A4%E6%98%93%E6%80%9D%E8%80%83/"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://charlesren.github.io/mysite-public/%E4%BA%A4%E6%98%93%E6%80%9D%E8%80%83/" data-title="交易思考"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://charlesren.github.io/mysite-public/%E4%BA%A4%E6%98%93%E6%80%9D%E8%80%83/" data-title="交易思考"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://charlesren.github.io/mysite-public/%E4%BA%A4%E6%98%93%E6%80%9D%E8%80%83/" data-title="交易思考"><i class="fab fa-weibo fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/mysite-public/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/mysite-public/deploy-yugabyte-on-k8s/" class="prev" rel="prev" title="Deploy Yugabyte On K8s"><i class="fas fa-angle-left fa-fw"></i>Deploy Yugabyte On K8s</a></div>
+</div>
+<div id="comments"></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.81.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://charlesren.github.io/mysite-public/" target="_blank">CharlesRen</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/mysite-public/js/theme.min.js"></script></body>
+</html>

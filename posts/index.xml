@@ -4,7 +4,14 @@
         <link>https://charlesren.github.io/mysite-public/posts/</link>
         <description>所有文章 | CharlesRen</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>renccn@gmail.com (CharlesRen)</managingEditor>
-            <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 23 Feb 2021 10:42:13 &#43;0800</lastBuildDate><atom:link href="https://charlesren.github.io/mysite-public/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 01 Mar 2021 09:52:33 &#43;0800</lastBuildDate><atom:link href="https://charlesren.github.io/mysite-public/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>交易思考</title>
+    <link>https://charlesren.github.io/mysite-public/%E4%BA%A4%E6%98%93%E6%80%9D%E8%80%83/</link>
+    <pubDate>Mon, 01 Mar 2021 09:52:33 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://charlesren.github.io/mysite-public/%E4%BA%A4%E6%98%93%E6%80%9D%E8%80%83/</guid>
+    <description><![CDATA[交易对照: 1.交易你的计划，计划你的交易（每只股挂好买单，止损单，想好各种可能，盘中不改计划，极力避免手动操作） 2.小周期大周期 3.等待机会]]></description>
+</item><item>
     <title>Deploy Yugabyte On K8s</title>
     <link>https://charlesren.github.io/mysite-public/deploy-yugabyte-on-k8s/</link>
     <pubDate>Tue, 23 Feb 2021 10:42:13 &#43;0800</pubDate>
