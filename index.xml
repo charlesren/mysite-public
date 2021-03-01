@@ -4,9 +4,16 @@
         <link>https://charlesren.github.io/mysite-public/</link>
         <description>关于 LoveIt 主题</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>renccn@gmail.com (CharlesRen)</managingEditor>
-            <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 01 Mar 2021 09:52:33 &#43;0800</lastBuildDate>
+            <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 01 Mar 2021 16:18:42 &#43;0800</lastBuildDate>
             <atom:link href="https://charlesren.github.io/mysite-public/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>定投ETF</title>
+    <link>https://charlesren.github.io/mysite-public/%E5%AE%9A%E6%8A%95etf/</link>
+    <pubDate>Mon, 01 Mar 2021 16:18:42 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://charlesren.github.io/mysite-public/%E5%AE%9A%E6%8A%95etf/</guid>
+    <description><![CDATA[1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70]]></description>
+</item><item>
     <title>交易思考</title>
     <link>https://charlesren.github.io/mysite-public/%E4%BA%A4%E6%98%93%E6%80%9D%E8%80%83/</link>
     <pubDate>Mon, 01 Mar 2021 09:52:33 &#43;0800</pubDate>
@@ -69,12 +76,5 @@
     <author>作者</author>
     <guid>https://charlesren.github.io/mysite-public/centos8%E5%AE%89%E8%A3%85vnc/</guid>
     <description><![CDATA[Centos8 配置VNC 安装 TigerVNC server 1 dnf install tigervnc-server 防火墙放行VNC服务 1 2 3 firewall-cmd --add-service=vnc-server --permanent firewall-cmd --reload 配置VNC 用户 vi /etc/tigervnc/vncserver.users 添加用户，如： :1=root 配置分辨率 mkdir $HOME/.vnc vi $HOME/.vnc/config 1 geometry=1920x1080 设置VNC用户密码 1]]></description>
-</item><item>
-    <title>hugo的使用</title>
-    <link>https://charlesren.github.io/mysite-public/hugo%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
-    <pubDate>Thu, 26 Nov 2020 16:45:15 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://charlesren.github.io/mysite-public/hugo%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
-    <description><![CDATA[参考 https://www.adamormsby.com/posts/how-to-set-up-a-hugo-site-on-github-pages-with-submodules/ 安装hugo github 下载linux安装包 注意：下载extend版 解压后把二进制文件复制到/usr/bin/ create new site 1 2 #### hugo new site [SITE_NAME] hugo new site mysite github 建新]]></description>
 </item></channel>
 </rss>
