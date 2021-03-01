@@ -4,9 +4,16 @@
         <link>https://charlesren.github.io/mysite-public/</link>
         <description>关于 LoveIt 主题</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>renccn@gmail.com (CharlesRen)</managingEditor>
-            <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 01 Mar 2021 16:18:42 &#43;0800</lastBuildDate>
+            <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 01 Mar 2021 16:23:37 &#43;0800</lastBuildDate>
             <atom:link href="https://charlesren.github.io/mysite-public/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>学股笔记</title>
+    <link>https://charlesren.github.io/mysite-public/%E5%AD%A6%E8%82%A1%E7%AC%94%E8%AE%B0/</link>
+    <pubDate>Mon, 01 Mar 2021 16:23:37 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://charlesren.github.io/mysite-public/%E5%AD%A6%E8%82%A1%E7%AC%94%E8%AE%B0/</guid>
+    <description><![CDATA[矩形虽为持续形态，通常只是休整，但需注意其是否会演变为反转形态。如双重或三重底或顶。尤其是在大趋势持续很长时间的时候。 矩形模式中，交易量是值]]></description>
+</item><item>
     <title>定投ETF</title>
     <link>https://charlesren.github.io/mysite-public/%E5%AE%9A%E6%8A%95etf/</link>
     <pubDate>Mon, 01 Mar 2021 16:18:42 &#43;0800</pubDate>
@@ -69,12 +76,5 @@
     <author>作者</author>
     <guid>https://charlesren.github.io/mysite-public/forced-to-change-expired-password-when-using-ssh-key/</guid>
     <description><![CDATA[I am working in an environment where I have an account on multiple linux machines where accounts and passwords are managed independently (no active directory/LDAP/etc) and passwords expire every 30 days. As such, I thought it would be easier to manage my authentication using ssh keys. I am able to authenticate using my ssh keys just fine. However, I found that when my password expires, I am prompted to change]]></description>
-</item><item>
-    <title>Centos8安装VNC</title>
-    <link>https://charlesren.github.io/mysite-public/centos8%E5%AE%89%E8%A3%85vnc/</link>
-    <pubDate>Mon, 30 Nov 2020 16:52:55 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://charlesren.github.io/mysite-public/centos8%E5%AE%89%E8%A3%85vnc/</guid>
-    <description><![CDATA[Centos8 配置VNC 安装 TigerVNC server 1 dnf install tigervnc-server 防火墙放行VNC服务 1 2 3 firewall-cmd --add-service=vnc-server --permanent firewall-cmd --reload 配置VNC 用户 vi /etc/tigervnc/vncserver.users 添加用户，如： :1=root 配置分辨率 mkdir $HOME/.vnc vi $HOME/.vnc/config 1 geometry=1920x1080 设置VNC用户密码 1]]></description>
 </item></channel>
 </rss>
