@@ -2,7 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://charlesren.github.io/mysite-public/categories/</loc><lastmod>2021-03-03T09:02:21&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://charlesren.github.io/mysite-public/categories/</loc><lastmod>2021-03-03T09:18:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://charlesren.github.io/mysite-public/en/categories/"
@@ -11,7 +11,7 @@
                     hreflang="zh-cn"
                     href="https://charlesren.github.io/mysite-public/categories/"
                     /></url><url>
-            <loc>https://charlesren.github.io/mysite-public/</loc><lastmod>2021-03-03T09:02:21&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://charlesren.github.io/mysite-public/</loc><lastmod>2021-03-03T09:18:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://charlesren.github.io/mysite-public/en/"
@@ -20,9 +20,11 @@
                     hreflang="zh-cn"
                     href="https://charlesren.github.io/mysite-public/"
                     /></url><url>
+            <loc>https://charlesren.github.io/mysite-public/categories/live/</loc><lastmod>2021-03-03T09:18:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://charlesren.github.io/mysite-public/posts/</loc><lastmod>2021-03-03T09:18:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://charlesren.github.io/mysite-public/%E4%BF%9D%E9%99%A9%E9%85%8D%E7%BD%AE/</loc><lastmod>2021-03-03T09:18:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://charlesren.github.io/mysite-public/tags/investment/</loc><lastmod>2021-03-03T09:02:21&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://charlesren.github.io/mysite-public/categories/investment/</loc><lastmod>2021-03-03T09:02:21&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://charlesren.github.io/mysite-public/posts/</loc><lastmod>2021-03-03T09:02:21&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://charlesren.github.io/mysite-public/sina%E8%A1%8C%E6%83%85%E8%8E%B7%E5%8F%96/</loc><lastmod>2021-03-03T09:02:21&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://charlesren.github.io/mysite-public/tags/</loc><lastmod>2021-03-03T09:02:21&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"

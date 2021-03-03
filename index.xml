@@ -4,9 +4,16 @@
         <link>https://charlesren.github.io/mysite-public/</link>
         <description>关于 LoveIt 主题</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>renccn@gmail.com (CharlesRen)</managingEditor>
-            <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 03 Mar 2021 09:02:21 &#43;0800</lastBuildDate>
+            <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 03 Mar 2021 09:18:00 &#43;0800</lastBuildDate>
             <atom:link href="https://charlesren.github.io/mysite-public/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>保险配置</title>
+    <link>https://charlesren.github.io/mysite-public/%E4%BF%9D%E9%99%A9%E9%85%8D%E7%BD%AE/</link>
+    <pubDate>Wed, 03 Mar 2021 09:18:00 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://charlesren.github.io/mysite-public/%E4%BF%9D%E9%99%A9%E9%85%8D%E7%BD%AE/</guid>
+    <description><![CDATA[重疾 确诊立即给付 中老年买到终身 多次理赔 豁免 医疗险做重疾额度补充 孩子重疾买到30岁，白血病，肿瘤多买 寿险 买了寿险可以不买意外险，因为寿险包含疾]]></description>
+</item><item>
     <title>Sina行情获取</title>
     <link>https://charlesren.github.io/mysite-public/sina%E8%A1%8C%E6%83%85%E8%8E%B7%E5%8F%96/</link>
     <pubDate>Wed, 03 Mar 2021 09:02:21 &#43;0800</pubDate>
@@ -69,12 +76,5 @@
     <author>作者</author>
     <guid>https://charlesren.github.io/mysite-public/%E5%AE%89%E8%A3%85emby/</guid>
     <description><![CDATA[docker pull emby/embyserver 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 # cat emby.sh docker run -d \ --name embyserver \ --volume /root/emby/programdata:/config \ --volume /data/Entbak:/mnt/Entbak \ --volume /data/Video:/mnt/Video \ --volume /data/Moives:/mnt/Moives \ --volume /data/Pictures:/mnt/Pictures \ --volume /data/Music:/mnt/Music \ --volume /data/Photos:/mnt/Photos \ --volume /data/Private:/mnt/Private \ --volume /data/TV:/mnt/TV \ --publish 8096:8096 \ --publish 8920:8920 \ --env UID=0 \ --env GID=0]]></description>
-</item><item>
-    <title>Gitlab的使用</title>
-    <link>https://charlesren.github.io/mysite-public/gitlab%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
-    <pubDate>Tue, 19 Jan 2021 16:09:22 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://charlesren.github.io/mysite-public/gitlab%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
-    <description><![CDATA[0.把用户是公钥导入gitlab；hosts文件加入git服务器解析 Attention: 注意remote url类型 1.在需要保存仓库的父目录下 1 2 3 4 5 6 7 8]]></description>
 </item></channel>
 </rss>
