@@ -4,7 +4,14 @@
         <link>https://charlesren.github.io/mysite-public/posts/</link>
         <description>所有文章 | CharlesRen</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>renccn@gmail.com (CharlesRen)</managingEditor>
-            <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 01 Mar 2021 16:23:37 &#43;0800</lastBuildDate><atom:link href="https://charlesren.github.io/mysite-public/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 03 Mar 2021 09:02:21 &#43;0800</lastBuildDate><atom:link href="https://charlesren.github.io/mysite-public/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Sina行情获取</title>
+    <link>https://charlesren.github.io/mysite-public/sina%E8%A1%8C%E6%83%85%E8%8E%B7%E5%8F%96/</link>
+    <pubDate>Wed, 03 Mar 2021 09:02:21 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://charlesren.github.io/mysite-public/sina%E8%A1%8C%E6%83%85%E8%8E%B7%E5%8F%96/</guid>
+    <description><![CDATA[参考 https://blog.csdn.net/luanpeng825485697/article/details/78442062 https://blog.csdn.net/wqy161109/article/details/80052716 请求http://hq.sinajs.cn/list=sh601006 返回： var hq_str_sh601006=&ldquo;大秦铁路]]></description>
+</item><item>
     <title>学股笔记</title>
     <link>https://charlesren.github.io/mysite-public/%E5%AD%A6%E8%82%A1%E7%AC%94%E8%AE%B0/</link>
     <pubDate>Mon, 01 Mar 2021 16:23:37 &#43;0800</pubDate>
@@ -67,12 +74,5 @@
     <author>作者</author>
     <guid>https://charlesren.github.io/mysite-public/gitlab%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
     <description><![CDATA[0.把用户是公钥导入gitlab；hosts文件加入git服务器解析 Attention: 注意remote url类型 1.在需要保存仓库的父目录下 1 2 3 4 5 6 7 8]]></description>
-</item><item>
-    <title>Forced to Change Expired Password When Using Ssh Key</title>
-    <link>https://charlesren.github.io/mysite-public/forced-to-change-expired-password-when-using-ssh-key/</link>
-    <pubDate>Fri, 08 Jan 2021 11:05:02 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://charlesren.github.io/mysite-public/forced-to-change-expired-password-when-using-ssh-key/</guid>
-    <description><![CDATA[I am working in an environment where I have an account on multiple linux machines where accounts and passwords are managed independently (no active directory/LDAP/etc) and passwords expire every 30 days. As such, I thought it would be easier to manage my authentication using ssh keys. I am able to authenticate using my ssh keys just fine. However, I found that when my password expires, I am prompted to change]]></description>
 </item></channel>
 </rss>
