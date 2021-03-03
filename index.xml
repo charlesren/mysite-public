@@ -4,9 +4,30 @@
         <link>https://charlesren.github.io/mysite-public/</link>
         <description>关于 LoveIt 主题</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>renccn@gmail.com (CharlesRen)</managingEditor>
-            <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 03 Mar 2021 15:39:39 &#43;0800</lastBuildDate>
+            <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 03 Mar 2021 16:17:13 &#43;0800</lastBuildDate>
             <atom:link href="https://charlesren.github.io/mysite-public/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Aria2 on Docker</title>
+    <link>https://charlesren.github.io/mysite-public/aria2-on-docker/</link>
+    <pubDate>Wed, 03 Mar 2021 16:17:13 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://charlesren.github.io/mysite-public/aria2-on-docker/</guid>
+    <description><![CDATA[1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  [root@192 conf]# cat aria2.sh #mkdir -p ~/aria2/conf #cd ~/aria2/conf #touch aria2.conf #touch aria2.session #touch aria2.session #touch dht.dat #touch dht6.dat docker run -d \ --name aria2-with-webui \ -p 6800:6800 \ -p 6880:80 \ -v /data/Downloads:/data \ -v ~/aria2/conf:/conf \ -e PGID=0 \ -e PUID=0 \ abcminiuser/docker-aria2-with-webui:latest-ng   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39  [root@192 conf]# cat aria2.]]></description>
+</item><item>
+    <title>HP3636打印机设置</title>
+    <link>https://charlesren.github.io/mysite-public/hp3636%E6%89%93%E5%8D%B0%E6%9C%BA%E8%AE%BE%E7%BD%AE/</link>
+    <pubDate>Wed, 03 Mar 2021 16:12:43 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://charlesren.github.io/mysite-public/hp3636%E6%89%93%E5%8D%B0%E6%9C%BA%E8%AE%BE%E7%BD%AE/</guid>
+    <description><![CDATA[https://weibo.com/tv/v/IhQSsEBsS?fid=1034:4442542427565493 无线打印机直连打印方法 https://v.youku.com/v_show/id_XMzc1MzY4MzA0MA==.html?spm=a2hzp.8244740.0.0 长按打印机的叉还有WiFi键 电源灯闪烁松手哈 然后手机直接连接打印机的WiFi哈 然后打开手机设置找到wifi名字是D]]></description>
+</item><item>
+    <title>Plex on Docker</title>
+    <link>https://charlesren.github.io/mysite-public/plex-on-docker/</link>
+    <pubDate>Wed, 03 Mar 2021 16:07:25 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://charlesren.github.io/mysite-public/plex-on-docker/</guid>
+    <description><![CDATA[1  docker run -d --restart=always --net=host --privileged --name plex -h rencc -v /Users/rencc/Plex:/config -v /Users/rencc/Downloads:/data -p 32400:32400 -e PUID=501 -e PGID=20 -e TZ=Asia/Shanghai linuxserver/plex   ]]></description>
+</item><item>
     <title>Gitlab容器化部署</title>
     <link>https://charlesren.github.io/mysite-public/gitlab%E5%AE%B9%E5%99%A8%E5%8C%96%E9%83%A8%E7%BD%B2/</link>
     <pubDate>Wed, 03 Mar 2021 15:39:39 &#43;0800</pubDate>
@@ -55,26 +76,5 @@
     <author>作者</author>
     <guid>https://charlesren.github.io/mysite-public/%E4%BF%9D%E9%99%A9%E9%85%8D%E7%BD%AE/</guid>
     <description><![CDATA[重疾 确诊立即给付 中老年买到终身 多次理赔 豁免 医疗险做重疾额度补充 孩子重疾买到30岁，白血病，肿瘤多买 寿险 买了寿险可以不买意外险，因为寿险包含疾]]></description>
-</item><item>
-    <title>Sina行情获取</title>
-    <link>https://charlesren.github.io/mysite-public/sina%E8%A1%8C%E6%83%85%E8%8E%B7%E5%8F%96/</link>
-    <pubDate>Wed, 03 Mar 2021 09:02:21 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://charlesren.github.io/mysite-public/sina%E8%A1%8C%E6%83%85%E8%8E%B7%E5%8F%96/</guid>
-    <description><![CDATA[参考 https://blog.csdn.net/luanpeng825485697/article/details/78442062 https://blog.csdn.net/wqy161109/article/details/80052716 请求http://hq.sinajs.cn/list=sh601006 返回： var hq_str_sh601006=&ldquo;大秦铁路]]></description>
-</item><item>
-    <title>学股笔记</title>
-    <link>https://charlesren.github.io/mysite-public/%E5%AD%A6%E8%82%A1%E7%AC%94%E8%AE%B0/</link>
-    <pubDate>Mon, 01 Mar 2021 16:23:37 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://charlesren.github.io/mysite-public/%E5%AD%A6%E8%82%A1%E7%AC%94%E8%AE%B0/</guid>
-    <description><![CDATA[矩形虽为持续形态，通常只是休整，但需注意其是否会演变为反转形态。如双重或三重底或顶。尤其是在大趋势持续很长时间的时候。 矩形模式中，交易量是值]]></description>
-</item><item>
-    <title>定投ETF</title>
-    <link>https://charlesren.github.io/mysite-public/%E5%AE%9A%E6%8A%95etf/</link>
-    <pubDate>Mon, 01 Mar 2021 16:18:42 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://charlesren.github.io/mysite-public/%E5%AE%9A%E6%8A%95etf/</guid>
-    <description><![CDATA[1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70]]></description>
 </item></channel>
 </rss>
