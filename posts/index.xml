@@ -4,7 +4,14 @@
         <link>https://charlesren.github.io/mysite-public/posts/</link>
         <description>所有文章 | CharlesRen</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>renccn@gmail.com (CharlesRen)</managingEditor>
-            <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 03 Mar 2021 10:13:00 &#43;0800</lastBuildDate><atom:link href="https://charlesren.github.io/mysite-public/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 03 Mar 2021 10:18:28 &#43;0800</lastBuildDate><atom:link href="https://charlesren.github.io/mysite-public/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>家庭强电</title>
+    <link>https://charlesren.github.io/mysite-public/%E5%AE%B6%E5%BA%AD%E5%BC%BA%E7%94%B5/</link>
+    <pubDate>Wed, 03 Mar 2021 10:18:28 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://charlesren.github.io/mysite-public/%E5%AE%B6%E5%BA%AD%E5%BC%BA%E7%94%B5/</guid>
+    <description><![CDATA[强电箱配置 1 2 3 4 5 6 7 8 9 10 11 12 http://post.smzdm.com/p/75172/ http://www.chiphell.com/thread-1358982-1-1.html http://www.chiphell.com/thread-1339180-1-4.html http://www.chiphell.com/thread-1338417-1-4.html http://www.chiphell.com/thread-1265501-1-10.html http://www.chiphell.com/thread-1313120-1-9.html http://www.chiphell.com/thread-1321814-1-8.html http://www.chiphell.com/thread-1268929-1-8.html http://www.chiphell.com/thread-1321847-2-5.html http://www.chiphell.com/thread-1340552-1-5.html http://www.chiphell.com/thread-1340264-1-5.html http://www.chiphell.com/thread-1040552-3-1.html 低压断路器产品 1 2 http://www.chiphell.com/thread-1354102-1-1.html http://www.chiphell.com/thread-1040552-1-1.html 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30]]></description>
+</item><item>
     <title>家庭网络规划</title>
     <link>https://charlesren.github.io/mysite-public/%E5%AE%B6%E5%BA%AD%E7%BD%91%E7%BB%9C%E8%A7%84%E5%88%92/</link>
     <pubDate>Wed, 03 Mar 2021 10:13:00 &#43;0800</pubDate>
@@ -67,12 +74,5 @@
     <author>作者</author>
     <guid>https://charlesren.github.io/mysite-public/centos8%E5%B7%A5%E4%BD%9C%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
     <description><![CDATA[配置网络 查看并连接设备 nmcli d nmcli d connect xxx 查看并配置连接 nmcli c nmcli c modify ens192 ipv4.address x.x.x.x/24 ipv4.gateway x.x.x.x ipv4.dns 8.8.8.8 ipv4.method manual connection.autoconnect yes 114.114.114.114 cat not resolve gcr.io etc, but 8.8.8.8 can 启用连接 nmcli c reload nmcli c up xxx Centos8 源设置 1 dnf config-manager --add-repo https://mirrors.aliyun.com/repo/Centos-8.repo 安]]></description>
-</item><item>
-    <title>ASUS ROG STRIX Z390 I GAMING Hakintosh</title>
-    <link>https://charlesren.github.io/mysite-public/asus-rog-strix-z390-i-gaming-hakintosh/</link>
-    <pubDate>Wed, 20 Jan 2021 10:50:53 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://charlesren.github.io/mysite-public/asus-rog-strix-z390-i-gaming-hakintosh/</guid>
-    <description><![CDATA[配置如下: 散热 海盗船h60 378.9 电源 海盗船sf600 698.9 机箱 追风者217e 700 主板 华硕rog z390i 1869 显示器 dell2419 1498.5 硬盘 三星970evo500g 879 硅脂 猫头鹰n]]></description>
 </item></channel>
 </rss>
