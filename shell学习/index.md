@@ -51,4 +51,24 @@ echo mem2 is $mem2
 三种方法我们可以看到，方法1、方法3对小数点后面的值不会四舍五入，而方法2(awk)方法使用printf 时会对小数点（浮点运算）的值四舍五入进位。所以浮点运行时还是建议使用awk处理。不过在取整数时，awk默认也是不会四舍五入的。
 
 
+# tail 
+tail命令语法为：
+
+     tail [ -f ] [ -c Number | -n Number | -m Number | -b Number | -k Number ] [ File ]
+
+     To Display Lines in Reverse Order
+
+     tail [ -r ] [ -n Number ] [ File ]
+
+
+
+tail 命令从指定点开始将文件写到标准输出.
+
+number变量指定多少units写到标准输出。注意是units，不是行。
+
+number的值可以是 positive or negative integer。如果值是+n,从文件开始算起，第n个units及以后的内容将被输出到标准输出。如果值是-n,从文件结尾算起，第n个units及以后的内容将被输出到标准输出。如果值是n，不带+或—，等同于-n。
+
+如果加-n 参数，则units为行。
+
+如果没有加任何参数，tail将读取文件最后10行并写到标准输出，相当于tail -n 10
 

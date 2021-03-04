@@ -5,32 +5,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>Shell学习 - CharlesRen</title><meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Shell学习" />
-<meta property="og:description" content="变量嵌套 1 2 3 4 5 6 7 8 [root@renccblj ~]# a=b [root@renccblj ~]# c=a [root@renccblj ~]# echo ${!c} b [root@renccblj ~]# [root@renccblj ~]# eval echo $&#34;${c}&#34; a [root@renccblj ~]# Aix下只能用 eval 算术精度 取小数点后两位 1 2 3 4 5 6 [root@renccblj ~]# echo &#34;scale=2; 5/3 &#34; | bc 1.66 [root@renccblj ~]# [root@renccblj" />
+        <title>高并发应用TCP等参数优化 - CharlesRen</title><meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="高并发应用TCP等参数优化" />
+<meta property="og:description" content="1 2 cp /etc/sysctl.conf /etc/sysctl.conf.bak vim /etc/sysctl.conf net.ipv4.tcp_tw_reuse = 1 net.ipv4.tcp_fin_timeout = 30 net.ipv4.ip_local_port_range = 1024 65000 net.ipv4.tcp_max_tw_buckets = 45000 1 2 3 4 5 6 sysctl -p /etc/sysctl.conf sysctl -w net.ipv4.route.flush=1 sysctl -a |grep net.ipv4.tcp_tw_reuse sysctl -a |grep net.ipv4.tcp_fin_timeout sysctl -a |grep net.ipv4.tcp_max_tw_buckets sysctl -a |grep net.ipv4.ip_local_port_range 1 2 cp /etc/security/limits.conf /etc/security/limits.conf.bak vim /etc/securiy/limits.conf soft nofile 65530 hard nofile 65530" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://charlesren.github.io/mysite-public/shell%E5%AD%A6%E4%B9%A0/" /><meta property="og:image" content="https://charlesren.github.io/logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-03-04T14:11:09&#43;08:00" />
-<meta property="article:modified_time" content="2021-03-04T14:11:09&#43;08:00" />
+<meta property="og:url" content="https://charlesren.github.io/mysite-public/%E9%AB%98%E5%B9%B6%E5%8F%91%E5%BA%94%E7%94%A8tcp%E7%AD%89%E5%8F%82%E6%95%B0%E4%BC%98%E5%8C%96/" /><meta property="og:image" content="https://charlesren.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-03-04T15:34:02&#43;08:00" />
+<meta property="article:modified_time" content="2021-03-04T15:34:02&#43;08:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://charlesren.github.io/logo.png"/>
 
-<meta name="twitter:title" content="Shell学习"/>
-<meta name="twitter:description" content="变量嵌套 1 2 3 4 5 6 7 8 [root@renccblj ~]# a=b [root@renccblj ~]# c=a [root@renccblj ~]# echo ${!c} b [root@renccblj ~]# [root@renccblj ~]# eval echo $&#34;${c}&#34; a [root@renccblj ~]# Aix下只能用 eval 算术精度 取小数点后两位 1 2 3 4 5 6 [root@renccblj ~]# echo &#34;scale=2; 5/3 &#34; | bc 1.66 [root@renccblj ~]# [root@renccblj"/>
+<meta name="twitter:title" content="高并发应用TCP等参数优化"/>
+<meta name="twitter:description" content="1 2 cp /etc/sysctl.conf /etc/sysctl.conf.bak vim /etc/sysctl.conf net.ipv4.tcp_tw_reuse = 1 net.ipv4.tcp_fin_timeout = 30 net.ipv4.ip_local_port_range = 1024 65000 net.ipv4.tcp_max_tw_buckets = 45000 1 2 3 4 5 6 sysctl -p /etc/sysctl.conf sysctl -w net.ipv4.route.flush=1 sysctl -a |grep net.ipv4.tcp_tw_reuse sysctl -a |grep net.ipv4.tcp_fin_timeout sysctl -a |grep net.ipv4.tcp_max_tw_buckets sysctl -a |grep net.ipv4.ip_local_port_range 1 2 cp /etc/security/limits.conf /etc/security/limits.conf.bak vim /etc/securiy/limits.conf soft nofile 65530 hard nofile 65530"/>
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://charlesren.github.io/mysite-public/shell%E5%AD%A6%E4%B9%A0/" /><link rel="prev" href="https://charlesren.github.io/mysite-public/aria2-on-docker/" /><link rel="next" href="https://charlesren.github.io/mysite-public/%E9%AB%98%E5%B9%B6%E5%8F%91%E5%BA%94%E7%94%A8tcp%E7%AD%89%E5%8F%82%E6%95%B0%E4%BC%98%E5%8C%96/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/mysite-public/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://charlesren.github.io/mysite-public/%E9%AB%98%E5%B9%B6%E5%8F%91%E5%BA%94%E7%94%A8tcp%E7%AD%89%E5%8F%82%E6%95%B0%E4%BC%98%E5%8C%96/" /><link rel="prev" href="https://charlesren.github.io/mysite-public/shell%E5%AD%A6%E4%B9%A0/" /><link rel="next" href="https://charlesren.github.io/mysite-public/%E8%87%AA%E5%8A%A8%E5%B0%9D%E8%AF%95%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95%E6%9C%8D%E5%8A%A1%E5%99%A8/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/mysite-public/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Shell学习",
+        "headline": "高并发应用TCP等参数优化",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/charlesren.github.io\/mysite-public\/shell%E5%AD%A6%E4%B9%A0\/"
-        },"image": ["https:\/\/charlesren.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  605 ,
-        "url": "https:\/\/charlesren.github.io\/mysite-public\/shell%E5%AD%A6%E4%B9%A0\/","datePublished": "2021-03-04T14:11:09+08:00","dateModified": "2021-03-04T14:11:09+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@id": "https:\/\/charlesren.github.io\/mysite-public\/%E9%AB%98%E5%B9%B6%E5%8F%91%E5%BA%94%E7%94%A8tcp%E7%AD%89%E5%8F%82%E6%95%B0%E4%BC%98%E5%8C%96\/"
+        },"image": ["https:\/\/charlesren.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  61 ,
+        "url": "https:\/\/charlesren.github.io\/mysite-public\/%E9%AB%98%E5%B9%B6%E5%8F%91%E5%BA%94%E7%94%A8tcp%E7%AD%89%E5%8F%82%E6%95%B0%E4%BC%98%E5%8C%96\/","datePublished": "2021-03-04T15:34:02+08:00","dateModified": "2021-03-04T15:34:02+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/charlesren.github.io\/images\/avatar.png"},"author": {
                 "@type": "Person",
@@ -47,7 +47,7 @@
         </div>
         <div class="menu">
             <div class="menu-inner"><a class="menu-item" href="/mysite-public/posts/"> 所有文章 </a><a class="menu-item" href="/mysite-public/tags/"> 标签 </a><a class="menu-item" href="/mysite-public/categories/"> 分类 </a><a class="menu-item" href="/mysite-public/categories/documentation/"> 文档 </a><a class="menu-item" href="/mysite-public/about/"> 关于 </a><a class="menu-item" href="https://github.com/charlesren" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
-                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/mysite-public/shell%E5%AD%A6%E4%B9%A0/" selected>简体中文</option></select>
+                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/mysite-public/%E9%AB%98%E5%B9%B6%E5%8F%91%E5%BA%94%E7%94%A8tcp%E7%AD%89%E5%8F%82%E6%95%B0%E4%BC%98%E5%8C%96/" selected>简体中文</option></select>
                     </a><span class="menu-item search" id="search-desktop">
                         <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
                         <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
@@ -94,7 +94,7 @@
                 </div><a class="menu-item" href="/mysite-public/posts/" title="">所有文章</a><a class="menu-item" href="/mysite-public/tags/" title="">标签</a><a class="menu-item" href="/mysite-public/categories/" title="">分类</a><a class="menu-item" href="/mysite-public/categories/documentation/" title="">文档</a><a class="menu-item" href="/mysite-public/about/" title="">关于</a><a class="menu-item" href="https://github.com/charlesren" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
                 <i class="fas fa-adjust fa-fw"></i>
             </a><a href="javascript:void(0);" class="menu-item" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
-                    <select class="language-select" onchange="location = this.value;"><option value="/mysite-public/shell%E5%AD%A6%E4%B9%A0/" selected>简体中文</option></select>
+                    <select class="language-select" onchange="location = this.value;"><option value="/mysite-public/%E9%AB%98%E5%B9%B6%E5%8F%91%E5%BA%94%E7%94%A8tcp%E7%AD%89%E5%8F%82%E6%95%B0%E4%BC%98%E5%8C%96/" selected>简体中文</option></select>
                 </a></div>
     </div>
 </header>
@@ -108,42 +108,32 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">目录</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animated flipInX">Shell学习</h1><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animated flipInX">高并发应用TCP等参数优化</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://charlesren.github.io/mysite-public/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>CharlesRen</a></span>&nbsp;<span class="post-category">收录于 <a href="/mysite-public/categories/tech/"><i class="far fa-folder fa-fw"></i>Tech</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-03-04">2021-03-04</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 605 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-03-04">2021-03-04</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 61 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
                     <span><i class="details-icon fas fa-angle-right"></i></span>
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
-            </div><div class="content" id="content"><h1 id="变量嵌套">变量嵌套</h1>
-<div class="highlight"><div class="chroma">
+            </div><div class="content" id="content"><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">[root@renccblj ~]# a=b
-[root@renccblj ~]# c=a
-[root@renccblj ~]# echo ${!c}
-b
-[root@renccblj ~]#
-[root@renccblj ~]# eval echo $&#34;${c}&#34;
-a
-[root@renccblj ~]#
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">cp  /etc/sysctl.conf  /etc/sysctl.conf.bak
+vim /etc/sysctl.conf
 </code></pre></td></tr></table>
 </div>
-</div><p>Aix下只能用 eval</p>
-<h1 id="算术精度">算术精度</h1>
-<p>取小数点后两位</p>
+</div><blockquote>
+<p>net.ipv4.tcp_tw_reuse = 1</p>
+<p>net.ipv4.tcp_fin_timeout = 30</p>
+<p>net.ipv4.ip_local_port_range = 1024 65000</p>
+<p>net.ipv4.tcp_max_tw_buckets = 45000</p>
+</blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -154,70 +144,34 @@ a
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">[root@renccblj ~]# echo &#34;scale=2; 5/3 &#34; | bc
-1.66
-[root@renccblj ~]#
-[root@renccblj ~]# echo &#34;scale=2; 1/3 &#34; | bc
-.33
-[root@renccblj ~]#
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">sysctl  -p  /etc/sysctl.conf
+sysctl -w net.ipv4.route.flush=1
+sysctl  -a  |grep  net.ipv4.tcp_tw_reuse
+sysctl  -a  |grep  net.ipv4.tcp_fin_timeout
+sysctl  -a  |grep  net.ipv4.tcp_max_tw_buckets
+sysctl  -a  |grep  net.ipv4.ip_local_port_range
 </code></pre></td></tr></table>
 </div>
-</div><p>发现零点几前面的0不显示，解决方法如下</p>
-<p><a href="http://www.361way.com/linux-bc-point-zero/4960.html">http://www.361way.com/linux-bc-point-zero/4960.html</a></p>
-<div class="highlight"><div class="chroma">
+</div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
-</span><span class="cp"></span><span class="c1">#方法1</span>
-<span class="nv">res1</span><span class="o">=</span><span class="k">$(</span><span class="nb">printf</span> <span class="s2">&#34;%.2f&#34;</span> <span class="sb">`</span><span class="nb">echo</span> <span class="s2">&#34;scale=2;1/3&#34;</span><span class="p">|</span>bc<span class="sb">`</span><span class="k">)</span>
-<span class="nv">res2</span><span class="o">=</span><span class="k">$(</span><span class="nb">printf</span> <span class="s2">&#34;%.2f&#34;</span> <span class="sb">`</span><span class="nb">echo</span> <span class="s2">&#34;scale=2;5/3&#34;</span><span class="p">|</span>bc<span class="sb">`</span><span class="k">)</span>
-<span class="c1">#方法2</span>
-<span class="c1">#v=$(echo $big $small | awk &#39;{ printf &#34;%0.2f\n&#34; ,$1/$2}&#39;)</span>
-<span class="nv">v1</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span> <span class="m">1</span> <span class="m">3</span> <span class="p">|</span> awk <span class="s1">&#39;{ printf &#34;%0.2f\n&#34; ,$1/$2}&#39;</span><span class="k">)</span>
-<span class="nv">v2</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span> <span class="m">5</span> <span class="m">3</span> <span class="p">|</span> awk <span class="s1">&#39;{ printf &#34;%0.2f\n&#34; ,$1/$2}&#39;</span><span class="k">)</span>
-<span class="c1">#方法3 </span>
-<span class="nv">mem1</span><span class="o">=</span><span class="sb">`</span><span class="nb">echo</span> <span class="s2">&#34;scale=2; a=1/3; if (length(a)==scale(a)) print 0;print a &#34;</span><span class="p">|</span>bc<span class="sb">`</span>
-<span class="nv">mem2</span><span class="o">=</span><span class="sb">`</span><span class="nb">echo</span> <span class="s2">&#34;scale=2; a=5/3; if (length(a)==scale(a)) print 0;print a &#34;</span><span class="p">|</span>bc<span class="sb">`</span>
-<span class="nb">echo</span> res1 is <span class="nv">$res1</span>
-<span class="nb">echo</span> res2 is <span class="nv">$res2</span>
-<span class="nb">echo</span> v1 is <span class="nv">$v1</span>
-<span class="nb">echo</span> v2 is <span class="nv">$v2</span>
-<span class="nb">echo</span> mem1 is <span class="nv">$mem1</span>
-<span class="nb">echo</span> mem2 is <span class="nv">$mem2</span>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">cp  /etc/security/limits.conf  /etc/security/limits.conf.bak
+vim /etc/securiy/limits.conf
 </code></pre></td></tr></table>
 </div>
-</div><p>三种方法我们可以看到，方法1、方法3对小数点后面的值不会四舍五入，而方法2(awk)方法使用printf 时会对小数点（浮点运算）的值四舍五入进位。所以浮点运行时还是建议使用awk处理。不过在取整数时，awk默认也是不会四舍五入的。</p>
-<h1 id="tail">tail</h1>
-<p>tail命令语法为：</p>
-<pre><code> tail [ -f ] [ -c Number | -n Number | -m Number | -b Number | -k Number ] [ File ]
-
- To Display Lines in Reverse Order
-
- tail [ -r ] [ -n Number ] [ File ]
-</code></pre>
-<p>tail 命令从指定点开始将文件写到标准输出.</p>
-<p>number变量指定多少units写到标准输出。注意是units，不是行。</p>
-<p>number的值可以是 positive or negative integer。如果值是+n,从文件开始算起，第n个units及以后的内容将被输出到标准输出。如果值是-n,从文件结尾算起，第n个units及以后的内容将被输出到标准输出。如果值是n，不带+或—，等同于-n。</p>
-<p>如果加-n 参数，则units为行。</p>
-<p>如果没有加任何参数，tail将读取文件最后10行并写到标准输出，相当于tail -n 10</p>
+</div><blockquote>
+<ul>
+<li>
+<p>soft nofile 65530</p>
+</li>
+<li>
+<p>hard nofile 65530</p>
+</li>
+</ul>
+</blockquote>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
@@ -228,10 +182,10 @@ a
         </div>
         <div class="post-info-line">
             <div class="post-info-md"><span>
-                            <a class="link-to-markdown" href="/mysite-public/shell%E5%AD%A6%E4%B9%A0/index.md" target="_blank">阅读原始文档</a>
+                            <a class="link-to-markdown" href="/mysite-public/%E9%AB%98%E5%B9%B6%E5%8F%91%E5%BA%94%E7%94%A8tcp%E7%AD%89%E5%8F%82%E6%95%B0%E4%BC%98%E5%8C%96/index.md" target="_blank">阅读原始文档</a>
                         </span></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://charlesren.github.io/mysite-public/shell%E5%AD%A6%E4%B9%A0/" data-title="Shell学习"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://charlesren.github.io/mysite-public/shell%E5%AD%A6%E4%B9%A0/"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://charlesren.github.io/mysite-public/shell%E5%AD%A6%E4%B9%A0/" data-title="Shell学习"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://charlesren.github.io/mysite-public/shell%E5%AD%A6%E4%B9%A0/" data-title="Shell学习"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://charlesren.github.io/mysite-public/shell%E5%AD%A6%E4%B9%A0/" data-title="Shell学习"><i class="fab fa-weibo fa-fw"></i></a></span>
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://charlesren.github.io/mysite-public/%E9%AB%98%E5%B9%B6%E5%8F%91%E5%BA%94%E7%94%A8tcp%E7%AD%89%E5%8F%82%E6%95%B0%E4%BC%98%E5%8C%96/" data-title="高并发应用TCP等参数优化"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://charlesren.github.io/mysite-public/%E9%AB%98%E5%B9%B6%E5%8F%91%E5%BA%94%E7%94%A8tcp%E7%AD%89%E5%8F%82%E6%95%B0%E4%BC%98%E5%8C%96/"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://charlesren.github.io/mysite-public/%E9%AB%98%E5%B9%B6%E5%8F%91%E5%BA%94%E7%94%A8tcp%E7%AD%89%E5%8F%82%E6%95%B0%E4%BC%98%E5%8C%96/" data-title="高并发应用TCP等参数优化"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://charlesren.github.io/mysite-public/%E9%AB%98%E5%B9%B6%E5%8F%91%E5%BA%94%E7%94%A8tcp%E7%AD%89%E5%8F%82%E6%95%B0%E4%BC%98%E5%8C%96/" data-title="高并发应用TCP等参数优化"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://charlesren.github.io/mysite-public/%E9%AB%98%E5%B9%B6%E5%8F%91%E5%BA%94%E7%94%A8tcp%E7%AD%89%E5%8F%82%E6%95%B0%E4%BC%98%E5%8C%96/" data-title="高并发应用TCP等参数优化"><i class="fab fa-weibo fa-fw"></i></a></span>
             </div>
         </div>
     </div>
@@ -243,8 +197,8 @@ a
         </section>
     </div>
 
-    <div class="post-nav"><a href="/mysite-public/aria2-on-docker/" class="prev" rel="prev" title="Aria2 on Docker"><i class="fas fa-angle-left fa-fw"></i>Aria2 on Docker</a>
-            <a href="/mysite-public/%E9%AB%98%E5%B9%B6%E5%8F%91%E5%BA%94%E7%94%A8tcp%E7%AD%89%E5%8F%82%E6%95%B0%E4%BC%98%E5%8C%96/" class="next" rel="next" title="高并发应用TCP等参数优化">高并发应用TCP等参数优化<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/mysite-public/shell%E5%AD%A6%E4%B9%A0/" class="prev" rel="prev" title="Shell学习"><i class="fas fa-angle-left fa-fw"></i>Shell学习</a>
+            <a href="/mysite-public/%E8%87%AA%E5%8A%A8%E5%B0%9D%E8%AF%95%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="next" rel="next" title="自动尝试密码登录服务器">自动尝试密码登录服务器<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id="comments"></div></article></div>
             </main><footer class="footer">
