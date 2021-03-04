@@ -4,9 +4,16 @@
         <link>https://charlesren.github.io/mysite-public/</link>
         <description>关于 LoveIt 主题</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>renccn@gmail.com (CharlesRen)</managingEditor>
-            <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 04 Mar 2021 16:31:47 &#43;0800</lastBuildDate>
+            <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 04 Mar 2021 17:07:43 &#43;0800</lastBuildDate>
             <atom:link href="https://charlesren.github.io/mysite-public/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Linux添加特权用户</title>
+    <link>https://charlesren.github.io/mysite-public/linux%E6%B7%BB%E5%8A%A0%E7%89%B9%E6%9D%83%E7%94%A8%E6%88%B7/</link>
+    <pubDate>Thu, 04 Mar 2021 17:07:43 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://charlesren.github.io/mysite-public/linux%E6%B7%BB%E5%8A%A0%E7%89%B9%E6%9D%83%E7%94%A8%E6%88%B7/</guid>
+    <description><![CDATA[在unix linux 系统中，系统通过uid 识别用户。 root 用户uid=0 gid=0，root用户是唯一的。 若其他用户与root用户uid,gid相同，就]]></description>
+</item><item>
     <title>SSH免密登录</title>
     <link>https://charlesren.github.io/mysite-public/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95/</link>
     <pubDate>Thu, 04 Mar 2021 16:31:47 &#43;0800</pubDate>
@@ -69,12 +76,5 @@
     <author>作者</author>
     <guid>https://charlesren.github.io/mysite-public/%E7%90%86%E6%83%B3%E7%9A%84%E4%BD%8F%E5%AE%85/</guid>
     <description><![CDATA[随心所欲，不受任何限制，包括，金钱，地理位置，气候条件，地形等等，任何条件都能满足 北纬18度左右（阳光充足，气候适宜），半山（海拔高，不会太]]></description>
-</item><item>
-    <title>热水循环</title>
-    <link>https://charlesren.github.io/mysite-public/%E7%83%AD%E6%B0%B4%E5%BE%AA%E7%8E%AF/</link>
-    <pubDate>Wed, 03 Mar 2021 10:25:05 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://charlesren.github.io/mysite-public/%E7%83%AD%E6%B0%B4%E5%BE%AA%E7%8E%AF/</guid>
-    <description><![CDATA[1 2 3 4 5 6 7 8 9 10 11 12 13 14 http://www.chiphell.com/thread-1340339-1-1.html至少全6分管，末端]]></description>
 </item></channel>
 </rss>
