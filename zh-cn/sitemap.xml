@@ -2,8 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://charlesren.github.io/mysite-public/aria2-on-docker/</loc><lastmod>2021-03-03T16:17:13&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://charlesren.github.io/mysite-public/categories/</loc><lastmod>2021-03-03T16:17:13&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://charlesren.github.io/mysite-public/categories/</loc><lastmod>2021-03-04T14:11:09&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://charlesren.github.io/mysite-public/en/categories/"
@@ -12,7 +11,7 @@
                     hreflang="zh-cn"
                     href="https://charlesren.github.io/mysite-public/categories/"
                     /></url><url>
-            <loc>https://charlesren.github.io/mysite-public/</loc><lastmod>2021-03-03T16:17:13&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://charlesren.github.io/mysite-public/</loc><lastmod>2021-03-04T14:11:09&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://charlesren.github.io/mysite-public/en/"
@@ -21,11 +20,14 @@
                     hreflang="zh-cn"
                     href="https://charlesren.github.io/mysite-public/"
                     /></url><url>
-            <loc>https://charlesren.github.io/mysite-public/posts/</loc><lastmod>2021-03-03T16:17:13&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://charlesren.github.io/mysite-public/categories/tools/</loc><lastmod>2021-03-03T16:17:13&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://charlesren.github.io/mysite-public/posts/</loc><lastmod>2021-03-04T14:11:09&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://charlesren.github.io/mysite-public/shell%E5%AD%A6%E4%B9%A0/</loc><lastmod>2021-03-04T14:11:09&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://charlesren.github.io/mysite-public/categories/tech/</loc><lastmod>2021-03-04T14:11:09&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://charlesren.github.io/mysite-public/aria2-on-docker/</loc><lastmod>2021-03-03T16:20:13&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://charlesren.github.io/mysite-public/categories/tools/</loc><lastmod>2021-03-03T16:20:13&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://charlesren.github.io/mysite-public/categories/device/</loc><lastmod>2021-03-03T16:12:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://charlesren.github.io/mysite-public/hp3636%E6%89%93%E5%8D%B0%E6%9C%BA%E8%AE%BE%E7%BD%AE/</loc><lastmod>2021-03-03T16:12:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://charlesren.github.io/mysite-public/plex-on-docker/</loc><lastmod>2021-03-03T16:07:25&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://charlesren.github.io/mysite-public/plex-on-docker/</loc><lastmod>2021-03-03T16:20:13&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://charlesren.github.io/mysite-public/gitlab%E5%AE%B9%E5%99%A8%E5%8C%96%E9%83%A8%E7%BD%B2/</loc><lastmod>2021-03-03T15:39:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://charlesren.github.io/mysite-public/categories/live/</loc><lastmod>2021-03-03T10:28:37&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://charlesren.github.io/mysite-public/%E7%90%86%E6%83%B3%E7%9A%84%E4%BD%8F%E5%AE%85/</loc><lastmod>2021-03-03T10:28:37&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
@@ -59,7 +61,6 @@
             <loc>https://charlesren.github.io/mysite-public/gitlab%E7%9A%84%E4%BD%BF%E7%94%A8/</loc><lastmod>2021-01-19T16:09:22&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://charlesren.github.io/mysite-public/forced-to-change-expired-password-when-using-ssh-key/</loc><lastmod>2021-03-03T10:07:55&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://charlesren.github.io/mysite-public/tags/linux/</loc><lastmod>2021-03-03T10:07:55&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://charlesren.github.io/mysite-public/categories/tech/</loc><lastmod>2021-03-03T10:07:55&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://charlesren.github.io/mysite-public/centos8%E5%AE%89%E8%A3%85vnc/</loc><lastmod>2020-11-30T16:52:55&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://charlesren.github.io/mysite-public/hugo%E7%9A%84%E4%BD%BF%E7%94%A8/</loc><lastmod>2020-11-26T16:45:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://charlesren.github.io/mysite-public/about/</loc><lastmod>2020-11-26T16:56:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url></urlset>
