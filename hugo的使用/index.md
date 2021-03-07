@@ -213,6 +213,8 @@ tags: ["cncf"]
 categories: ["cncf","documentation"]
 ---
 ```
-
-***如已通过本文建站，在别的设备上只需clone my-site,public,Loveit主题,即可使用***
+> 如已建站，在别的设备上只需clone main project 时指定同时clone submodule 即可
+> ```
+> git clone git@github.com:charlesren/mysite.git --recurse-submodules
+> ```
 
