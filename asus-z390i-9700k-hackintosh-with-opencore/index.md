@@ -47,7 +47,7 @@
 ### 安装步骤
 #### BIOS设置
 ###### 设置内容
-参考[OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)文档的Configs > Coffee Lake > Intel BIOS settings章节
+参考 [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)文档的Configs > Coffee Lake > Intel BIOS settings章节
 
 Disable
 
