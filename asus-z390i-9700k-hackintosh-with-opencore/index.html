@@ -10,7 +10,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://charlesren.github.io/mysite-public/asus-z390i-9700k-hackintosh-with-opencore/" /><meta property="og:image" content="https://charlesren.github.io/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-03-04T17:39:57&#43;08:00" />
-<meta property="article:modified_time" content="2021-03-08T17:20:00&#43;08:00" />
+<meta property="article:modified_time" content="2021-03-08T17:27:20&#43;08:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://charlesren.github.io/logo.png"/>
@@ -29,8 +29,8 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/charlesren.github.io\/mysite-public\/asus-z390i-9700k-hackintosh-with-opencore\/"
-        },"image": ["https:\/\/charlesren.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  2364 ,
-        "url": "https:\/\/charlesren.github.io\/mysite-public\/asus-z390i-9700k-hackintosh-with-opencore\/","datePublished": "2021-03-04T17:39:57+08:00","dateModified": "2021-03-08T17:20:00+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        },"image": ["https:\/\/charlesren.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  2380 ,
+        "url": "https:\/\/charlesren.github.io\/mysite-public\/asus-z390i-9700k-hackintosh-with-opencore\/","datePublished": "2021-03-04T17:39:57+08:00","dateModified": "2021-03-08T17:27:20+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/charlesren.github.io\/images\/avatar.png"},"author": {
                 "@type": "Person",
@@ -110,7 +110,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Asus Z390i 9700k Hackintosh With OpenCore</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://charlesren.github.io/mysite-public/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>CharlesRen</a></span>&nbsp;<span class="post-category">收录于 <a href="/mysite-public/categories/tools/"><i class="far fa-folder fa-fw"></i>Tools</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-03-04">2021-03-04</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 2364 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-03-04">2021-03-04</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 2380 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 5 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -131,25 +131,9 @@
         </li>
         <li><a href="#安装步骤">安装步骤</a>
           <ul>
-            <li><a href="#bios设置">BIOS设置</a>
-              <ul>
-                <li>
-                  <ul>
-                    <li><a href="#设置内容">设置内容</a></li>
-                    <li><a href="#设置方法">设置方法</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
+            <li><a href="#bios设置">BIOS设置</a></li>
             <li><a href="#创建macos安装u盘">创建macOS安装U盘</a></li>
-            <li><a href="#efi准备">EFI准备</a>
-              <ul>
-                <li><a href="#ssdt准备">SSDT准备</a></li>
-                <li><a href="#使用-oc-gen-x-生成基础efi文件">使用 OC Gen X 生成基础EFI文件</a></li>
-                <li><a href="#添加ssdt并修改configplist">添加SSDT并修改config.plist</a></li>
-                <li><a href="#dw1560修正">DW1560修正</a></li>
-              </ul>
-            </li>
+            <li><a href="#efi准备">EFI准备</a></li>
             <li><a href="#opencore启动盘制作">OpenCore启动盘制作</a></li>
             <li><a href="#安装macos">安装macOS</a></li>
             <li><a href="#硬盘启动配置">硬盘启动配置</a></li>
@@ -265,7 +249,7 @@
 </blockquote>
 <h3 id="安装步骤">安装步骤</h3>
 <h4 id="bios设置">BIOS设置</h4>
-<h6 id="设置内容">设置内容</h6>
+<p><strong>设置内容</strong></p>
 <p>参考 <a href="https://dortania.github.io/OpenCore-Install-Guide/" target="_blank" rel="noopener noreffer">OpenCore Install Guide</a>文档的Configs &gt; Coffee Lake &gt; Intel BIOS settings章节</p>
 <p>Disable</p>
 <ul>
@@ -307,7 +291,7 @@
 </li>
 <li>SATA Mode: AHCI</li>
 </ul>
-<h6 id="设置方法">设置方法</h6>
+<p><strong>设置方法</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -375,7 +359,10 @@
 </div><h4 id="创建macos安装u盘">创建macOS安装U盘</h4>
 <p>参考Apple官方文档: <a href="https://support.apple.com/en-us/HT201372" target="_blank" rel="noopener noreffer">How to create a bootable installer for macOS</a></p>
 <h4 id="efi准备">EFI准备</h4>
-<h5 id="ssdt准备">SSDT准备</h5>
+<blockquote>
+<p>最终的EFI已上传到<a href="https://github.com/charlesren/Hackintosh-AsusZ390i-OpenCore" target="_blank" rel="noopener noreffer">Github</a></p>
+</blockquote>
+<p><strong>SSDT准备</strong></p>
 <ul>
 <li>
 <p>通用SSDT</p>
@@ -384,10 +371,10 @@
 </li>
 <li>
 <p>定制USB</p>
-<p>使用网上Z390-i定制好的<a href="https://www.tonymacx86.com/threads/the-everything-works-asus-z390-i-gaming-i7-8700k-sapphire-nitro-radeon-rx-vega-64-build.272572/" target="_blank" rel="noopener noreffer">SSDT-UIAC.aml</a></p>
+<p>使用网上Z390-i定制好的<a href="https://www.tonymacx86.com/threads/the-everything-works-asus-z390-i-gaming-i7-8700k-sapphire-nitro-radeon-rx-vega-64-build.272572/" target="_blank" rel="noopener noreffer">SSDT-UIAC.aml</a>
+<strong>使用 OC Gen X 生成基础EFI文件</strong></p>
 </li>
 </ul>
-<h5 id="使用-oc-gen-x-生成基础efi文件">使用 OC Gen X 生成基础EFI文件</h5>
 <blockquote>
 <p>需要的Firmware Drivers &amp;  Kexts &amp; SSDTS参考<a href="https://dortania.github.io/OpenCore-Install-Guide/ktext.html" target="_blank" rel="noopener noreffer">OpenCore Install Guide &gt; USB Creation &gt; Gathering files</a></p>
 </blockquote>
@@ -403,7 +390,7 @@
 <p>Kext &gt; Extra&rsquo;s : <strong>Null</strong></p>
 <p>Firmware Drivers &gt; UEFI : <strong>OpenRuntime.efi &amp; HfsPlus.efi</strong></p>
 <p>SMBIOS &gt; System Model : <strong>iMac19.1</strong></p>
-<h5 id="添加ssdt并修改configplist">添加SSDT并修改config.plist</h5>
+<p><strong>添加SSDT并修改config.plist</strong></p>
 <ol>
 <li>把SSDT文件拷贝到<strong>EFI/OC/ACPI</strong>目录下</li>
 <li>运行ProperTree,打开EFI/OC/config.plist文件.</li>
@@ -422,7 +409,7 @@
 <li>完成后，会发现SSDTs, Kexts and firmware drivers 在 config.plist里出现了.</li>
 <li>保存设置并关闭ProperTree软件.</li>
 </ol>
-<h5 id="dw1560修正">DW1560修正</h5>
+<p><strong>DW1560修正</strong></p>
 <blockquote>
 <p><strong>问题:</strong></p>
 <p>安装过程中出现**IOKit Daemon (kernelmanagerd) stall[0], (240s): &lsquo;PXSX&rsquo;**字样，似乎中断240s,大概会重复三次，然后才能安装完成。完成后，系统连接不上wifi.</p>
@@ -494,8 +481,8 @@
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2021-03-08&nbsp;<a class="git-hash" href="https://github.com/charlesren/LoveIt/commit/8ead4413c8bb225df5ff5217e874ff0251a3c2d2" target="_blank" title="commit by charlesren(renccn@gmail.com) 8ead4413c8bb225df5ff5217e874ff0251a3c2d2: rebuilding site Mon Mar  8 17:20:00 CST 2021">
-                                    <i class="fas fa-hashtag fa-fw"></i>8ead441</a></span>
+                <span>更新于 2021-03-08&nbsp;<a class="git-hash" href="https://github.com/charlesren/LoveIt/commit/049b55c09ffffc0247a6a0972e5d40211df17cb1" target="_blank" title="commit by charlesren(renccn@gmail.com) 049b55c09ffffc0247a6a0972e5d40211df17cb1: rebuilding site Mon Mar  8 17:27:20 CST 2021">
+                                    <i class="fas fa-hashtag fa-fw"></i>049b55c</a></span>
             </div>
             <div class="post-info-license"></div>
         </div>

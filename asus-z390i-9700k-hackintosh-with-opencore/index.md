@@ -46,7 +46,9 @@
 > ProperTree修改config.plist方法参考：[OpenCore Install Guide > USB Creation > config.plist Setup](https://dortania.github.io/OpenCore-Install-Guide/config.plist/) 章节
 ### 安装步骤
 #### BIOS设置
-###### 设置内容
+
+**设置内容**
+
 参考 [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)文档的Configs > Coffee Lake > Intel BIOS settings章节
 
 Disable
@@ -77,7 +79,8 @@ Enable
   > Advanced Items > System Agent (SA) Graphics Configuration > DVMT Pre-Allocated > 64
 - SATA Mode: AHCI
 
-###### 设置方法
+**设置方法**
+
 ```
 1. Plug your monitor into your video cards DisplayPort to avoid graphics issues. You can use HDMI if it's all you have
 2. Start your machine and use 1 of these methods to get onto BIOS during boot:
@@ -114,7 +117,9 @@ Enable
 参考Apple官方文档: [How to create a bootable installer for macOS](https://support.apple.com/en-us/HT201372)
 
 #### EFI准备
-##### SSDT准备
+> 最终的EFI已上传到[Github](https://github.com/charlesren/Hackintosh-AsusZ390i-OpenCore)
+
+**SSDT准备**
 - 通用SSDT
 
   *参考[Getting Started With ACPI](https://dortania.github.io/Getting-Started-With-ACPI/)*
@@ -123,7 +128,7 @@ Enable
 - 定制USB
 
   使用网上Z390-i定制好的[SSDT-UIAC.aml](https://www.tonymacx86.com/threads/the-everything-works-asus-z390-i-gaming-i7-8700k-sapphire-nitro-radeon-rx-vega-64-build.272572/)
-##### 使用 OC Gen X 生成基础EFI文件
+**使用 OC Gen X 生成基础EFI文件**
 > 需要的Firmware Drivers &  Kexts & SSDTS参考[OpenCore Install Guide > USB Creation > Gathering files](https://dortania.github.io/OpenCore-Install-Guide/ktext.html) 
 
 配置如下：
@@ -150,7 +155,7 @@ Firmware Drivers > UEFI : **OpenRuntime.efi & HfsPlus.efi**
       
 SMBIOS > System Model : **iMac19.1**
 
-##### 添加SSDT并修改config.plist
+**添加SSDT并修改config.plist**
 1. 把SSDT文件拷贝到**EFI/OC/ACPI**目录下
 2. 运行ProperTree,打开EFI/OC/config.plist文件.
 3. config.plist文件打开后, 按Cmd/Ctrl + Shift + R 快捷键,然后选中 EFI/OC 文件夹,用来**Clean Snapshot**
@@ -160,7 +165,7 @@ SMBIOS > System Model : **iMac19.1**
 4. 完成后，会发现SSDTs, Kexts and firmware drivers 在 config.plist里出现了.
 5. 保存设置并关闭ProperTree软件.
 
-##### DW1560修正
+**DW1560修正**
 > **问题:**
 >
 > 安装过程中出现**IOKit Daemon (kernelmanagerd) stall[0], (240s): 'PXSX'**字样，似乎中断240s,大概会重复三次，然后才能安装完成。完成后，系统连接不上wifi.
@@ -210,7 +215,6 @@ diskutil list
 sudo diskutil mount disk0s1 
 ```
 3. 把最终EFI文件夹拷贝到硬盘EFI分区
-
 
 
 
