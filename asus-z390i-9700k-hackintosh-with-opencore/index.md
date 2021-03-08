@@ -25,17 +25,31 @@
 [一键生成黑苹果 OpenCore EFI 文件OC.Gen-X](https://heipg.cn/tutorial/one-key-opencore-efi.html)
 ### 工具准备
 #### 硬件
-1. U盘 : 16GB或以上容量,用于创建macOS安装U盘
-2. U盘2 : 可选
+**方案一: OpenCore boot Manager 与macOS 安装U盘分离**
+1. U盘1 : 16GB或以上容量,用于创建macOS安装U盘
+2. U盘2 : 4GB或以上容量，用于安装OpenCore boot Manager
+> OpenCore boot Manager与macOS 系统分离优点
+> - 可以单独升级OpenCore boot Manager
+> - 用Apple推荐的方法创建macOS启动盘(没有任何第三方bootloaders),此U盘还可以用于安装升级白苹果.
+> - 安装完成后，OpenCore boot Manager U盘也会成为永久的启动U盘.(也可以把EFI文件拷贝到硬盘的EFI分区，从硬盘启动)
+>
+> *当选择从OpenCore boot Manager U盘启动后, Clover/OC should display one more option (Install macOS from the other USB)*
+
+**方案二：OpenCore boot Manager与macOS 安装U盘合二为一**
+
+需一个U盘 : 16GB或以上容量,用于创建OpenCore boot manager及macOS安装U盘
+> One flash drive is always sufficient, you can format it using Disk Utility choosing Mac OS Extended (journal) with a GUID boot partition. It adds a UEFI partition you can mount, and then copy and paste EFI folder there. 
 #### 软件
 [OC Gen X](https://github.com/Pavo-IM/OC-Gen-X) :用于生成基础EFI文件
 
 [ProperTree](https://github.com/corpnewt/ProperTree) :用于修改config.plist文件及加载SSDT
-> ProperTree修改config.plist方法见：[OpenCore Install Guide > USB Creation > config.plist Setup](https://dortania.github.io/OpenCore-Install-Guide/config.plist/) 章节
+> ProperTree修改config.plist方法参考：[OpenCore Install Guide > USB Creation > config.plist Setup](https://dortania.github.io/OpenCore-Install-Guide/config.plist/) 章节
 ### 安装步骤
 #### BIOS设置
-##### 设置内容
-参考[OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)文档的Configs > Coffee Lake > Intel BIOS settings章节
+
+**设置内容**
+
+参考 [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)文档的Configs > Coffee Lake > Intel BIOS settings章节
 
 Disable
 
@@ -65,7 +79,8 @@ Enable
   > Advanced Items > System Agent (SA) Graphics Configuration > DVMT Pre-Allocated > 64
 - SATA Mode: AHCI
 
-##### 设置方法
+**设置方法**
+
 ```
 1. Plug your monitor into your video cards DisplayPort to avoid graphics issues. You can use HDMI if it's all you have
 2. Start your machine and use 1 of these methods to get onto BIOS during boot:
@@ -102,13 +117,21 @@ Enable
 参考Apple官方文档: [How to create a bootable installer for macOS](https://support.apple.com/en-us/HT201372)
 
 #### EFI准备
-##### SSDT准备
+> 最终的EFI已上传到[Github](https://github.com/charlesren/Hackintosh-AsusZ390i-OpenCore)
+
+**SSDT准备**
 - 通用SSDT
 
-   参考[Getting Started With ACPI](https://dortania.github.io/Getting-Started-With-ACPI/)
+  *参考[Getting Started With ACPI](https://dortania.github.io/Getting-Started-With-ACPI/)*
+
+  直接从[OpenCorePkg](https://github.com/acidanthera/OpenCorePkg)项目下载
 - 定制USB
-##### 使用 OC Gen X 生成基础EFI文件
+
+  使用网上Z390-i定制好的[SSDT-UIAC.aml](https://www.tonymacx86.com/threads/the-everything-works-asus-z390-i-gaming-i7-8700k-sapphire-nitro-radeon-rx-vega-64-build.272572/)
+**使用 OC Gen X 生成基础EFI文件**
 > 需要的Firmware Drivers &  Kexts & SSDTS参考[OpenCore Install Guide > USB Creation > Gathering files](https://dortania.github.io/OpenCore-Install-Guide/ktext.html) 
+
+配置如下：
 
 System Type : **Coffee Lake**
 
@@ -132,8 +155,7 @@ Firmware Drivers > UEFI : **OpenRuntime.efi & HfsPlus.efi**
       
 SMBIOS > System Model : **iMac19.1**
 
-##### 添加SSDT并修改config.plist
-> config.plist修改方法参见[config.plist Setup](https://dortania.github.io/OpenCore-Install-Guide/config.plist/)
+**添加SSDT并修改config.plist**
 1. 把SSDT文件拷贝到**EFI/OC/ACPI**目录下
 2. 运行ProperTree,打开EFI/OC/config.plist文件.
 3. config.plist文件打开后, 按Cmd/Ctrl + Shift + R 快捷键,然后选中 EFI/OC 文件夹,用来**Clean Snapshot**
@@ -143,7 +165,7 @@ SMBIOS > System Model : **iMac19.1**
 4. 完成后，会发现SSDTs, Kexts and firmware drivers 在 config.plist里出现了.
 5. 保存设置并关闭ProperTree软件.
 
-##### DW1560修正
+**DW1560修正**
 > **问题:**
 >
 > 安装过程中出现**IOKit Daemon (kernelmanagerd) stall[0], (240s): 'PXSX'**字样，似乎中断240s,大概会重复三次，然后才能安装完成。完成后，系统连接不上wifi.
@@ -162,10 +184,38 @@ SMBIOS > System Model : **iMac19.1**
 **解决方案:**
 
 Specify MaxKernel 19.9.9 for AirPortBrcm4360_Injector.kext in config.plist file. 
-#### OpenCore启动盘设置
-#### 安装MAC OS
+#### OpenCore启动盘制作
+> OpenCore启动盘创建方法参考：[OpenCore Install Guide > USB Creation > Creating the USB](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/) 章节
+
+**本次使用OenCore boot Manager 与macOS 安装U盘分离方案，所以不需要执行手册中下载macOS，载入macOS等部分**
+
+以在macOS系统下操作为例:
+
+- 格式化U盘2.
+  > use macOS Extended (HFS+) with a GUID partition map. This will create two partitions: the main MyVolume and a second called EFI which is used as a boot partition where your firmware will check for boot files.
+- 挂载EFI
+- 把上面最终的EFI文件夹拷贝到EFI分区
+
+
+#### 安装macOS
+1. 插入U盘1,U盘2
+2. 启动电脑，快速按F8键，选择从OpenCore U盘启动
+3. 正常安装macOS
 
 #### 硬盘启动配置
+**本章节为可选配置，正常情况下，总是从U盘2启动;当期望从硬盘启动时，执行如下步骤**
+
+1. 查看硬盘的EFI分区名称
+```
+diskutil list
+```
+2. 挂载硬盘的EFI分区
+> 以EFI分区为disk0s1为例 
+```
+sudo diskutil mount disk0s1 
+```
+3. 把最终EFI文件夹拷贝到硬盘EFI分区
+
 
 
 
