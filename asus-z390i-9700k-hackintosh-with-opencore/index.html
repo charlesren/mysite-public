@@ -10,7 +10,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://charlesren.github.io/mysite-public/asus-z390i-9700k-hackintosh-with-opencore/" /><meta property="og:image" content="https://charlesren.github.io/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-03-04T17:39:57&#43;08:00" />
-<meta property="article:modified_time" content="2021-03-04T18:56:22&#43;08:00" />
+<meta property="article:modified_time" content="2021-03-05T17:37:10&#43;08:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://charlesren.github.io/logo.png"/>
@@ -29,8 +29,8 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/charlesren.github.io\/mysite-public\/asus-z390i-9700k-hackintosh-with-opencore\/"
-        },"image": ["https:\/\/charlesren.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  1678 ,
-        "url": "https:\/\/charlesren.github.io\/mysite-public\/asus-z390i-9700k-hackintosh-with-opencore\/","datePublished": "2021-03-04T17:39:57+08:00","dateModified": "2021-03-04T18:56:22+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        },"image": ["https:\/\/charlesren.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  2371 ,
+        "url": "https:\/\/charlesren.github.io\/mysite-public\/asus-z390i-9700k-hackintosh-with-opencore\/","datePublished": "2021-03-04T17:39:57+08:00","dateModified": "2021-03-05T17:37:10+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/charlesren.github.io\/images\/avatar.png"},"author": {
                 "@type": "Person",
@@ -110,8 +110,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Asus Z390i 9700k Hackintosh With OpenCore</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://charlesren.github.io/mysite-public/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>CharlesRen</a></span>&nbsp;<span class="post-category">收录于 <a href="/mysite-public/categories/tools/"><i class="far fa-folder fa-fw"></i>Tools</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-03-04">2021-03-04</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1678 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 4 分钟&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-03-04">2021-03-04</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 2371 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 5 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
@@ -133,8 +133,12 @@
           <ul>
             <li><a href="#bios设置">BIOS设置</a>
               <ul>
-                <li><a href="#设置内容">设置内容</a></li>
-                <li><a href="#设置方法">设置方法</a></li>
+                <li>
+                  <ul>
+                    <li><a href="#设置内容">设置内容</a></li>
+                    <li><a href="#设置方法">设置方法</a></li>
+                  </ul>
+                </li>
               </ul>
             </li>
             <li><a href="#创建macos安装u盘">创建macOS安装U盘</a></li>
@@ -146,8 +150,8 @@
                 <li><a href="#dw1560修正">DW1560修正</a></li>
               </ul>
             </li>
-            <li><a href="#opencore启动盘设置">OpenCore启动盘设置</a></li>
-            <li><a href="#安装mac-os">安装MAC OS</a></li>
+            <li><a href="#opencore启动盘制作">OpenCore启动盘制作</a></li>
+            <li><a href="#安装macos">安装macOS</a></li>
             <li><a href="#硬盘启动配置">硬盘启动配置</a></li>
           </ul>
         </li>
@@ -234,19 +238,34 @@
 <p><a href="https://heipg.cn/tutorial/one-key-opencore-efi.html" target="_blank" rel="noopener noreffer">一键生成黑苹果 OpenCore EFI 文件OC.Gen-X</a></p>
 <h3 id="工具准备">工具准备</h3>
 <h4 id="硬件">硬件</h4>
+<p><strong>方案一: OpenCore boot Manager 与macOS 安装U盘分离</strong></p>
 <ol>
-<li>U盘 : 16GB或以上容量,用于创建macOS安装U盘</li>
-<li>U盘2 : 可选</li>
+<li>U盘1 : 16GB或以上容量,用于创建macOS安装U盘</li>
+<li>U盘2 : 4GB或以上容量，用于安装OpenCore boot Manager</li>
 </ol>
+<blockquote>
+<p>OpenCore boot Manager与macOS 系统分离优点</p>
+<ul>
+<li>可以单独升级OpenCore boot Manager</li>
+<li>用Apple推荐的方法创建macOS启动盘(没有任何第三方bootloaders),此U盘还可以用于安装升级白苹果.</li>
+<li>安装完成后，OpenCore boot Manager U盘也会成为永久的启动U盘.(也可以把EFI文件拷贝到硬盘的EFI分区，从硬盘启动)</li>
+</ul>
+<p><em>当选择从OpenCore boot Manager U盘启动后, Clover/OC should display one more option (Install macOS from the other USB)</em></p>
+</blockquote>
+<p><strong>方案二：OpenCore boot Manager与macOS 安装U盘合二为一</strong></p>
+<p>需一个U盘 : 16GB或以上容量,用于创建OpenCore boot manager及macOS安装U盘</p>
+<blockquote>
+<p>One flash drive is always sufficient, you can format it using Disk Utility choosing Mac OS Extended (journal) with a GUID boot partition. It adds a UEFI partition you can mount, and then copy and paste EFI folder there.</p>
+</blockquote>
 <h4 id="软件">软件</h4>
 <p><a href="https://github.com/Pavo-IM/OC-Gen-X" target="_blank" rel="noopener noreffer">OC Gen X</a> :用于生成基础EFI文件</p>
 <p><a href="https://github.com/corpnewt/ProperTree" target="_blank" rel="noopener noreffer">ProperTree</a> :用于修改config.plist文件及加载SSDT</p>
 <blockquote>
-<p>ProperTree修改config.plist方法见：<a href="https://dortania.github.io/OpenCore-Install-Guide/config.plist/" target="_blank" rel="noopener noreffer">OpenCore Install Guide &gt; USB Creation &gt; config.plist Setup</a> 章节</p>
+<p>ProperTree修改config.plist方法参考：<a href="https://dortania.github.io/OpenCore-Install-Guide/config.plist/" target="_blank" rel="noopener noreffer">OpenCore Install Guide &gt; USB Creation &gt; config.plist Setup</a> 章节</p>
 </blockquote>
 <h3 id="安装步骤">安装步骤</h3>
 <h4 id="bios设置">BIOS设置</h4>
-<h5 id="设置内容">设置内容</h5>
+<h6 id="设置内容">设置内容</h6>
 <p>参考<a href="https://dortania.github.io/OpenCore-Install-Guide/" target="_blank" rel="noopener noreffer">OpenCore Install Guide</a>文档的Configs &gt; Coffee Lake &gt; Intel BIOS settings章节</p>
 <p>Disable</p>
 <ul>
@@ -288,7 +307,7 @@
 </li>
 <li>SATA Mode: AHCI</li>
 </ul>
-<h5 id="设置方法">设置方法</h5>
+<h6 id="设置方法">设置方法</h6>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -360,16 +379,19 @@
 <ul>
 <li>
 <p>通用SSDT</p>
-<p>参考<a href="https://dortania.github.io/Getting-Started-With-ACPI/" target="_blank" rel="noopener noreffer">Getting Started With ACPI</a></p>
+<p><em>参考<a href="https://dortania.github.io/Getting-Started-With-ACPI/" target="_blank" rel="noopener noreffer">Getting Started With ACPI</a></em></p>
+<p>直接从<a href="https://github.com/acidanthera/OpenCorePkg" target="_blank" rel="noopener noreffer">OpenCorePkg</a>项目下载</p>
 </li>
 <li>
 <p>定制USB</p>
+<p>使用网上Z390-i定制好的<a href="https://www.tonymacx86.com/threads/the-everything-works-asus-z390-i-gaming-i7-8700k-sapphire-nitro-radeon-rx-vega-64-build.272572/" target="_blank" rel="noopener noreffer">SSDT-UIAC.aml</a></p>
 </li>
 </ul>
 <h5 id="使用-oc-gen-x-生成基础efi文件">使用 OC Gen X 生成基础EFI文件</h5>
 <blockquote>
 <p>需要的Firmware Drivers &amp;  Kexts &amp; SSDTS参考<a href="https://dortania.github.io/OpenCore-Install-Guide/ktext.html" target="_blank" rel="noopener noreffer">OpenCore Install Guide &gt; USB Creation &gt; Gathering files</a></p>
 </blockquote>
+<p>配置如下：</p>
 <p>System Type : <strong>Coffee Lake</strong></p>
 <p>Kext &gt; Essential : <strong>Lilu &amp; VirtualSMC</strong></p>
 <p>Kext &gt; VirtualSMC Plugins : <strong>SMCProcessor &amp; SMCSuperIO</strong></p>
@@ -382,9 +404,6 @@
 <p>Firmware Drivers &gt; UEFI : <strong>OpenRuntime.efi &amp; HfsPlus.efi</strong></p>
 <p>SMBIOS &gt; System Model : <strong>iMac19.1</strong></p>
 <h5 id="添加ssdt并修改configplist">添加SSDT并修改config.plist</h5>
-<blockquote>
-<p>config.plist修改方法参见<a href="https://dortania.github.io/OpenCore-Install-Guide/config.plist/" target="_blank" rel="noopener noreffer">config.plist Setup</a></p>
-</blockquote>
 <ol>
 <li>把SSDT文件拷贝到<strong>EFI/OC/ACPI</strong>目录下</li>
 <li>运行ProperTree,打开EFI/OC/config.plist文件.</li>
@@ -420,15 +439,63 @@
 </blockquote>
 <p><strong>解决方案:</strong></p>
 <p>Specify MaxKernel 19.9.9 for AirPortBrcm4360_Injector.kext in config.plist file.</p>
-<h4 id="opencore启动盘设置">OpenCore启动盘设置</h4>
-<h4 id="安装mac-os">安装MAC OS</h4>
+<h4 id="opencore启动盘制作">OpenCore启动盘制作</h4>
+<blockquote>
+<p>OpenCore启动盘创建方法参考：<a href="https://dortania.github.io/OpenCore-Install-Guide/installer-guide/" target="_blank" rel="noopener noreffer">OpenCore Install Guide &gt; USB Creation &gt; Creating the USB</a> 章节</p>
+</blockquote>
+<p><strong>本次使用OenCore boot Manager 与macOS 安装U盘分离方案，所以不需要执行手册中下载macOS，载入macOS等部分</strong></p>
+<p>以在macOS系统下操作为例:</p>
+<ul>
+<li>格式化U盘2.
+<blockquote>
+<p>use macOS Extended (HFS+) with a GUID partition map. This will create two partitions: the main MyVolume and a second called EFI which is used as a boot partition where your firmware will check for boot files.</p>
+</blockquote>
+</li>
+<li>挂载EFI</li>
+<li>把上面最终的EFI文件夹拷贝到EFI分区</li>
+</ul>
+<h4 id="安装macos">安装macOS</h4>
+<ol>
+<li>插入U盘1,U盘2</li>
+<li>启动电脑，快速按F8键，选择从OpenCore U盘启动</li>
+<li>正常安装macOS</li>
+</ol>
 <h4 id="硬盘启动配置">硬盘启动配置</h4>
+<p><strong>本章节为可选配置，正常情况下，总是从U盘2启动;当期望从硬盘启动时，执行如下步骤</strong></p>
+<ol>
+<li>查看硬盘的EFI分区名称</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">diskutil list
+</code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>挂载硬盘的EFI分区</li>
+</ol>
+<blockquote>
+<p>以EFI分区为disk0s1为例</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">sudo diskutil mount disk0s1 
+</code></pre></td></tr></table>
+</div>
+</div><ol start="3">
+<li>把最终EFI文件夹拷贝到硬盘EFI分区</li>
+</ol>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2021-03-04&nbsp;<a class="git-hash" href="https://github.com/charlesren/LoveIt/commit/ac06b71f30bac42461db49568915a69057950ac1" target="_blank" title="commit by charlesren(renccn@gmail.com) ac06b71f30bac42461db49568915a69057950ac1: rebuilding site Thu Mar  4 18:56:22 CST 2021">
-                                    <i class="fas fa-hashtag fa-fw"></i>ac06b71</a></span>
+                <span>更新于 2021-03-05&nbsp;<a class="git-hash" href="https://github.com/charlesren/LoveIt/commit/84d8ffa54cb2eeaa2139af508750a88fd3232350" target="_blank" title="commit by charlesren(renccn@gmail.com) 84d8ffa54cb2eeaa2139af508750a88fd3232350: rebuilding site Fri Mar  5 17:37:09 CST 2021">
+                                    <i class="fas fa-hashtag fa-fw"></i>84d8ffa</a></span>
             </div>
             <div class="post-info-license"></div>
         </div>
