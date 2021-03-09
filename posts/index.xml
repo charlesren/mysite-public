@@ -4,7 +4,14 @@
         <link>https://charlesren.github.io/mysite-public/posts/</link>
         <description>所有文章 | CharlesRen</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>renccn@gmail.com (CharlesRen)</managingEditor>
-            <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 09 Mar 2021 11:30:03 &#43;0800</lastBuildDate><atom:link href="https://charlesren.github.io/mysite-public/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 09 Mar 2021 14:10:26 &#43;0800</lastBuildDate><atom:link href="https://charlesren.github.io/mysite-public/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Centos7.6离线安装docker</title>
+    <link>https://charlesren.github.io/mysite-public/centos7.6%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85docker/</link>
+    <pubDate>Tue, 09 Mar 2021 14:10:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://charlesren.github.io/mysite-public/centos7.6%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85docker/</guid>
+    <description><![CDATA[1、安装环境： 系统：CentOS Linux release 7.6.1810 (Core) Docker版本：18.09.8 2、下载离线安装包 docker 依赖包下载： containerd.io docker-ce-cli container-selinux 3、安装 1 2 3 4 rpm -ivh docker-ce-cli-18.09.8-3.el7.x86_64.rpm rpm -ivh container-selinux-2.107-3.el7.noarch.rpm rpm]]></description>
+</item><item>
     <title>Yum源的使用方法</title>
     <link>https://charlesren.github.io/mysite-public/yum%E6%BA%90%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
     <pubDate>Tue, 09 Mar 2021 11:30:03 &#43;0800</pubDate>
@@ -67,12 +74,5 @@
     <author>作者</author>
     <guid>https://charlesren.github.io/mysite-public/%E9%AB%98%E5%B9%B6%E5%8F%91%E5%BA%94%E7%94%A8tcp%E7%AD%89%E5%8F%82%E6%95%B0%E4%BC%98%E5%8C%96/</guid>
     <description><![CDATA[1 2 cp /etc/sysctl.conf /etc/sysctl.conf.bak vim /etc/sysctl.conf net.ipv4.tcp_tw_reuse = 1 net.ipv4.tcp_fin_timeout = 30 net.ipv4.ip_local_port_range = 1024 65000 net.ipv4.tcp_max_tw_buckets = 45000 1 2 3 4 5 6 sysctl -p /etc/sysctl.conf sysctl -w net.ipv4.route.flush=1 sysctl -a |grep net.ipv4.tcp_tw_reuse sysctl -a |grep net.ipv4.tcp_fin_timeout sysctl -a |grep net.ipv4.tcp_max_tw_buckets sysctl -a |grep net.ipv4.ip_local_port_range 1 2 cp /etc/security/limits.conf /etc/security/limits.conf.bak vim /etc/securiy/limits.conf soft nofile 65530 hard nofile 65530]]></description>
-</item><item>
-    <title>Shell学习</title>
-    <link>https://charlesren.github.io/mysite-public/shell%E5%AD%A6%E4%B9%A0/</link>
-    <pubDate>Thu, 04 Mar 2021 14:11:09 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://charlesren.github.io/mysite-public/shell%E5%AD%A6%E4%B9%A0/</guid>
-    <description><![CDATA[变量嵌套 1 2 3 4 5 6 7 8 [root@renccblj ~]# a=b [root@renccblj ~]# c=a [root@renccblj ~]# echo ${!c} b [root@renccblj ~]# [root@renccblj ~]# eval echo $&#34;${c}&#34; a [root@renccblj ~]# Aix下只能用 eval 算术精度 取小数点后两位 1 2 3 4 5 6 [root@renccblj ~]# echo &#34;scale=2; 5/3 &#34; | bc 1.66 [root@renccblj ~]# [root@renccblj]]></description>
 </item></channel>
 </rss>
