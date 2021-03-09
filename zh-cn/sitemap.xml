@@ -2,8 +2,8 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://charlesren.github.io/mysite-public/asus-z390i-9700k-hackintosh-with-opencore/</loc><lastmod>2021-03-08T17:39:09&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://charlesren.github.io/mysite-public/categories/</loc><lastmod>2021-03-08T17:39:09&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://charlesren.github.io/mysite-public/aix%E6%8C%82%E8%BD%BD%E5%85%89%E7%9B%98%E9%95%9C%E5%83%8F/</loc><lastmod>2021-03-09T08:35:16&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://charlesren.github.io/mysite-public/categories/</loc><lastmod>2021-03-09T08:35:16&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://charlesren.github.io/mysite-public/en/categories/"
@@ -12,7 +12,7 @@
                     hreflang="zh-cn"
                     href="https://charlesren.github.io/mysite-public/categories/"
                     /></url><url>
-            <loc>https://charlesren.github.io/mysite-public/</loc><lastmod>2021-03-08T17:39:09&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://charlesren.github.io/mysite-public/</loc><lastmod>2021-03-09T08:35:16&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://charlesren.github.io/mysite-public/en/"
@@ -21,10 +21,11 @@
                     hreflang="zh-cn"
                     href="https://charlesren.github.io/mysite-public/"
                     /></url><url>
-            <loc>https://charlesren.github.io/mysite-public/posts/</loc><lastmod>2021-03-08T17:39:09&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://charlesren.github.io/mysite-public/posts/</loc><lastmod>2021-03-09T08:35:16&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://charlesren.github.io/mysite-public/categories/tech/</loc><lastmod>2021-03-09T08:35:16&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://charlesren.github.io/mysite-public/asus-z390i-9700k-hackintosh-with-opencore/</loc><lastmod>2021-03-08T17:39:09&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://charlesren.github.io/mysite-public/categories/tools/</loc><lastmod>2021-03-08T17:39:09&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://charlesren.github.io/mysite-public/linux%E6%B7%BB%E5%8A%A0%E7%89%B9%E6%9D%83%E7%94%A8%E6%88%B7/</loc><lastmod>2021-03-04T17:07:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://charlesren.github.io/mysite-public/categories/tech/</loc><lastmod>2021-03-04T17:07:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://charlesren.github.io/mysite-public/ssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95/</loc><lastmod>2021-03-04T16:31:47&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://charlesren.github.io/mysite-public/%E8%87%AA%E5%8A%A8%E5%B0%9D%E8%AF%95%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc><lastmod>2021-03-04T16:09:52&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://charlesren.github.io/mysite-public/%E9%AB%98%E5%B9%B6%E5%8F%91%E5%BA%94%E7%94%A8tcp%E7%AD%89%E5%8F%82%E6%95%B0%E4%BC%98%E5%8C%96/</loc><lastmod>2021-03-04T15:34:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>

@@ -4,9 +4,16 @@
         <link>https://charlesren.github.io/mysite-public/</link>
         <description>关于 LoveIt 主题</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>renccn@gmail.com (CharlesRen)</managingEditor>
-            <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 04 Mar 2021 17:39:57 &#43;0800</lastBuildDate>
+            <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 09 Mar 2021 08:35:16 &#43;0800</lastBuildDate>
             <atom:link href="https://charlesren.github.io/mysite-public/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Aix挂载光盘镜像</title>
+    <link>https://charlesren.github.io/mysite-public/aix%E6%8C%82%E8%BD%BD%E5%85%89%E7%9B%98%E9%95%9C%E5%83%8F/</link>
+    <pubDate>Tue, 09 Mar 2021 08:35:16 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://charlesren.github.io/mysite-public/aix%E6%8C%82%E8%BD%BD%E5%85%89%E7%9B%98%E9%95%9C%E5%83%8F/</guid>
+    <description><![CDATA[AIX 6.1 TL 4开始，AIX系统提供了一个loopmount命令，可直接mount ISO文件 挂载点是目录，不要用建立的文件系统做挂载点 挂镜像文件: 1]]></description>
+</item><item>
     <title>Asus Z390i 9700k Hackintosh With OpenCore</title>
     <link>https://charlesren.github.io/mysite-public/asus-z390i-9700k-hackintosh-with-opencore/</link>
     <pubDate>Thu, 04 Mar 2021 17:39:57 &#43;0800</pubDate>
@@ -69,12 +76,5 @@
     <author>作者</author>
     <guid>https://charlesren.github.io/mysite-public/plex-on-docker/</guid>
     <description><![CDATA[1  docker run -d --restart=always --net=host --privileged --name plex -h rencc -v /Users/rencc/Plex:/config -v /Users/rencc/Downloads:/data -p 32400:32400 -e PUID=501 -e PGID=20 -e TZ=Asia/Shanghai linuxserver/plex   ]]></description>
-</item><item>
-    <title>Gitlab容器化部署</title>
-    <link>https://charlesren.github.io/mysite-public/gitlab%E5%AE%B9%E5%99%A8%E5%8C%96%E9%83%A8%E7%BD%B2/</link>
-    <pubDate>Wed, 03 Mar 2021 15:39:39 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://charlesren.github.io/mysite-public/gitlab%E5%AE%B9%E5%99%A8%E5%8C%96%E9%83%A8%E7%BD%B2/</guid>
-    <description><![CDATA[OS: Redhat 7.6 0：Docker 安装 需要如下4个安装包。（container-selinux取代老版本docker-selinux） docker-ce-18.09.0-3.el7.x86_64.rpm containerd.io-1.2.0-3.el7.x86_64.rpm docker-ce-cli-18.09.0-3.el7.x86_64.rpm container-selinux-2.74-1.el7.noarch.rpm 1.gitlab 镜像准备]]></description>
 </item></channel>
 </rss>
