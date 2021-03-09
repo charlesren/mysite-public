@@ -106,6 +106,10 @@
         alt="/images/avatar.png"
         title="/images/avatar.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/https://github.com/charlesren" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:renccn@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/mysite-public/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/mysite-public/%E9%AB%98%E5%B9%B6%E5%8F%91%E5%BA%94%E7%94%A8tcp%E7%AD%89%E5%8F%82%E6%95%B0%E4%BC%98%E5%8C%96/">高并发应用TCP等参数优化</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://charlesren.github.io/mysite-public/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>CharlesRen</a></span>&nbsp;<span class="post-publish">发布于 <time datetime="2021-03-04">2021-03-04</time></span>&nbsp;<span class="post-category">收录于 <a href="/mysite-public/categories/tech/"><i class="far fa-folder fa-fw"></i>Tech</a></span></div><div class="content">1 2 cp /etc/sysctl.conf /etc/sysctl.conf.bak vim /etc/sysctl.conf net.ipv4.tcp_tw_reuse = 1 net.ipv4.tcp_fin_timeout = 30 net.ipv4.ip_local_port_range = 1024 65000 net.ipv4.tcp_max_tw_buckets = 45000 1 2 3 4 5 6 sysctl -p /etc/sysctl.conf sysctl -w net.ipv4.route.flush=1 sysctl -a |grep net.ipv4.tcp_tw_reuse sysctl -a |grep net.ipv4.tcp_fin_timeout sysctl -a |grep net.ipv4.tcp_max_tw_buckets sysctl -a |grep net.ipv4.ip_local_port_range 1 2 cp /etc/security/limits.conf /etc/security/limits.conf.bak vim /etc/securiy/limits.conf soft nofile 65530 hard nofile 65530</div><div class="post-footer">
+        <a href="/mysite-public/%E9%AB%98%E5%B9%B6%E5%8F%91%E5%BA%94%E7%94%A8tcp%E7%AD%89%E5%8F%82%E6%95%B0%E4%BC%98%E5%8C%96/">阅读全文</a></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/mysite-public/shell%E5%AD%A6%E4%B9%A0/">Shell学习</a>
     </h1><div class="post-meta"><span class="post-author"><a href="https://charlesren.github.io/mysite-public/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>CharlesRen</a></span>&nbsp;<span class="post-publish">发布于 <time datetime="2021-03-04">2021-03-04</time></span>&nbsp;<span class="post-category">收录于 <a href="/mysite-public/categories/tech/"><i class="far fa-folder fa-fw"></i>Tech</a></span></div><div class="content">变量嵌套 1 2 3 4 5 6 7 8 [root@renccblj ~]# a=b [root@renccblj ~]# c=a [root@renccblj ~]# echo ${!c} b [root@renccblj ~]# [root@renccblj ~]# eval echo $&#34;${c}&#34; a [root@renccblj ~]# Aix下只能用 eval 算术精度 取小数点后两位 1 2 3 4 5 6 [root@renccblj ~]# echo &#34;scale=2; 5/3 &#34; | bc 1.66 [root@renccblj ~]# [root@renccblj</div><div class="post-footer">
         <a href="/mysite-public/shell%E5%AD%A6%E4%B9%A0/">阅读全文</a></div>
@@ -125,10 +129,6 @@
         <a href="/mysite-public/gitlab%E5%AE%B9%E5%99%A8%E5%8C%96%E9%83%A8%E7%BD%B2/">Gitlab容器化部署</a>
     </h1><div class="post-meta"><span class="post-author"><a href="https://charlesren.github.io/mysite-public/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>CharlesRen</a></span>&nbsp;<span class="post-publish">发布于 <time datetime="2021-03-03">2021-03-03</time></span>&nbsp;<span class="post-category">收录于 <a href="/mysite-public/categories/tools/"><i class="far fa-folder fa-fw"></i>Tools</a></span></div><div class="content">OS: Redhat 7.6 0：Docker 安装 需要如下4个安装包。（container-selinux取代老版本docker-selinux） docker-ce-18.09.0-3.el7.x86_64.rpm containerd.io-1.2.0-3.el7.x86_64.rpm docker-ce-cli-18.09.0-3.el7.x86_64.rpm container-selinux-2.74-1.el7.noarch.rpm 1.gitlab 镜像准备</div><div class="post-footer">
         <a href="/mysite-public/gitlab%E5%AE%B9%E5%99%A8%E5%8C%96%E9%83%A8%E7%BD%B2/">阅读全文</a></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/mysite-public/%E7%90%86%E6%83%B3%E7%9A%84%E4%BD%8F%E5%AE%85/">理想的住宅</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="https://charlesren.github.io/mysite-public/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>CharlesRen</a></span>&nbsp;<span class="post-publish">发布于 <time datetime="2021-03-03">2021-03-03</time></span>&nbsp;<span class="post-category">收录于 <a href="/mysite-public/categories/live/"><i class="far fa-folder fa-fw"></i>Live</a></span></div><div class="content">随心所欲，不受任何限制，包括，金钱，地理位置，气候条件，地形等等，任何条件都能满足 北纬18度左右（阳光充足，气候适宜），半山（海拔高，不会太</div><div class="post-footer">
-        <a href="/mysite-public/%E7%90%86%E6%83%B3%E7%9A%84%E4%BD%8F%E5%AE%85/">阅读全文</a></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/mysite-public/">1</a>
@@ -146,8 +146,10 @@
                         <a href="/mysite-public/page/4/">4</a>
                     </span>
                 </li><li class="page-item ">
+                    <span class="page-link" aria-hidden="true">&hellip;</span>
+                </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/mysite-public/page/5/">5</a>
+                        <a href="/mysite-public/page/6/">6</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">

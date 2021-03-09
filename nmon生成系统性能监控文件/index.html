@@ -5,32 +5,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>Aix挂载光盘镜像 - CharlesRen</title><meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Aix挂载光盘镜像" />
-<meta property="og:description" content="AIX 6.1 TL 4开始，AIX系统提供了一个loopmount命令，可直接mount ISO文件 挂载点是目录，不要用建立的文件系统做挂载点 挂镜像文件: 1" />
+        <title>Nmon生成系统性能监控文件 - CharlesRen</title><meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Nmon生成系统性能监控文件" />
+<meta property="og:description" content="用nmon命令生成系统性能监控文件 为了查看系统在一段时间内的性能，我们可以借助系统自身提供的性能监控命令来生成一份性能监控日志，然后用nmo" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://charlesren.github.io/mysite-public/aix%E6%8C%82%E8%BD%BD%E5%85%89%E7%9B%98%E9%95%9C%E5%83%8F/" /><meta property="og:image" content="https://charlesren.github.io/logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-03-09T08:35:16&#43;08:00" />
-<meta property="article:modified_time" content="2021-03-09T08:35:16&#43;08:00" />
+<meta property="og:url" content="https://charlesren.github.io/mysite-public/nmon%E7%94%9F%E6%88%90%E7%B3%BB%E7%BB%9F%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7%E6%96%87%E4%BB%B6/" /><meta property="og:image" content="https://charlesren.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-03-09T08:47:13&#43;08:00" />
+<meta property="article:modified_time" content="2021-03-09T08:47:13&#43;08:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://charlesren.github.io/logo.png"/>
 
-<meta name="twitter:title" content="Aix挂载光盘镜像"/>
-<meta name="twitter:description" content="AIX 6.1 TL 4开始，AIX系统提供了一个loopmount命令，可直接mount ISO文件 挂载点是目录，不要用建立的文件系统做挂载点 挂镜像文件: 1"/>
+<meta name="twitter:title" content="Nmon生成系统性能监控文件"/>
+<meta name="twitter:description" content="用nmon命令生成系统性能监控文件 为了查看系统在一段时间内的性能，我们可以借助系统自身提供的性能监控命令来生成一份性能监控日志，然后用nmo"/>
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://charlesren.github.io/mysite-public/aix%E6%8C%82%E8%BD%BD%E5%85%89%E7%9B%98%E9%95%9C%E5%83%8F/" /><link rel="prev" href="https://charlesren.github.io/mysite-public/asus-z390i-9700k-hackintosh-with-opencore/" /><link rel="next" href="https://charlesren.github.io/mysite-public/nmon%E7%94%9F%E6%88%90%E7%B3%BB%E7%BB%9F%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7%E6%96%87%E4%BB%B6/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/mysite-public/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://charlesren.github.io/mysite-public/nmon%E7%94%9F%E6%88%90%E7%B3%BB%E7%BB%9F%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7%E6%96%87%E4%BB%B6/" /><link rel="prev" href="https://charlesren.github.io/mysite-public/aix%E6%8C%82%E8%BD%BD%E5%85%89%E7%9B%98%E9%95%9C%E5%83%8F/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/mysite-public/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Aix挂载光盘镜像",
+        "headline": "Nmon生成系统性能监控文件",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/charlesren.github.io\/mysite-public\/aix%E6%8C%82%E8%BD%BD%E5%85%89%E7%9B%98%E9%95%9C%E5%83%8F\/"
-        },"image": ["https:\/\/charlesren.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  194 ,
-        "url": "https:\/\/charlesren.github.io\/mysite-public\/aix%E6%8C%82%E8%BD%BD%E5%85%89%E7%9B%98%E9%95%9C%E5%83%8F\/","datePublished": "2021-03-09T08:35:16+08:00","dateModified": "2021-03-09T08:35:16+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@id": "https:\/\/charlesren.github.io\/mysite-public\/nmon%E7%94%9F%E6%88%90%E7%B3%BB%E7%BB%9F%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7%E6%96%87%E4%BB%B6\/"
+        },"image": ["https:\/\/charlesren.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  248 ,
+        "url": "https:\/\/charlesren.github.io\/mysite-public\/nmon%E7%94%9F%E6%88%90%E7%B3%BB%E7%BB%9F%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7%E6%96%87%E4%BB%B6\/","datePublished": "2021-03-09T08:47:13+08:00","dateModified": "2021-03-09T08:47:13+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/charlesren.github.io\/images\/avatar.png"},"author": {
                 "@type": "Person",
@@ -47,7 +47,7 @@
         </div>
         <div class="menu">
             <div class="menu-inner"><a class="menu-item" href="/mysite-public/posts/"> 所有文章 </a><a class="menu-item" href="/mysite-public/tags/"> 标签 </a><a class="menu-item" href="/mysite-public/categories/"> 分类 </a><a class="menu-item" href="/mysite-public/categories/documentation/"> 文档 </a><a class="menu-item" href="/mysite-public/about/"> 关于 </a><a class="menu-item" href="https://github.com/charlesren" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
-                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/mysite-public/aix%E6%8C%82%E8%BD%BD%E5%85%89%E7%9B%98%E9%95%9C%E5%83%8F/" selected>简体中文</option></select>
+                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/mysite-public/nmon%E7%94%9F%E6%88%90%E7%B3%BB%E7%BB%9F%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7%E6%96%87%E4%BB%B6/" selected>简体中文</option></select>
                     </a><span class="menu-item search" id="search-desktop">
                         <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
                         <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
@@ -94,7 +94,7 @@
                 </div><a class="menu-item" href="/mysite-public/posts/" title="">所有文章</a><a class="menu-item" href="/mysite-public/tags/" title="">标签</a><a class="menu-item" href="/mysite-public/categories/" title="">分类</a><a class="menu-item" href="/mysite-public/categories/documentation/" title="">文档</a><a class="menu-item" href="/mysite-public/about/" title="">关于</a><a class="menu-item" href="https://github.com/charlesren" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
                 <i class="fas fa-adjust fa-fw"></i>
             </a><a href="javascript:void(0);" class="menu-item" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
-                    <select class="language-select" onchange="location = this.value;"><option value="/mysite-public/aix%E6%8C%82%E8%BD%BD%E5%85%89%E7%9B%98%E9%95%9C%E5%83%8F/" selected>简体中文</option></select>
+                    <select class="language-select" onchange="location = this.value;"><option value="/mysite-public/nmon%E7%94%9F%E6%88%90%E7%B3%BB%E7%BB%9F%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7%E6%96%87%E4%BB%B6/" selected>简体中文</option></select>
                 </a></div>
     </div>
 </header>
@@ -108,9 +108,9 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">目录</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animated flipInX">Aix挂载光盘镜像</h1><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animated flipInX">Nmon生成系统性能监控文件</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://charlesren.github.io/mysite-public/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>CharlesRen</a></span>&nbsp;<span class="post-category">收录于 <a href="/mysite-public/categories/tech/"><i class="far fa-folder fa-fw"></i>Tech</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-03-09">2021-03-09</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 194 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-03-09">2021-03-09</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 248 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -118,55 +118,21 @@
                     <span><i class="details-icon fas fa-angle-right"></i></span>
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
-            </div><div class="content" id="content"><p>AIX 6.1 TL 4开始，AIX系统提供了一个loopmount命令，可直接mount ISO文件</p>
-<p>挂载点是目录，不要用建立的文件系统做挂载点</p>
-<p>挂镜像文件:</p>
+            </div><div class="content" id="content"><p><strong>用nmon命令生成系统性能监控文件</strong></p>
+<p>为了查看系统在一段时间内的性能，我们可以借助系统自身提供的性能监控命令来生成一份性能监控日志，然后用nmon analyser小软件来生成图形化的监控界面.</p>
+<p>在aix操作系统下，用root 用户执行如下命令：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">loopmount -i PowerHA6.1.iso -o &#34;-V cdrfs -o ro&#34; -m /mnt
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">nmon  -f  -s 30 –c 2880  -m /tmp
 </code></pre></td></tr></table>
 </div>
-</div><p>挂光驱：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">mount -rv cdrfs /dev/cd0 /mnt
-</code></pre></td></tr></table>
-</div>
-</div><p><strong>AIX 6.1 TL4之前系统步骤示例如下：</strong></p>
-<p>一：建立一个和iso文件差不多大小的裸设备。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">mklv -y is0_lv datavg 10
-</code></pre></td></tr></table>
-</div>
-</div><p>二：用dd命令把iso文件写到这个裸设备上，</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">dd if=test_unix_mount_iso.iso of=/dev/iso_lv bs=10M
-</code></pre></td></tr></table>
-</div>
-</div><p>三：mount</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">mount -rv cdrfs /dev/iso_lv   /mnt
-</code></pre></td></tr></table>
-</div>
-</div><p>这样，在mnt下就是iso文件的内容了。</p>
+</div><p><em>系统每隔30秒，总共2880次监控性能，生成的文件存放在/tmp目录下。</em></p>
+<p><strong>topas</strong></p>
+<p>系统自动保存topas文件，可以转为csv文件，用nmon工具分析。文件在/etc/perf/daily目录下</p>
+<p>topas文件可通过topasout -a xxxxx.topas 转化为csv文件</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
@@ -177,10 +143,10 @@
         </div>
         <div class="post-info-line">
             <div class="post-info-md"><span>
-                            <a class="link-to-markdown" href="/mysite-public/aix%E6%8C%82%E8%BD%BD%E5%85%89%E7%9B%98%E9%95%9C%E5%83%8F/index.md" target="_blank">阅读原始文档</a>
+                            <a class="link-to-markdown" href="/mysite-public/nmon%E7%94%9F%E6%88%90%E7%B3%BB%E7%BB%9F%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7%E6%96%87%E4%BB%B6/index.md" target="_blank">阅读原始文档</a>
                         </span></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://charlesren.github.io/mysite-public/aix%E6%8C%82%E8%BD%BD%E5%85%89%E7%9B%98%E9%95%9C%E5%83%8F/" data-title="Aix挂载光盘镜像"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://charlesren.github.io/mysite-public/aix%E6%8C%82%E8%BD%BD%E5%85%89%E7%9B%98%E9%95%9C%E5%83%8F/"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://charlesren.github.io/mysite-public/aix%E6%8C%82%E8%BD%BD%E5%85%89%E7%9B%98%E9%95%9C%E5%83%8F/" data-title="Aix挂载光盘镜像"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://charlesren.github.io/mysite-public/aix%E6%8C%82%E8%BD%BD%E5%85%89%E7%9B%98%E9%95%9C%E5%83%8F/" data-title="Aix挂载光盘镜像"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://charlesren.github.io/mysite-public/aix%E6%8C%82%E8%BD%BD%E5%85%89%E7%9B%98%E9%95%9C%E5%83%8F/" data-title="Aix挂载光盘镜像"><i class="fab fa-weibo fa-fw"></i></a></span>
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://charlesren.github.io/mysite-public/nmon%E7%94%9F%E6%88%90%E7%B3%BB%E7%BB%9F%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7%E6%96%87%E4%BB%B6/" data-title="Nmon生成系统性能监控文件"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://charlesren.github.io/mysite-public/nmon%E7%94%9F%E6%88%90%E7%B3%BB%E7%BB%9F%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7%E6%96%87%E4%BB%B6/"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://charlesren.github.io/mysite-public/nmon%E7%94%9F%E6%88%90%E7%B3%BB%E7%BB%9F%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7%E6%96%87%E4%BB%B6/" data-title="Nmon生成系统性能监控文件"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://charlesren.github.io/mysite-public/nmon%E7%94%9F%E6%88%90%E7%B3%BB%E7%BB%9F%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7%E6%96%87%E4%BB%B6/" data-title="Nmon生成系统性能监控文件"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://charlesren.github.io/mysite-public/nmon%E7%94%9F%E6%88%90%E7%B3%BB%E7%BB%9F%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7%E6%96%87%E4%BB%B6/" data-title="Nmon生成系统性能监控文件"><i class="fab fa-weibo fa-fw"></i></a></span>
             </div>
         </div>
     </div>
@@ -192,8 +158,7 @@
         </section>
     </div>
 
-    <div class="post-nav"><a href="/mysite-public/asus-z390i-9700k-hackintosh-with-opencore/" class="prev" rel="prev" title="Asus Z390i 9700k Hackintosh With OpenCore"><i class="fas fa-angle-left fa-fw"></i>Asus Z390i 9700k Hackintosh With OpenCore</a>
-            <a href="/mysite-public/nmon%E7%94%9F%E6%88%90%E7%B3%BB%E7%BB%9F%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7%E6%96%87%E4%BB%B6/" class="next" rel="next" title="Nmon生成系统性能监控文件">Nmon生成系统性能监控文件<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/mysite-public/aix%E6%8C%82%E8%BD%BD%E5%85%89%E7%9B%98%E9%95%9C%E5%83%8F/" class="prev" rel="prev" title="Aix挂载光盘镜像"><i class="fas fa-angle-left fa-fw"></i>Aix挂载光盘镜像</a></div>
 </div>
 <div id="comments"></div></article></div>
             </main><footer class="footer">

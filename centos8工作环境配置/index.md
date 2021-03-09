@@ -67,6 +67,13 @@ tar -C /usr/local -xzf gox.xx.x.linux-amd64.tar.gz
 vim $HOME/.bash_profile
 
 export PATH=$PATH:/usr/local/go/bin
+#### 设置代理
+打开Terminal执行
+```
+go env -w GO111MODULE=on
+go env -w GOPROXY=https://goproxy.cn,direct
+```
+
 ### 安装vnc
 参考[Centos8安装VNC](https://charlesren.github.io/mysite-public/centos8%E5%AE%89%E8%A3%85vnc/)
 
