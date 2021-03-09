@@ -4,9 +4,16 @@
         <link>https://charlesren.github.io/mysite-public/</link>
         <description>关于 LoveIt 主题</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>renccn@gmail.com (CharlesRen)</managingEditor>
-            <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 09 Mar 2021 10:30:26 &#43;0800</lastBuildDate>
+            <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 09 Mar 2021 11:30:03 &#43;0800</lastBuildDate>
             <atom:link href="https://charlesren.github.io/mysite-public/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Yum源的使用方法</title>
+    <link>https://charlesren.github.io/mysite-public/yum%E6%BA%90%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
+    <pubDate>Tue, 09 Mar 2021 11:30:03 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://charlesren.github.io/mysite-public/yum%E6%BA%90%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
+    <description><![CDATA[1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 ##################################### ##################################### ####### YUM 使用方法 （仅redhat 6.2) ########## ##################################### ##################################### # 在客户机/etc]]></description>
+</item><item>
     <title>Centos连接存储</title>
     <link>https://charlesren.github.io/mysite-public/centos%E8%BF%9E%E6%8E%A5%E5%AD%98%E5%82%A8/</link>
     <pubDate>Tue, 09 Mar 2021 10:30:26 &#43;0800</pubDate>
@@ -69,12 +76,5 @@
     <author>作者</author>
     <guid>https://charlesren.github.io/mysite-public/shell%E5%AD%A6%E4%B9%A0/</guid>
     <description><![CDATA[变量嵌套 1 2 3 4 5 6 7 8 [root@renccblj ~]# a=b [root@renccblj ~]# c=a [root@renccblj ~]# echo ${!c} b [root@renccblj ~]# [root@renccblj ~]# eval echo $&#34;${c}&#34; a [root@renccblj ~]# Aix下只能用 eval 算术精度 取小数点后两位 1 2 3 4 5 6 [root@renccblj ~]# echo &#34;scale=2; 5/3 &#34; | bc 1.66 [root@renccblj ~]# [root@renccblj]]></description>
-</item><item>
-    <title>Aria2 on Docker</title>
-    <link>https://charlesren.github.io/mysite-public/aria2-on-docker/</link>
-    <pubDate>Wed, 03 Mar 2021 16:17:13 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://charlesren.github.io/mysite-public/aria2-on-docker/</guid>
-    <description><![CDATA[1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  [root@192 conf]# cat aria2.sh #mkdir -p ~/aria2/conf #cd ~/aria2/conf #touch aria2.conf #touch aria2.session #touch aria2.session #touch dht.dat #touch dht6.dat docker run -d \ --name aria2-with-webui \ -p 6800:6800 \ -p 6880:80 \ -v /data/Downloads:/data \ -v ~/aria2/conf:/conf \ -e PGID=0 \ -e PUID=0 \ abcminiuser/docker-aria2-with-webui:latest-ng   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39  [root@192 conf]# cat aria2.]]></description>
 </item></channel>
 </rss>
