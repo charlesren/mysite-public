@@ -292,7 +292,7 @@ vgcreate vg_data /dev/mapper/360050768018207840000000000000000 /dev/mapper/36005
 lvcreate -L 600G -n lv_data vg_data
 mkfs.ext4 /dev/vg_data/lv_data
 mkdir /data
-chmod 777 /data
+chmod 755 /data
 mount /dev/vg_data/lv_data /data
 </code></pre></td></tr></table>
 </div>
