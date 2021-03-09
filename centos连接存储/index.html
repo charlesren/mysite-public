@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Centos连接存储 - CharlesRen</title><meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Centos连接存储" />
+<meta property="og:description" content="device-mapper 检查是否安装多路径软件包 device-mapper device-mapper-multipath 1 rpm -qa |grep device-mapper 安装device-mapper, device-mapper-multipath 1 yum install -y device-mapper device-mapper-multipath 生成多路径配置文件 1 mpathconf --enable 说明：生成配置文件是/etc/" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://charlesren.github.io/mysite-public/centos%E8%BF%9E%E6%8E%A5%E5%AD%98%E5%82%A8/" /><meta property="og:image" content="https://charlesren.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-03-09T10:30:26&#43;08:00" />
+<meta property="article:modified_time" content="2021-03-09T10:30:26&#43;08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://charlesren.github.io/logo.png"/>
+
+<meta name="twitter:title" content="Centos连接存储"/>
+<meta name="twitter:description" content="device-mapper 检查是否安装多路径软件包 device-mapper device-mapper-multipath 1 rpm -qa |grep device-mapper 安装device-mapper, device-mapper-multipath 1 yum install -y device-mapper device-mapper-multipath 生成多路径配置文件 1 mpathconf --enable 说明：生成配置文件是/etc/"/>
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://charlesren.github.io/mysite-public/centos%E8%BF%9E%E6%8E%A5%E5%AD%98%E5%82%A8/" /><link rel="prev" href="https://charlesren.github.io/mysite-public/nmon%E7%94%9F%E6%88%90%E7%B3%BB%E7%BB%9F%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7%E6%96%87%E4%BB%B6/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/mysite-public/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Centos连接存储",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/charlesren.github.io\/mysite-public\/centos%E8%BF%9E%E6%8E%A5%E5%AD%98%E5%82%A8\/"
+        },"image": ["https:\/\/charlesren.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  1130 ,
+        "url": "https:\/\/charlesren.github.io\/mysite-public\/centos%E8%BF%9E%E6%8E%A5%E5%AD%98%E5%82%A8\/","datePublished": "2021-03-09T10:30:26+08:00","dateModified": "2021-03-09T10:30:26+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/charlesren.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "CharlesRen"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/mysite-public/" title="CharlesRen"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>CharlesRen</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/mysite-public/posts/"> 所有文章 </a><a class="menu-item" href="/mysite-public/tags/"> 标签 </a><a class="menu-item" href="/mysite-public/categories/"> 分类 </a><a class="menu-item" href="/mysite-public/categories/documentation/"> 文档 </a><a class="menu-item" href="/mysite-public/about/"> 关于 </a><a class="menu-item" href="https://github.com/charlesren" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
+                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/mysite-public/centos%E8%BF%9E%E6%8E%A5%E5%AD%98%E5%82%A8/" selected>简体中文</option></select>
+                    </a><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/mysite-public/" title="CharlesRen"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>CharlesRen</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/mysite-public/posts/" title="">所有文章</a><a class="menu-item" href="/mysite-public/tags/" title="">标签</a><a class="menu-item" href="/mysite-public/categories/" title="">分类</a><a class="menu-item" href="/mysite-public/categories/documentation/" title="">文档</a><a class="menu-item" href="/mysite-public/about/" title="">关于</a><a class="menu-item" href="https://github.com/charlesren" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/mysite-public/centos%E8%BF%9E%E6%8E%A5%E5%AD%98%E5%82%A8/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Centos连接存储</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://charlesren.github.io/mysite-public/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>CharlesRen</a></span>&nbsp;<span class="post-category">收录于 <a href="/mysite-public/categories/tech/"><i class="far fa-folder fa-fw"></i>Tech</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-03-09">2021-03-09</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1130 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 3 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#device-mapper">device-mapper</a></li>
+        <li><a href="#lvm配置">LVM配置</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h3 id="device-mapper">device-mapper</h3>
+<p><strong>检查是否安装多路径软件包  device-mapper  device-mapper-multipath</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">rpm -qa |grep device-mapper
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>安装device-mapper, device-mapper-multipath</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">yum install -y    device-mapper  device-mapper-multipath
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>生成多路径配置文件</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">mpathconf --enable
+</code></pre></td></tr></table>
+</div>
+</div><p><em>说明：生成配置文件是/etc/multipath.conf</em></p>
+<p><strong>修改配置文件</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">vim /etc/multipath.conf
+#blacklist {
+#devnode &#34;*&#34;
+#}
+defaults {
+user_friendly_names yes
+path_grouping_policy multibus
+failback immediate
+no_path_retry fail
+}
+</code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">在默认配置下，LVM对所有磁盘进行扫描，以确定哪一块上面包含PV。如果使用了device-mapper-multipath或其他多路径软件如 EMC PowerPath 或Hitachi Dynamic Link Manager (HDLM)，那么对于每一个LUN的每一条路径就注册成为一个不同的SCSI设备。如/dev/sdb， /dev/sdc，等等。多路径软件之后会创建一个新的设备映射到这些路径如：/dev/mapper/mpath1 (device-mapper-multipath)， /dev/emcpowerb (EMC PowerPath)，或 /dev/sddlmab (HDLM)。由于每一个设备都指向同一个LUN，所以它们都包含相同的LVM元数据，因此在扫描时显示为duplicate。运行任何LVM命令，都会出现你所说的告警。
+
+With a default configuration, LVM commands will scan for devices in /dev, and check every resulting device for LVM metadata.   This is caused by the default filter in /etc/lvm/lvm.conf:
+
+ 
+要确保LVM只扫描想要的多路径设备而不是单条路径，需要在/etc/lvm/lvm.conf文件中加上过滤条件，格式如下：
+filter = [ &#34;a/.*/&#34; ]
+过滤语法接收多重条件。形式如 &#34;a&#34; &#34;&#34; (add) or &#34;r&#34; &#34;&#34; (remove)，中间以逗号为间隔。所有符合add条件的设备都会被扫描，同时忽略所有符合remove条件的设备。
+ 
+注意：如果本地存储设备包含物理卷，确保除了多路径设备外，这些设备也包含在过滤条件中。
+ filter = [ &#34;a/emcpower.*/&#34;,&#34;a/mpath.*/&#34;,&#34;r/sd.*/&#34; ]
+ 
+然后重新扫描一下确认所有设备都能被看见：
+#pvscan
+#vgscan
+ 
+注意如果根文件系统位于逻辑卷上，确保上述扫描命令列出卷组中所有物理卷。如果没有列出，不要重启系统，直到过滤条件修改正确为止。
+ 
+过滤条件修改好后，建议重新编译initrd以使所需设备在重启后能够自动扫描。
+补充：
+使用上述方法仍然没有解决问题，最终问题通过如下方法解决
+1，修改了/etc/fstab 文件，文件系统为延时mount，也就是powerpath启动后在mount
+
+/dev/dbvg/lv_mysql      /data                     ext3    _netdev        1 2                 
+
+2，mysql最后再启动，防止文件系统没有mount就启动了
+lrwxrwxrwx 1 root root 15 Mar  2  2013 S99mysql -&gt; ../init.d/mysql
+</code></pre></td></tr></table>
+</div>
+</div></blockquote>
+<p><strong>启动multipath服务</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">modprobe dm-multipath
+/etc/init.d/multipathd start
+chkconfig multipathd on
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>查看磁盘</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">multipath -ll
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="lvm配置">LVM配置</h3>
+<blockquote>
+<p>使用/dev/mapper/下带wwid的盘</p>
+<p>不要用/dev/dm-0 之类的盘</p>
+<p>dm-0&hellip;. 内部使用</p>
+</blockquote>
+<p><strong>创建vg,lv</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">pvcreate /dev/mapper/360050768018207840000000000000000
+pvcreate /dev/mapper/360050768018207840000000000000001
+vgcreate vg_data /dev/mapper/360050768018207840000000000000000 /dev/mapper/360050768018207840000000000000001
+lvcreate -L 600G -n lv_data vg_data
+mkfs.ext4 /dev/vg_data/lv_data
+mkdir /data
+chmod 777 /data
+mount /dev/vg_data/lv_data /data
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>开机自动挂载文件系统</strong></p>
+<p>/etc/fstab 文件添加如下内容</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">/dev/vg_data/lv_data   /data   auto  defaults  0  0
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>调整LV大小</strong></p>
+<ul>
+<li>扩大LV
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">lvextend -L +350G /dev/mapper/vg_data-lv_data
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>缩减lv
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">lvreduce -L -20G  /dev/mapper/vg_blade4linux-lv_home
+</code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+<p><strong>调整文件系统大小</strong></p>
+<ul>
+<li>ext4
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">resize2fs   /dev/mapper/lv_data-lv_data
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>xfs
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">xfs_growfs  /dev/mapper/lv_data-lv_data
+</code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+<p><strong>删除vg</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">umount /u01
+lvremove /dev/mapper/vg_data-lv_u01
+vgs
+pvs
+pvremove /dev/sdb
+vgreduce vg_data /dev/sdb
+vgremove vg_data
+</code></pre></td></tr></table>
+</div>
+</div></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2021-03-09</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/mysite-public/centos%E8%BF%9E%E6%8E%A5%E5%AD%98%E5%82%A8/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://charlesren.github.io/mysite-public/centos%E8%BF%9E%E6%8E%A5%E5%AD%98%E5%82%A8/" data-title="Centos连接存储"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://charlesren.github.io/mysite-public/centos%E8%BF%9E%E6%8E%A5%E5%AD%98%E5%82%A8/"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://charlesren.github.io/mysite-public/centos%E8%BF%9E%E6%8E%A5%E5%AD%98%E5%82%A8/" data-title="Centos连接存储"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://charlesren.github.io/mysite-public/centos%E8%BF%9E%E6%8E%A5%E5%AD%98%E5%82%A8/" data-title="Centos连接存储"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://charlesren.github.io/mysite-public/centos%E8%BF%9E%E6%8E%A5%E5%AD%98%E5%82%A8/" data-title="Centos连接存储"><i class="fab fa-weibo fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/mysite-public/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/mysite-public/nmon%E7%94%9F%E6%88%90%E7%B3%BB%E7%BB%9F%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7%E6%96%87%E4%BB%B6/" class="prev" rel="prev" title="Nmon生成系统性能监控文件"><i class="fas fa-angle-left fa-fw"></i>Nmon生成系统性能监控文件</a></div>
+</div>
+<div id="comments"></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.81.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://charlesren.github.io/mysite-public/" target="_blank">CharlesRen</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/mysite-public/js/theme.min.js"></script></body>
+</html>
