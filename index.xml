@@ -4,9 +4,16 @@
         <link>https://charlesren.github.io/mysite-public/</link>
         <description>关于 LoveIt 主题</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>renccn@gmail.com (CharlesRen)</managingEditor>
-            <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 09 Mar 2021 14:47:50 &#43;0800</lastBuildDate>
+            <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 10 Mar 2021 16:07:54 &#43;0800</lastBuildDate>
             <atom:link href="https://charlesren.github.io/mysite-public/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Clickhouse容器化部署及使用</title>
+    <link>https://charlesren.github.io/mysite-public/clickhouse%E5%AE%B9%E5%99%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E5%8F%8A%E4%BD%BF%E7%94%A8/</link>
+    <pubDate>Wed, 10 Mar 2021 16:07:54 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://charlesren.github.io/mysite-public/clickhouse%E5%AE%B9%E5%99%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E5%8F%8A%E4%BD%BF%E7%94%A8/</guid>
+    <description><![CDATA[下载镜像 1 docker pull yandex/clickhouse-server 准备存储空间 clickhouse server 重要目录介绍 数据文件: /var/lib/clickhouse 配置文件: /etc/clickhouse-sever 日志文件: /var/log/clickhouse-server 以/data为外接存储为例,新建数据目录 1 mkdir -p /data/clickhouse 启动clic]]></description>
+</item><item>
     <title>Centos使用ZFS文件系统</title>
     <link>https://charlesren.github.io/mysite-public/centos%E4%BD%BF%E7%94%A8zfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</link>
     <pubDate>Tue, 09 Mar 2021 14:47:50 &#43;0800</pubDate>
@@ -69,12 +76,5 @@
     <author>作者</author>
     <guid>https://charlesren.github.io/mysite-public/asus-z390i-9700k-hackintosh-with-opencore/</guid>
     <description><![CDATA[硬件配置 配件 型号 价格 散热 海盗船h60 378.9 电源 海盗船sf600 698.9 机箱 追风者217e 700 主板 华硕rog z390i 1869 显示器 dell2419 1498.5 硬盘 三星970evo500g 879 硅]]></description>
-</item><item>
-    <title>Linux添加特权用户</title>
-    <link>https://charlesren.github.io/mysite-public/linux%E6%B7%BB%E5%8A%A0%E7%89%B9%E6%9D%83%E7%94%A8%E6%88%B7/</link>
-    <pubDate>Thu, 04 Mar 2021 17:07:43 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://charlesren.github.io/mysite-public/linux%E6%B7%BB%E5%8A%A0%E7%89%B9%E6%9D%83%E7%94%A8%E6%88%B7/</guid>
-    <description><![CDATA[在unix linux 系统中，系统通过uid 识别用户。 root 用户uid=0 gid=0，root用户是唯一的。 若其他用户与root用户uid,gid相同，就]]></description>
 </item></channel>
 </rss>
