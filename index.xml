@@ -7,12 +7,12 @@
             <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 10 Mar 2021 16:07:54 &#43;0800</lastBuildDate>
             <atom:link href="https://charlesren.github.io/mysite-public/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>Clickhouse容器化部署及使用</title>
-    <link>https://charlesren.github.io/mysite-public/clickhouse%E5%AE%B9%E5%99%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E5%8F%8A%E4%BD%BF%E7%94%A8/</link>
+    <title>容器化部署Clickhouse及Tabix</title>
+    <link>https://charlesren.github.io/mysite-public/%E5%AE%B9%E5%99%A8%E5%8C%96%E9%83%A8%E7%BD%B2clickhouse%E5%8F%8Atabix/</link>
     <pubDate>Wed, 10 Mar 2021 16:07:54 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>https://charlesren.github.io/mysite-public/clickhouse%E5%AE%B9%E5%99%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E5%8F%8A%E4%BD%BF%E7%94%A8/</guid>
-    <description><![CDATA[下载镜像 1 docker pull yandex/clickhouse-server 准备存储空间 clickhouse server 重要目录介绍 数据文件: /var/lib/clickhouse 配置文件: /etc/clickhouse-sever 日志文件: /var/log/clickhouse-server 以/data为外接存储为例,新建数据目录 1 mkdir -p /data/clickhouse 启动clic]]></description>
+    <guid>https://charlesren.github.io/mysite-public/%E5%AE%B9%E5%99%A8%E5%8C%96%E9%83%A8%E7%BD%B2clickhouse%E5%8F%8Atabix/</guid>
+    <description><![CDATA[下载镜像 1 docker pull yandex/clickhouse-server 准备数据目录 clickhouse server 重要目录介绍 数据文件: /var/lib/clickhouse 配置文件: /etc/clickhouse-sever 日志文件: /var/log/clickhouse-server 以/data为外接存储为例,新建数据目录 1 mkdir -p /data/clickhouse 启动clic]]></description>
 </item><item>
     <title>Centos使用ZFS文件系统</title>
     <link>https://charlesren.github.io/mysite-public/centos%E4%BD%BF%E7%94%A8zfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</link>
