@@ -36,7 +36,7 @@ Configuration > Data Sources > Add data source
 > - Additional
 >
 >   根据情况设置Default database ,如默认则无需设置
-### 创建 Dashboard
+### 自定义Dashboard
 Create > Dashboard > Add new panl菜单,编辑Query tab页
 
 - 选择数据源
