@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/charlesren.github.io\/mysite-public\/grafana%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8\/"
-        },"image": ["https:\/\/charlesren.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  530 ,
+        },"image": ["https:\/\/charlesren.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  556 ,
         "url": "https:\/\/charlesren.github.io\/mysite-public\/grafana%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8\/","datePublished": "2021-03-18T08:45:37+08:00","dateModified": "2021-03-18T08:45:37+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/charlesren.github.io\/images\/avatar.png"},"author": {
@@ -110,7 +110,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Grafana的安装及使用</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://charlesren.github.io/mysite-public/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>CharlesRen</a></span>&nbsp;<span class="post-category">收录于 <a href="/mysite-public/categories/tools/"><i class="far fa-folder fa-fw"></i>Tools</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-03-18">2021-03-18</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 530 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-03-18">2021-03-18</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 556 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -208,14 +208,16 @@ docker restart grafana
 <p>Create &gt; Dashboard &gt; Add new panl菜单,编辑Query tab页</p>
 <ul>
 <li>选择数据源</li>
-<li>Form 选择database名称及表名</li>
 <li>Format As 选择展示方式：时间序列或表格</li>
+<li>Form 选择database名称及表名</li>
+<li>Column:DataTime 输入表中时间列</li>
 <li>Text edit modle 输入SQL
 <blockquote>
 <p>以展示数据库中两列值trade_date,high为例</p>
 <p>trade_date格式为20200319,high格式为61.64</p>
 <p><em>Format As: Time Series</em></p>
 <p><em>库/表  ： tushare/dailies</em></p>
+<p>Column:DataTime 输入表中时间列trade_date</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1

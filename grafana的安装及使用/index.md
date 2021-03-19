@@ -42,8 +42,9 @@ Configuration > Data Sources > Add data source
 Create > Dashboard > Add new panl菜单,编辑Query tab页
 
 - 选择数据源
-- Form 选择database名称及表名
 - Format As 选择展示方式：时间序列或表格
+- Form 选择database名称及表名
+- Column:DataTime 输入表中时间列 
 - Text edit modle 输入SQL
   > 以展示数据库中两列值trade_date,high为例
   >
@@ -52,6 +53,8 @@ Create > Dashboard > Add new panl菜单,编辑Query tab页
   > *Format As: Time Series*
   >
   > *库/表  ： tushare/dailies*
+  >
+  > Column:DataTime 输入表中时间列trade_date
   > ```
   > SELECT
   >     (intDiv(toUInt32(toDateTime(concat(substr(trade_date, 1, 4), '-', substr(trade_date, 5, 2), '-', substr(trade_date, 7, 2), ' ', '00:00:00'))), 2) * 2) * 1000 as t,
