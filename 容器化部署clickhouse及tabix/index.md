@@ -24,6 +24,8 @@ docker run -d --name clickhouse-server \
 --ulimit nofile=262144:262144 \
 --volume=/data/clickhouse:/var/lib/clickhouse \
 -p 8123:8123 \
+-p 9000:9000 \
+-p 9009:9009 \
 yandex/clickhouse-server 
 ```
 #### 新建数据库用户

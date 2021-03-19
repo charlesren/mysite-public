@@ -20,7 +20,7 @@
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://charlesren.github.io/mysite-public/%E5%AE%B9%E5%99%A8%E5%8C%96%E9%83%A8%E7%BD%B2clickhouse%E5%8F%8Atabix/" /><link rel="prev" href="https://charlesren.github.io/mysite-public/centos%E4%BD%BF%E7%94%A8zfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/mysite-public/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://charlesren.github.io/mysite-public/%E5%AE%B9%E5%99%A8%E5%8C%96%E9%83%A8%E7%BD%B2clickhouse%E5%8F%8Atabix/" /><link rel="prev" href="https://charlesren.github.io/mysite-public/centos%E4%BD%BF%E7%94%A8zfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/" /><link rel="next" href="https://charlesren.github.io/mysite-public/grafana%E5%AE%89%E8%A3%85%E5%8F%8Aa%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/mysite-public/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/charlesren.github.io\/mysite-public\/%E5%AE%B9%E5%99%A8%E5%8C%96%E9%83%A8%E7%BD%B2clickhouse%E5%8F%8Atabix\/"
-        },"image": ["https:\/\/charlesren.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  732 ,
+        },"image": ["https:\/\/charlesren.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  740 ,
         "url": "https:\/\/charlesren.github.io\/mysite-public\/%E5%AE%B9%E5%99%A8%E5%8C%96%E9%83%A8%E7%BD%B2clickhouse%E5%8F%8Atabix\/","datePublished": "2021-03-10T16:07:54+08:00","dateModified": "2021-03-10T16:07:54+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/charlesren.github.io\/images\/avatar.png"},"author": {
@@ -110,7 +110,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">容器化部署Clickhouse及Tabix</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://charlesren.github.io/mysite-public/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>CharlesRen</a></span>&nbsp;<span class="post-category">收录于 <a href="/mysite-public/categories/tools/"><i class="far fa-folder fa-fw"></i>Tools</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-03-10">2021-03-10</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 732 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-03-10">2021-03-10</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 740 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -182,12 +182,16 @@
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-fallback" data-lang="fallback">docker run -d --name clickhouse-server \
 --ulimit nofile=262144:262144 \
 --volume=/data/clickhouse:/var/lib/clickhouse \
 -p 8123:8123 \
+-p 9000:9000 \
+-p 9009:9009 \
 yandex/clickhouse-server 
 </code></pre></td></tr></table>
 </div>
@@ -329,7 +333,8 @@ Connected to ClickHouse server version 21.1.2 revision 54443.
         </section>
     </div>
 
-    <div class="post-nav"><a href="/mysite-public/centos%E4%BD%BF%E7%94%A8zfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/" class="prev" rel="prev" title="Centos使用ZFS文件系统"><i class="fas fa-angle-left fa-fw"></i>Centos使用ZFS文件系统</a></div>
+    <div class="post-nav"><a href="/mysite-public/centos%E4%BD%BF%E7%94%A8zfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/" class="prev" rel="prev" title="Centos使用ZFS文件系统"><i class="fas fa-angle-left fa-fw"></i>Centos使用ZFS文件系统</a>
+            <a href="/mysite-public/grafana%E5%AE%89%E8%A3%85%E5%8F%8Aa%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/" class="next" rel="next" title="Grafana安装及使用">Grafana安装及使用<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id="comments"></div></article></div>
             </main><footer class="footer">

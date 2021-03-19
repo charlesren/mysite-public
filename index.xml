@@ -4,9 +4,16 @@
         <link>https://charlesren.github.io/mysite-public/</link>
         <description>关于 LoveIt 主题</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>renccn@gmail.com (CharlesRen)</managingEditor>
-            <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 10 Mar 2021 16:07:54 &#43;0800</lastBuildDate>
+            <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 18 Mar 2021 08:45:37 &#43;0800</lastBuildDate>
             <atom:link href="https://charlesren.github.io/mysite-public/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Grafana安装及使用</title>
+    <link>https://charlesren.github.io/mysite-public/grafana%E5%AE%89%E8%A3%85%E5%8F%8Aa%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/</link>
+    <pubDate>Thu, 18 Mar 2021 08:45:37 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://charlesren.github.io/mysite-public/grafana%E5%AE%89%E8%A3%85%E5%8F%8Aa%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/</guid>
+    <description><![CDATA[安装 1 docker pull grafana/grafana 准备存储空间 1 mkdir -p /data/grafana 启动 1 docker run -d -p 3000:3000 -v /data/grafana:/var/lib/grafana --name grafana grafana/grafana 登录 浏览器访问http://localhost:3000/login 默认用户名密码]]></description>
+</item><item>
     <title>容器化部署Clickhouse及Tabix</title>
     <link>https://charlesren.github.io/mysite-public/%E5%AE%B9%E5%99%A8%E5%8C%96%E9%83%A8%E7%BD%B2clickhouse%E5%8F%8Atabix/</link>
     <pubDate>Wed, 10 Mar 2021 16:07:54 &#43;0800</pubDate>
@@ -69,12 +76,5 @@
     <author>作者</author>
     <guid>https://charlesren.github.io/mysite-public/aix%E6%8C%82%E8%BD%BD%E5%85%89%E7%9B%98%E9%95%9C%E5%83%8F/</guid>
     <description><![CDATA[AIX 6.1 TL 4开始，AIX系统提供了一个loopmount命令，可直接mount ISO文件 挂载点是目录，不要用建立的文件系统做挂载点 挂镜像文件: 1]]></description>
-</item><item>
-    <title>Asus Z390i 9700k Hackintosh With OpenCore</title>
-    <link>https://charlesren.github.io/mysite-public/asus-z390i-9700k-hackintosh-with-opencore/</link>
-    <pubDate>Thu, 04 Mar 2021 17:39:57 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://charlesren.github.io/mysite-public/asus-z390i-9700k-hackintosh-with-opencore/</guid>
-    <description><![CDATA[硬件配置 配件 型号 价格 散热 海盗船h60 378.9 电源 海盗船sf600 698.9 机箱 追风者217e 700 主板 华硕rog z390i 1869 显示器 dell2419 1498.5 硬盘 三星970evo500g 879 硅]]></description>
 </item></channel>
 </rss>
