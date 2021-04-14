@@ -12,11 +12,11 @@
     <guid>https://charlesren.github.io/mysite-public/nats%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
     <description><![CDATA[单机部署参考NATS Docker tutorial 集群部署参考nats_docker 单机部署 下载镜像 1 docker pull nats 启动服务 1 docker run -p 4222:4222 -p 8222:8222 -p 6222:6222 --name nats-server -d nats:latest 查看服务 通过 http://localhost:8222 查看服务状]]></description>
 </item><item>
-    <title>Grafana安装及使用</title>
-    <link>https://charlesren.github.io/mysite-public/grafana%E5%AE%89%E8%A3%85%E5%8F%8A%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/</link>
+    <title>Grafana的安装及使用</title>
+    <link>https://charlesren.github.io/mysite-public/grafana%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/</link>
     <pubDate>Thu, 18 Mar 2021 08:45:37 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>https://charlesren.github.io/mysite-public/grafana%E5%AE%89%E8%A3%85%E5%8F%8A%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/</guid>
+    <guid>https://charlesren.github.io/mysite-public/grafana%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/</guid>
     <description><![CDATA[安装 1 docker pull grafana/grafana 准备存储空间 1 mkdir -p /data/grafana 启动 1 docker run -d -p 3000:3000 -v /data/grafana:/var/lib/grafana --name grafana grafana/grafana 登录 浏览器访问http://localhost:3000/login 默认用户名密码]]></description>
 </item><item>
     <title>容器化部署Clickhouse及Tabix</title>
