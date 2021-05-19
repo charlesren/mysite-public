@@ -2,7 +2,7 @@
     <channel>
         <title>CharlesRen</title>
         <link>https://charlesren.github.io/mysite-public/en/</link>
-        <description>About LoveIt Theme</description>
+        <description>About DoIt Theme</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>renccn@gmail.com (CharlesRen)</managingEditor>
             <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
             <atom:link href="https://charlesren.github.io/mysite-public/en/index.xml" rel="self" type="application/rss+xml" />

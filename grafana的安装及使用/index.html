@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Grafana的安装及使用 - CharlesRen</title><meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Grafana的安装及使用" />
+        <title>Grafana的安装及使用 - CharlesRen</title><meta name="Description" content="关于 DoIt 主题"><meta property="og:title" content="Grafana的安装及使用" />
 <meta property="og:description" content="安装 1 docker pull grafana/grafana 准备存储空间 1 mkdir -p /data/grafana 启动 1 docker run -d -p 3000:3000 -v /data/grafana:/var/lib/grafana --name grafana grafana/grafana 登录 浏览器访问http://localhost:3000/login 默认用户名密码" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://charlesren.github.io/mysite-public/grafana%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/" /><meta property="og:image" content="https://charlesren.github.io/logo.png"/><meta property="article:section" content="posts" />
@@ -17,15 +17,15 @@
 
 <meta name="twitter:title" content="Grafana的安装及使用"/>
 <meta name="twitter:description" content="安装 1 docker pull grafana/grafana 准备存储空间 1 mkdir -p /data/grafana 启动 1 docker run -d -p 3000:3000 -v /data/grafana:/var/lib/grafana --name grafana grafana/grafana 登录 浏览器访问http://localhost:3000/login 默认用户名密码"/>
-<meta name="application-name" content="LoveIt">
-<meta name="apple-mobile-web-app-title" content="LoveIt">
+<meta name="application-name" content="DoIt">
+<meta name="apple-mobile-web-app-title" content="DoIt">
 
 <meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://charlesren.github.io/mysite-public/grafana%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/" /><link rel="prev" href="https://charlesren.github.io/mysite-public/%E5%AE%B9%E5%99%A8%E5%8C%96%E9%83%A8%E7%BD%B2clickhouse%E5%8F%8Atabix/" /><link rel="next" href="https://charlesren.github.io/mysite-public/nats%E7%9A%84%E4%BD%BF%E7%94%A8/" /><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
-    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"></noscript><link rel="stylesheet" href="/mysite-public/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css">
-    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css">
-    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://charlesren.github.io/mysite-public/grafana%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/" /><link rel="prev" href="https://charlesren.github.io/mysite-public/%E5%AE%B9%E5%99%A8%E5%8C%96%E9%83%A8%E7%BD%B2clickhouse%E5%8F%8Atabix/" /><link rel="next" href="https://charlesren.github.io/mysite-public/nats%E7%9A%84%E4%BD%BF%E7%94%A8/" /><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/mysite-public/lib/normalize/normalize.min.css">
+    <noscript><link rel="stylesheet" href="/mysite-public/lib/normalize/normalize.min.css"></noscript><link rel="stylesheet" href="/mysite-public/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/mysite-public/lib/fontawesome-free/all.min.css">
+    <noscript><link rel="stylesheet" href="/mysite-public/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/mysite-public/lib/animate/animate.min.css">
+    <noscript><link rel="stylesheet" href="/mysite-public/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -87,7 +87,7 @@
         <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
     <div class="header-wrapper">
         <div class="header-title">
-            <a href="/mysite-public/" title="CharlesRen"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>CharlesRen</a>
+            <a href="/mysite-public/" title="CharlesRen"><span class="header-title-pre"><i class='far fa-edit fa-fw'></i></span>CharlesRen</a>
         </div>
         <div class="menu">
             <div class="menu-inner"><a class="menu-item" href="/mysite-public/posts/"> 所有文章 </a><a class="menu-item" href="/mysite-public/tags/"> 标签 </a><a class="menu-item" href="/mysite-public/categories/"> 分类 </a><a class="menu-item" href="/mysite-public/categories/documentation/"> 文档 </a><a class="menu-item" href="/mysite-public/about/"> 关于 </a><a class="menu-item" href="https://github.com/charlesren" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
@@ -103,8 +103,14 @@
                         <span class="search-button search-loading" id="search-loading-desktop">
                             <i class="fas fa-spinner fa-fw fa-spin"></i>
                         </span>
-                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    </span><a href="javascript:void(0);" class="menu-item theme-select" title="切换主题">
                     <i class="fas fa-adjust fa-fw"></i>
+                    <select class="color-theme-select" id="theme-select-desktop" title="切换主题">
+                        <option value="light">浅色</option>
+                        <option value="dark">深色</option>
+                        <option value="black">黑色</option>
+                        <option value="auto">跟随系统</option>
+                    </select>
                 </a></div>
         </div>
     </div>
@@ -112,7 +118,7 @@
     <div class="header-container">
         <div class="header-wrapper">
             <div class="header-title">
-                <a href="/mysite-public/" title="CharlesRen"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>CharlesRen</a>
+                <a href="/mysite-public/" title="CharlesRen"><span class="header-title-pre"><i class='far fa-edit fa-fw'></i></span>CharlesRen</a>
             </div>
             <div class="menu-toggle" id="menu-toggle-mobile">
                 <span></span><span></span><span></span>
@@ -134,8 +140,14 @@
                     <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
                         取消
                     </a>
-                </div><a class="menu-item" href="/mysite-public/posts/" title="">所有文章</a><a class="menu-item" href="/mysite-public/tags/" title="">标签</a><a class="menu-item" href="/mysite-public/categories/" title="">分类</a><a class="menu-item" href="/mysite-public/categories/documentation/" title="">文档</a><a class="menu-item" href="/mysite-public/about/" title="">关于</a><a class="menu-item" href="https://github.com/charlesren" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                </div><a class="menu-item" href="/mysite-public/posts/" title="">所有文章</a><a class="menu-item" href="/mysite-public/tags/" title="">标签</a><a class="menu-item" href="/mysite-public/categories/" title="">分类</a><a class="menu-item" href="/mysite-public/categories/documentation/" title="">文档</a><a class="menu-item" href="/mysite-public/about/" title="">关于</a><a class="menu-item" href="https://github.com/charlesren" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-select" title="切换主题">
                 <i class="fas fa-adjust fa-fw"></i>
+                <select class="color-theme-select" id="theme-select-mobile" title="切换主题">
+                    <option value="light">浅色</option>
+                    <option value="dark">深色</option>
+                    <option value="black">黑色</option>
+                    <option value="auto">跟随系统</option>
+                </select>
             </a><a href="javascript:void(0);" class="menu-item" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
                     <select class="language-select" onchange="location = this.value;"><option value="/mysite-public/grafana%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/" selected>简体中文</option></select>
                 </a></div>
@@ -151,10 +163,12 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">目录</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><script>document.body.setAttribute("pageStyle", "normal")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Grafana的安装及使用</h1><div class="post-meta">
+        </div><script>document.body.setAttribute("pageStyle", "wide")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Grafana的安装及使用</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://charlesren.github.io/mysite-public/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>CharlesRen</a></span>&nbsp;<span class="post-category">收录于 <a href="/mysite-public/categories/tools/"><i class="far fa-folder fa-fw"></i>Tools</a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-03-18">2021-03-18</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 556 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;<span id="/mysite-public/grafana%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/" class="leancloud_visitors" data-flag-title="Grafana的安装及使用">
+                        <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
@@ -306,7 +320,7 @@ ORDER BY t
                             <a class="link-to-markdown" href="/mysite-public/grafana%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/index.md" target="_blank" rel="noopener noreferrer">阅读原始文档</a>
                         </span></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://charlesren.github.io/mysite-public/grafana%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/" data-title="Grafana的安装及使用"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://charlesren.github.io/mysite-public/grafana%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://charlesren.github.io/mysite-public/grafana%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/" data-title="Grafana的安装及使用"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://charlesren.github.io/mysite-public/grafana%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/" data-title="Grafana的安装及使用"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@4.23.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://charlesren.github.io/mysite-public/grafana%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/" data-title="Grafana的安装及使用"><i class="fab fa-weibo fa-fw"></i></a></span>
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://charlesren.github.io/mysite-public/grafana%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/" data-title="Grafana的安装及使用"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://charlesren.github.io/mysite-public/grafana%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://charlesren.github.io/mysite-public/grafana%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/" data-title="Grafana的安装及使用"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://charlesren.github.io/mysite-public/grafana%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/" data-title="Grafana的安装及使用"><i data-svg-src="/mysite-public/lib/simple-icons/icons/line.min.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://charlesren.github.io/mysite-public/grafana%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/" data-title="Grafana的安装及使用"><i class="fab fa-weibo fa-fw"></i></a></span>
             </div>
         </div>
     </div>
@@ -321,16 +335,32 @@ ORDER BY t
     <div class="post-nav"><a href="/mysite-public/%E5%AE%B9%E5%99%A8%E5%8C%96%E9%83%A8%E7%BD%B2clickhouse%E5%8F%8Atabix/" class="prev" rel="prev" title="容器化部署Clickhouse及Tabix"><i class="fas fa-angle-left fa-fw"></i>容器化部署Clickhouse及Tabix</a>
             <a href="/mysite-public/nats%E7%9A%84%E4%BD%BF%E7%94%A8/" class="next" rel="next" title="Nats的使用">Nats的使用<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
-<div id="comments"></div></article></div>
+<div id="comments"><div id="waline" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://waline.js.org/">Waline</a>.
+            </noscript></div></article></div>
             </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.81.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreffer" title="DoIt 0.2.10"><i class="far fa-edit fa-fw"></i> DoIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://charlesren.github.io/mysite-public/" target="_blank" rel="noopener noreferrer">CharlesRen</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
-        </div></footer></div>
+        </div><script>
+            if('serviceWorker' in navigator) {
+                navigator.serviceWorker
+                    .register('/sw.min.js', { scope: '/' })
+                    .then(function(registration) {
+                        
+                    });
+          
+                navigator.serviceWorker
+                    .ready
+                    .then(function(registration) {
+                        
+                    });
+            }
+          </script></footer></div>
 
         <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
                 <i class="fas fa-arrow-up fa-fw"></i>
             </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
                 <i class="fas fa-comment fa-fw"></i>
             </a>
-        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.0/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.9.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/mysite-public/js/theme.min.js"></script></body>
+        </div><link rel="stylesheet" href="/mysite-public/lib/waline/Waline.min.css"><script type="text/javascript" src="/mysite-public/lib/waline/Waline.min.js"></script><script type="text/javascript" src="/mysite-public/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/mysite-public/lib/algoliasearch/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="/mysite-public/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/mysite-public/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/mysite-public/lib/sharer/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{"waline":{"avatar":"mp","avatarCDN":"https://cdn.v2ex.com/gravatar/","el":"#waline","emojiCDN":"https://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/","emojiMaps":"微博表情包","highlight":true,"lang":"en","meta":["nick","mail","link"],"pageSize":10,"placeholder":"Just Go Go.","serverURL":"https://doit-docs-comment.vercel.app/","visitor":true}},"search":{"algoliaAppID":"5YGRNRQK1G","algoliaIndex":"zh_cn_index","algoliaSearchKey":"0ff6874805de24b84aa1d5ebccad56cd","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/mysite-public/js/theme.min.js"></script></body>
 </html>
