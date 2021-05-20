@@ -1,0 +1,26 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Device - Category - CharlesRen</title>
+        <link>https://charlesren.github.io/mysite-public/categories/device/</link>
+        <description>Device - Category - CharlesRen</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>renccn@gmail.com (CharlesRen)</managingEditor>
+            <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 03 Mar 2021 16:12:43 &#43;0800</lastBuildDate><atom:link href="https://charlesren.github.io/mysite-public/categories/device/" rel="self" type="application/rss+xml" /><item>
+    <title>HP3636打印机设置</title>
+    <link>https://charlesren.github.io/mysite-public/hp3636%E6%89%93%E5%8D%B0%E6%9C%BA%E8%AE%BE%E7%BD%AE/</link>
+    <pubDate>Wed, 03 Mar 2021 16:12:43 &#43;0800</pubDate>
+    <author>CharlesRen</author>
+    <guid>https://charlesren.github.io/mysite-public/hp3636%E6%89%93%E5%8D%B0%E6%9C%BA%E8%AE%BE%E7%BD%AE/</guid>
+    <description><![CDATA[https://weibo.com/tv/v/IhQSsEBsS?fid=1034:4442542427565493
+无线打印机直连打印方法 https://v.youku.com/v_show/id_XMzc1MzY4MzA0MA==.html?spm=a2hzp.8244740.0.0
+长按打印机的叉还有WiFi键 电源灯闪烁松手哈 然后手机直接连接打印机的WiFi哈
+然后打开手机设置找到wifi名字是DE和Hp的名字的wifi密码是12345678
+网络 无线（80211） 无线设置向导]]></description>
+</item><item>
+    <title>R7000刷merlin固件</title>
+    <link>https://charlesren.github.io/mysite-public/r7000%E5%88%B7merlin%E5%9B%BA%E4%BB%B6/</link>
+    <pubDate>Wed, 03 Mar 2021 09:48:05 &#43;0800</pubDate>
+    <author>CharlesRen</author>
+    <guid>https://charlesren.github.io/mysite-public/r7000%E5%88%B7merlin%E5%9B%BA%E4%BB%B6/</guid>
+    <description><![CDATA[1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25  原厂 先刷中间R7000_378.52-2.chk 恢复出厂 dual wan load banlance 3:1 较1:1网速快 ss 全局代理 全局tcp才能连上选全局https连不上 全局模式下网速慢 用gfwlist模式，都默认配置 更新7.4 拔掉电信猫到路由器网线，防恢复出厂后地址冲突，自动重启改ip 格式化jffs （ administration-system-format jffs at nest boot） 恢复出厂 加载7.4文件 插网线 ip和电信猫冲突，自动改为192.168.2.1 改路由器管理秘密，无线密码 software center 下载 shadowshocks enable jffs custom 设置ss（注意勾选使用ssr） 导出ss设置 保持路由器配置文件   ]]></description>
+</item></channel>
+</rss>

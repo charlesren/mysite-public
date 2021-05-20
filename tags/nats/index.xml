@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Nats - Tag - CharlesRen</title>
+        <link>https://charlesren.github.io/mysite-public/tags/nats/</link>
+        <description>Nats - Tag - CharlesRen</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>renccn@gmail.com (CharlesRen)</managingEditor>
+            <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 14 Apr 2021 16:35:47 &#43;0800</lastBuildDate><atom:link href="https://charlesren.github.io/mysite-public/tags/nats/" rel="self" type="application/rss+xml" /><item>
+    <title>Nats的使用</title>
+    <link>https://charlesren.github.io/mysite-public/nats%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
+    <pubDate>Wed, 14 Apr 2021 16:35:47 &#43;0800</pubDate>
+    <author>CharlesRen</author>
+    <guid>https://charlesren.github.io/mysite-public/nats%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
+    <description><![CDATA[单机部署参考NATS Docker tutorial
+集群部署参考nats_docker
+单机部署 下载镜像 1  docker pull nats   启动服务 1  docker run -p 4222:4222 -p 8222:8222 -p 6222:6222 --name nats-server -d nats:latest   查看服务 通过 http://localhost:8222 查看服务状态]]></description>
+</item></channel>
+</rss>

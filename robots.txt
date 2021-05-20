@@ -61,4 +61,4 @@ Disallow: /
 User-agent: ZoominfoBot
 Disallow: /
 
-Sitemap: https://charlesren.github.io/en/sitemap.xml
+Sitemap: https://charlesren.github.io/sitemap.xml

@@ -2,8 +2,8 @@
     <channel>
         <title>CharlesRen</title>
         <link>https://charlesren.github.io/mysite-public/</link>
-        <description>关于 DoIt 主题</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>renccn@gmail.com (CharlesRen)</managingEditor>
+        <description>About DoIt Theme</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>renccn@gmail.com (CharlesRen)</managingEditor>
             <webMaster>renccn@gmail.com (CharlesRen)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 14 Apr 2021 16:35:47 &#43;0800</lastBuildDate>
             <atom:link href="https://charlesren.github.io/mysite-public/index.xml" rel="self" type="application/rss+xml" />
         <item>
@@ -12,69 +12,119 @@
     <pubDate>Wed, 14 Apr 2021 16:35:47 &#43;0800</pubDate>
     <author>CharlesRen</author>
     <guid>https://charlesren.github.io/mysite-public/nats%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
-    <description><![CDATA[单机部署参考NATS Docker tutorial 集群部署参考nats_docker 单机部署 下载镜像 1 docker pull nats 启动服务 1 docker run -p 4222:4222 -p 8222:8222 -p 6222:6222 --name nats-server -d nats:latest 查看服务 通过 http://localhost:8222 查看服务状]]></description>
+    <description><![CDATA[单机部署参考NATS Docker tutorial
+集群部署参考nats_docker
+单机部署 下载镜像 1  docker pull nats   启动服务 1  docker run -p 4222:4222 -p 8222:8222 -p 6222:6222 --name nats-server -d nats:latest   查看服务 通过 http://localhost:8222 查看服务状态]]></description>
 </item><item>
     <title>Grafana的安装及使用</title>
     <link>https://charlesren.github.io/mysite-public/grafana%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/</link>
     <pubDate>Thu, 18 Mar 2021 08:45:37 &#43;0800</pubDate>
     <author>CharlesRen</author>
     <guid>https://charlesren.github.io/mysite-public/grafana%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/</guid>
-    <description><![CDATA[安装 1 docker pull grafana/grafana 准备存储空间 1 mkdir -p /data/grafana 启动 1 docker run -d -p 3000:3000 -v /data/grafana:/var/lib/grafana --name grafana grafana/grafana 登录 浏览器访问http://localhost:3000/login 默认用户名密码]]></description>
+    <description><![CDATA[安装 1  docker pull grafana/grafana   准备存储空间 1  mkdir -p /data/grafana   启动 1  docker run -d -p 3000:3000 -v /data/grafana:/var/lib/grafana --name grafana grafana/grafana   登录 浏览器访问http://localhost:3000/login
+ 默认用户名密码为: admin/admin
+参考Configure a Grafana Docker image
+ 安装ClickHouse plugins  参考https://grafana.com/grafana/plugins/vertamedia-clickhouse-datasource/
+ 1 2 3 4  docker exec -it grafana /bin/bash grafana-cli plugins install vertamedia-clickhouse-datasource exit docker restart grafana   配置数据源 Configuration &gt; Data Sources &gt; Add data source]]></description>
 </item><item>
     <title>容器化部署Clickhouse及Tabix</title>
     <link>https://charlesren.github.io/mysite-public/%E5%AE%B9%E5%99%A8%E5%8C%96%E9%83%A8%E7%BD%B2clickhouse%E5%8F%8Atabix/</link>
     <pubDate>Wed, 10 Mar 2021 16:07:54 &#43;0800</pubDate>
     <author>CharlesRen</author>
     <guid>https://charlesren.github.io/mysite-public/%E5%AE%B9%E5%99%A8%E5%8C%96%E9%83%A8%E7%BD%B2clickhouse%E5%8F%8Atabix/</guid>
-    <description><![CDATA[下载镜像 1 docker pull yandex/clickhouse-server 准备数据目录 clickhouse server 重要目录介绍 数据文件: /var/lib/clickhouse 配置文件: /etc/clickhouse-sever 日志文件: /var/log/clickhouse-server 以/data为外接存储为例,新建数据目录 1 mkdir -p /data/clickhouse 启动clic]]></description>
+    <description><![CDATA[下载镜像 1  docker pull yandex/clickhouse-server   准备数据目录  clickhouse server 重要目录介绍
+数据文件: /var/lib/clickhouse
+配置文件: /etc/clickhouse-sever
+日志文件: /var/log/clickhouse-server
+ 以/data为外接存储为例,新建数据目录
+1  mkdir -p /data/clickhouse   启动clickhouse数据库 1 2 3 4 5 6 7  docker run -d --name clickhouse-server \ --ulimit nofile=262144:262144 \ --volume=/data/clickhouse:/var/lib/clickhouse \ -p 8123:8123 \ -p 9000:9000 \ -p 9009:9009 \ yandex/clickhouse-server   新建数据库用户  clickhouse默认账号为default,密码为空
+本示例新建名为clickhouse的用户
+容器内无vim命令
+ 准备用户配置文件模板 1  docker cp clickhouse-server:/etc/clickhouse-server/users.]]></description>
 </item><item>
     <title>Centos使用ZFS文件系统</title>
     <link>https://charlesren.github.io/mysite-public/centos%E4%BD%BF%E7%94%A8zfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</link>
     <pubDate>Tue, 09 Mar 2021 14:47:50 &#43;0800</pubDate>
     <author>CharlesRen</author>
     <guid>https://charlesren.github.io/mysite-public/centos%E4%BD%BF%E7%94%A8zfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</guid>
-    <description><![CDATA[安装epel，zfs仓库 epel可以使用中科院开源软件协会等 mirrors.opencas.cn keys不用管，安装库里软件时会提示import 安装zfs 1 yum install zfs kernel]]></description>
+    <description><![CDATA[安装epel，zfs仓库 epel可以使用中科院开源软件协会等
+mirrors.opencas.cn
+keys不用管，安装库里软件时会提示import
+安装zfs 1  yum install zfs   kernel-devel等会自动安装
+内核加载zfs模块 提示zfs not found
+重启系统（dmks staus显示added，没有安装）
+重启后变为installed
+modprobe zfs
+导入pool
+升级pool
+正常使用
+重启后自动import crontab 加如下内容
+1  @reboot sleep 30；/sbin/zpool import data   1 2 3 4  zfs get sharenfs systemctl start rpcbind systemctl enable nfs systemctl start nfs   共享设置 vi /etc/exports
+/data/Downloads 192.168.2.0/24（rw，no_root_squash，sync）后来又加上insecure 不加macmount不上
+mac上远程挂载 1  mount -t nfs 192.168.2.215/data/Downloads /data/Downloads   zfs set sharesmb=on data]]></description>
 </item><item>
     <title>Nginx&#43;keepalived实现apiserver高可用</title>
     <link>https://charlesren.github.io/mysite-public/nginx-keepalived%E5%AE%9E%E7%8E%B0apiserver%E9%AB%98%E5%8F%AF%E7%94%A8/</link>
     <pubDate>Tue, 09 Mar 2021 14:41:07 &#43;0800</pubDate>
     <author>CharlesRen</author>
     <guid>https://charlesren.github.io/mysite-public/nginx-keepalived%E5%AE%9E%E7%8E%B0apiserver%E9%AB%98%E5%8F%AF%E7%94%A8/</guid>
-    <description><![CDATA[cat /etc/keepalived/keepalived.conf 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 global_defs { router_id nginx_apiserver__test } vrrp_script chk_nginx { script &#34;/etc/keepalived/check_nginx.sh&#34; interval 5 weight 2 } vrrp_instance VI_1 { state BACKUP interface ens192 virtual_router_id 51 priority 99 advert_int 1 authentication { auth_type PASS auth_pass 1111 } virtual_ipaddress { 1.1.1.1/24 } } check_nginx.sh 脚本内]]></description>
+    <description><![CDATA[cat /etc/keepalived/keepalived.conf
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24  global_defs { router_id nginx_apiserver__test } vrrp_script chk_nginx { script &#34;/etc/keepalived/check_nginx.sh&#34; interval 5 weight 2 } vrrp_instance VI_1 { state BACKUP interface ens192 virtual_router_id 51 priority 99 advert_int 1 authentication { auth_type PASS auth_pass 1111 } virtual_ipaddress { 1.1.1.1/24 } }   check_nginx.sh 脚本内容]]></description>
 </item><item>
     <title>新建用户且home目录在存储上</title>
     <link>https://charlesren.github.io/mysite-public/%E6%96%B0%E5%BB%BA%E7%94%A8%E6%88%B7%E4%B8%94home%E7%9B%AE%E5%BD%95%E5%9C%A8%E5%AD%98%E5%82%A8%E4%B8%8A/</link>
     <pubDate>Tue, 09 Mar 2021 14:37:31 &#43;0800</pubDate>
     <author>CharlesRen</author>
     <guid>https://charlesren.github.io/mysite-public/%E6%96%B0%E5%BB%BA%E7%94%A8%E6%88%B7%E4%B8%94home%E7%9B%AE%E5%BD%95%E5%9C%A8%E5%AD%98%E5%82%A8%E4%B8%8A/</guid>
-    <description><![CDATA[1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 groupadd -g 1100 xprice useradd -u 1101 -g 1100 -d /tmp/xprice xprice umount /data mkdir /home/xprice mount -a chown xprice:xprice /home/xprice chmod 750 /home/xprice usermod -m -d /home/xprice xprice cp /tmp/xprice/.* /home/xprice/ passwd xprice 或可尝试 groupadd -g]]></description>
+    <description><![CDATA[1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30  groupadd -g 1100 xprice useradd -u 1101 -g 1100 -d /tmp/xprice xprice umount /data mkdir /home/xprice mount -a chown xprice:xprice /home/xprice chmod 750 /home/xprice usermod -m -d /home/xprice xprice cp /tmp/xprice/.* /home/xprice/ passwd xprice 或可尝试 groupadd -g 1100 xprice useradd -u 1101 -g 1100 -M xprice umount /data mkdir /home/xprice mount -a chown xprice:xprice /home/xprice chmod 750 /home/xprice usermod -d /home/xprice xprice passwd xprice 未验证如下tips http://blog.]]></description>
 </item><item>
     <title>Centos7.6离线安装docker</title>
     <link>https://charlesren.github.io/mysite-public/centos7.6%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85docker/</link>
     <pubDate>Tue, 09 Mar 2021 14:10:26 &#43;0800</pubDate>
     <author>CharlesRen</author>
     <guid>https://charlesren.github.io/mysite-public/centos7.6%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85docker/</guid>
-    <description><![CDATA[1、安装环境： 系统：CentOS Linux release 7.6.1810 (Core) Docker版本：18.09.8 2、下载离线安装包 docker 依赖包下载： containerd.io docker-ce-cli container-selinux 3、安装 1 2 3 4 rpm -ivh docker-ce-cli-18.09.8-3.el7.x86_64.rpm rpm -ivh container-selinux-2.107-3.el7.noarch.rpm rpm]]></description>
+    <description><![CDATA[1、安装环境：
+系统：CentOS Linux release 7.6.1810 (Core)
+Docker版本：18.09.8
+2、下载离线安装包
+docker
+依赖包下载：
+containerd.io
+docker-ce-cli
+container-selinux
+3、安装
+1 2 3 4  rpm -ivh docker-ce-cli-18.09.8-3.el7.x86_64.rpm rpm -ivh container-selinux-2.107-3.el7.noarch.rpm rpm -ivh containerd.io-1.2.2-3.el7.x86_64.rpm rpm -ivh docker-ce-18.09.8-3.el7.x86_64.rpm   ]]></description>
 </item><item>
     <title>Yum源的使用方法</title>
     <link>https://charlesren.github.io/mysite-public/yum%E6%BA%90%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
     <pubDate>Tue, 09 Mar 2021 11:30:03 &#43;0800</pubDate>
     <author>CharlesRen</author>
     <guid>https://charlesren.github.io/mysite-public/yum%E6%BA%90%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
-    <description><![CDATA[1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 ##################################### ##################################### ####### YUM 使用方法 （仅redhat 6.2) ########## ##################################### ##################################### # 在客户机/etc]]></description>
+    <description><![CDATA[1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41  ##################################### ##################################### ####### YUM 使用方法 （仅redhat 6.2) ########## ##################################### ##################################### # 在客户机/etc/yum.repos.d/下面新建rhel-media.repo文件 # rhel-media.repo文件内容如下： [rhel-media] name=Red Hat Enterprise Linux 6.2 baseurl=http://1.1.1.1 #baseurl=file:///media/cdrom #/media/cdrom为光盘的mountpoint enabled=1 gpgcheck=0 #gpgkey=file:///media/rhel/RPM-GPG-KEY-redhat-release # 在命令行下 yum install 应用名 即可安装 ######################################### #####使用本地源############################# ####根据源的不同可分为两种情况 ########### 用光驱中的光盘做源 #第一步： mkdir /media/cdrom #第二步： mount /dev/sr0 /media/cdrom #第三步： 把rhel-media.]]></description>
 </item><item>
     <title>Centos连接存储</title>
     <link>https://charlesren.github.io/mysite-public/centos%E8%BF%9E%E6%8E%A5%E5%AD%98%E5%82%A8/</link>
     <pubDate>Tue, 09 Mar 2021 10:30:26 &#43;0800</pubDate>
     <author>CharlesRen</author>
     <guid>https://charlesren.github.io/mysite-public/centos%E8%BF%9E%E6%8E%A5%E5%AD%98%E5%82%A8/</guid>
-    <description><![CDATA[device-mapper 检查是否安装多路径软件包 device-mapper device-mapper-multipath 1 rpm -qa |grep device-mapper 安装device-mapper, device-mapper-multipath 1 yum install -y device-mapper device-mapper-multipath 生成多路径配置文件 1 mpathconf --enable 说明：生成配置文件是/etc/]]></description>
+    <description><![CDATA[device-mapper 检查是否安装多路径软件包 device-mapper device-mapper-multipath
+1  rpm -qa |grep device-mapper   安装device-mapper, device-mapper-multipath
+1  yum install -y device-mapper device-mapper-multipath   生成多路径配置文件
+1  mpathconf --enable   说明：生成配置文件是/etc/multipath.conf
+修改配置文件
+1 2 3 4 5 6 7 8 9 10  vim /etc/multipath.conf #blacklist { #devnode &#34;*&#34; #} defaults { user_friendly_names yes path_grouping_policy multibus failback immediate no_path_retry fail }    1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27  在默认配置下，LVM对所有磁盘进行扫描，以确定哪一块上面包含PV。如果使用了device-mapper-multipath或其他多路径软件如 EMC PowerPath 或Hitachi Dynamic Link Manager (HDLM)，那么对于每一个LUN的每一条路径就注册成为一个不同的SCSI设备。如/dev/sdb， /dev/sdc，等等。多路径软件之后会创建一个新的设备映射到这些路径如：/dev/mapper/mpath1 (device-mapper-multipath)， /dev/emcpowerb (EMC PowerPath)，或 /dev/sddlmab (HDLM)。由于每一个设备都指向同一个LUN，所以它们都包含相同的LVM元数据，因此在扫描时显示为duplicate。运行任何LVM命令，都会出现你所说的告警。 With a default configuration, LVM commands will scan for devices in /dev, and check every resulting device for LVM metadata.]]></description>
 </item><item>
     <title>Nmon生成系统性能监控文件</title>
     <link>https://charlesren.github.io/mysite-public/nmon%E7%94%9F%E6%88%90%E7%B3%BB%E7%BB%9F%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7%E6%96%87%E4%BB%B6/</link>
     <pubDate>Tue, 09 Mar 2021 08:47:13 &#43;0800</pubDate>
     <author>CharlesRen</author>
     <guid>https://charlesren.github.io/mysite-public/nmon%E7%94%9F%E6%88%90%E7%B3%BB%E7%BB%9F%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7%E6%96%87%E4%BB%B6/</guid>
-    <description><![CDATA[用nmon命令生成系统性能监控文件 为了查看系统在一段时间内的性能，我们可以借助系统自身提供的性能监控命令来生成一份性能监控日志，然后用nmo]]></description>
+    <description><![CDATA[用nmon命令生成系统性能监控文件
+为了查看系统在一段时间内的性能，我们可以借助系统自身提供的性能监控命令来生成一份性能监控日志，然后用nmon analyser小软件来生成图形化的监控界面.
+在aix操作系统下，用root 用户执行如下命令：
+1  nmon -f -s 30 –c 2880 -m /tmp   系统每隔30秒，总共2880次监控性能，生成的文件存放在/tmp目录下。
+topas
+系统自动保存topas文件，可以转为csv文件，用nmon工具分析。文件在/etc/perf/daily目录下
+topas文件可通过topasout -a xxxxx.topas 转化为csv文件]]></description>
 </item></channel>
 </rss>
