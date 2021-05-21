@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.min.css",
-	"sourceRoot": "/Users/rencc/scm/mysite",
+	"sourceRoot": "/data/mysite",
 	"sources": [
 		"assets/css/style.scss",
 		"assets/css/_variables.scss",
